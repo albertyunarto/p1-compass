@@ -70,7 +70,12 @@ async function getToken(): Promise<string | null> {
   }
 }
 
-export type OneMapHit = { lat: number; lng: number; address: string };
+export type OneMapHit = {
+  lat: number;
+  lng: number;
+  address: string;
+  postal?: string;
+};
 
 type OneMapResult = {
   SEARCHVAL?: string;
@@ -93,32 +98,51 @@ function formatAddress(hit: OneMapResult): string {
   return main || "Singapore";
 }
 
-/** Resolve a 6-digit postal code via OneMap, or null on any failure. */
-export async function onemapSearchPostal(
-  postal: string,
-): Promise<OneMapHit | null> {
+function toHit(r: OneMapResult): OneMapHit | null {
+  const lat = Number(r.LATITUDE);
+  const lng = Number(r.LONGITUDE);
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+  const postal = r.POSTAL && r.POSTAL !== "NIL" ? r.POSTAL : undefined;
+  return { lat, lng, address: formatAddress(r), postal };
+}
+
+async function rawSearch(searchVal: string): Promise<OneMapResult[]> {
   const token = await getToken();
-  if (!token) return null;
+  if (!token) return [];
 
   try {
     const url = `${SEARCH_URL}?searchVal=${encodeURIComponent(
-      postal,
+      searchVal,
     )}&returnGeom=Y&getAddrDetails=Y&pageNum=1`;
     const res = await fetch(url, {
       headers: { Authorization: token },
       signal: AbortSignal.timeout(6000),
     });
-    if (!res.ok) return null;
+    if (!res.ok) return [];
     const data = (await res.json()) as { results?: OneMapResult[] };
-    const results = data.results ?? [];
-    const hit =
-      results.find((r) => String(r.POSTAL) === postal) ?? results[0];
-    if (!hit) return null;
-    const lat = Number(hit.LATITUDE);
-    const lng = Number(hit.LONGITUDE);
-    if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
-    return { lat, lng, address: formatAddress(hit) };
+    return data.results ?? [];
   } catch {
-    return null;
+    return [];
   }
+}
+
+/** Resolve a 6-digit postal code via OneMap, or null on any failure. */
+export async function onemapSearchPostal(
+  postal: string,
+): Promise<OneMapHit | null> {
+  const results = await rawSearch(postal);
+  const match = results.find((r) => String(r.POSTAL) === postal) ?? results[0];
+  return match ? toHit(match) : null;
+}
+
+/** Resolve a free-text query (e.g. a school name) to its first valid hit. */
+export async function onemapSearch(
+  searchVal: string,
+): Promise<OneMapHit | null> {
+  const results = await rawSearch(searchVal);
+  for (const r of results) {
+    const hit = toHit(r);
+    if (hit) return hit;
+  }
+  return null;
 }
