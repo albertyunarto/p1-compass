@@ -69,8 +69,12 @@ export type GeoResult = {
   lat: number;
   lng: number;
   cached: boolean;
-  /** "onemap" = precise geocode; "sector" = postal-sector centroid fallback. */
-  source: "onemap" | "sector";
+  /**
+   * "index"  = exact match in the bundled postal dataset
+   * "onemap" = live OneMap geocode
+   * "sector" = postal-sector centroid fallback (approximate)
+   */
+  source: "index" | "onemap" | "sector";
 };
 
 /** Sector centroid table entry (data/postal_sectors.json). */

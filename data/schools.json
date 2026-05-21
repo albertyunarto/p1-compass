@@ -6,8 +6,8 @@
     "short": "CAN",
     "address": "Blk 577 City Crescent 8, Singapore 072023",
     "postal": "072023",
-    "lat": 1.2748,
-    "lng": 103.841,
+    "lat": 1.275505,
+    "lng": 103.839923,
     "type": [
       "Neighbourhood"
     ],
@@ -71,8 +71,8 @@
     "short": "RV",
     "address": "Blk 676 Orchard Street 11, Singapore 098608",
     "postal": "098608",
-    "lat": 1.2925,
-    "lng": 103.842,
+    "lat": 1.294183,
+    "lng": 103.836019,
     "type": [
       "Neighbourhood"
     ],
@@ -138,8 +138,8 @@
     "short": "RM",
     "address": "Blk 675 Bukit Merah Walk 10, Singapore 035879",
     "postal": "035879",
-    "lat": 1.274,
-    "lng": 103.824,
+    "lat": 1.274962,
+    "lng": 103.82418,
     "type": [
       "Neighbourhood"
     ],
@@ -205,8 +205,8 @@
     "short": "GES",
     "address": "Blk 188 Bukit Merah Lane 6, Singapore 039085",
     "postal": "039085",
-    "lat": 1.287,
-    "lng": 103.8155,
+    "lat": 1.285955,
+    "lng": 103.815228,
     "type": [
       "Neighbourhood"
     ],
@@ -271,8 +271,8 @@
     "short": "ZHA",
     "address": "Blk 522 Bukit Merah Crescent 2, Singapore 036644",
     "postal": "036644",
-    "lat": 1.285,
-    "lng": 103.8285,
+    "lat": 1.284498,
+    "lng": 103.826149,
     "type": [
       "Neighbourhood"
     ],
@@ -337,8 +337,8 @@
     "short": "CHIJ",
     "address": "Blk 165 Bukit Merah Avenue 3, Singapore 038503",
     "postal": "038503",
-    "lat": 1.2755,
-    "lng": 103.8265,
+    "lat": 1.274845,
+    "lng": 103.82807,
     "type": [
       "Affiliated",
       "Girls"
@@ -407,8 +407,8 @@
     "short": "BR",
     "address": "Blk 302 Bukit Merah Avenue 4, Singapore 036043",
     "postal": "036043",
-    "lat": 1.2755,
-    "lng": 103.81,
+    "lat": 1.27613,
+    "lng": 103.808639,
     "type": [
       "Neighbourhood"
     ],
@@ -473,8 +473,8 @@
     "short": "ALE",
     "address": "Blk 754 Queenstown Crescent 7, Singapore 055599",
     "postal": "055599",
-    "lat": 1.2895,
-    "lng": 103.816,
+    "lat": 1.291299,
+    "lng": 103.823941,
     "type": [
       "Neighbourhood"
     ],
@@ -538,8 +538,8 @@
     "short": "QUE",
     "address": "Blk 662 Queenstown Walk 8, Singapore 056664",
     "postal": "056664",
-    "lat": 1.2935,
-    "lng": 103.803,
+    "lat": 1.295988,
+    "lng": 103.807902,
     "type": [
       "Neighbourhood"
     ],
@@ -604,8 +604,8 @@
     "short": "NT",
     "address": "Blk 283 Queenstown Avenue 12, Singapore 058749",
     "postal": "058749",
-    "lat": 1.3005,
-    "lng": 103.7975,
+    "lat": 1.299811,
+    "lng": 103.799965,
     "type": [
       "Neighbourhood"
     ],
@@ -672,8 +672,8 @@
     "short": "FM",
     "address": "Blk 600 Queenstown Lane 8, Singapore 059503",
     "postal": "059503",
-    "lat": 1.306,
-    "lng": 103.7855,
+    "lat": 1.300799,
+    "lng": 103.785692,
     "type": [
       "Affiliated"
     ],
@@ -741,8 +741,8 @@
     "short": "CLE",
     "address": "Blk 648 Clementi Avenue 6, Singapore 596306",
     "postal": "596306",
-    "lat": 1.3175,
-    "lng": 103.766,
+    "lat": 1.315809,
+    "lng": 103.763055,
     "type": [
       "Neighbourhood"
     ],
@@ -807,8 +807,8 @@
     "short": "NH",
     "address": "Blk 300 Clementi Crescent 2, Singapore 590040",
     "postal": "590040",
-    "lat": 1.3105,
-    "lng": 103.774,
+    "lat": 1.31984,
+    "lng": 103.7614,
     "type": [
       "SAP",
       "GEP"
@@ -874,8 +874,8 @@
     "short": "PT",
     "address": "Blk 277 Clementi Crescent 6, Singapore 595255",
     "postal": "595255",
-    "lat": 1.3195,
-    "lng": 103.77,
+    "lat": 1.316148,
+    "lng": 103.767576,
     "type": [
       "Neighbourhood"
     ],
@@ -940,8 +940,8 @@
     "short": "QIF",
     "address": "Blk 191 Clementi Lane 4, Singapore 596933",
     "postal": "596933",
-    "lat": 1.312,
-    "lng": 103.7625,
+    "lat": 1.312622,
+    "lng": 103.75703,
     "type": [
       "Neighbourhood"
     ],
@@ -1005,8 +1005,8 @@
     "short": "HP",
     "address": "Blk 391 Holland Road 7, Singapore 216051",
     "postal": "216051",
-    "lat": 1.317,
-    "lng": 103.7935,
+    "lat": 1.316726,
+    "lng": 103.784208,
     "type": [
       "GEP"
     ],
@@ -1069,8 +1069,8 @@
     "short": "NAN",
     "address": "Blk 297 Holland Crescent 6, Singapore 295775",
     "postal": "295775",
-    "lat": 1.3215,
-    "lng": 103.806,
+    "lat": 1.321246,
+    "lng": 103.807795,
     "type": [
       "SAP",
       "Affiliated",
@@ -1140,8 +1140,8 @@
     "short": "RG",
     "address": "Blk 365 Holland Drive 1, Singapore 294771",
     "postal": "294771",
-    "lat": 1.332,
-    "lng": 103.809,
+    "lat": 1.330074,
+    "lng": 103.806221,
     "type": [
       "Girls"
     ],
@@ -1205,8 +1205,8 @@
     "short": "MG",
     "address": "Blk 663 Holland Lane 4, Singapore 100153",
     "postal": "100153",
-    "lat": 1.334,
-    "lng": 103.779,
+    "lat": 1.33286,
+    "lng": 103.78336,
     "type": [
       "Affiliated",
       "Girls"
@@ -1273,8 +1273,8 @@
     "short": "PHP",
     "address": "Blk 239 Holland Crescent 12, Singapore 106841",
     "postal": "106841",
-    "lat": 1.3795,
-    "lng": 103.77,
+    "lat": 1.338055,
+    "lng": 103.776108,
     "type": [
       "Neighbourhood"
     ],
@@ -1339,8 +1339,8 @@
     "short": "BT",
     "address": "Blk 788 Holland Walk 2, Singapore 105854",
     "postal": "105854",
-    "lat": 1.364,
-    "lng": 103.7595,
+    "lat": 1.33775,
+    "lng": 103.766855,
     "type": [
       "Neighbourhood"
     ],
@@ -1406,8 +1406,8 @@
     "short": "AC",
     "address": "Blk 314 Orchard Street 8, Singapore 096820",
     "postal": "096820",
-    "lat": 1.3245,
-    "lng": 103.8395,
+    "lat": 1.318719,
+    "lng": 103.835345,
     "type": [
       "Affiliated",
       "Boys"
@@ -1475,8 +1475,8 @@
     "short": "AC",
     "address": "Blk 271 Novena Avenue 10, Singapore 119793",
     "postal": "119793",
-    "lat": 1.3035,
-    "lng": 103.84,
+    "lat": 1.309321,
+    "lng": 103.840644,
     "type": [
       "Affiliated",
       "Boys"
@@ -1546,8 +1546,8 @@
     "short": "SCG",
     "address": "Blk 676 Orchard Walk 1, Singapore 094851",
     "postal": "094851",
-    "lat": 1.324,
-    "lng": 103.821,
+    "lat": 1.32103,
+    "lng": 103.82808,
     "type": [
       "Girls"
     ],
@@ -1681,8 +1681,8 @@
     "short": "SJIJ",
     "address": "Blk 706 Novena Road 12, Singapore 118602",
     "postal": "118602",
-    "lat": 1.321,
-    "lng": 103.8455,
+    "lat": 1.317702,
+    "lng": 103.84567,
     "type": [
       "Affiliated",
       "Boys"
@@ -1750,8 +1750,8 @@
     "short": "BH",
     "address": "Blk 399 Novena Street 3, Singapore 129480",
     "postal": "129480",
-    "lat": 1.327,
-    "lng": 103.847,
+    "lat": 1.326,
+    "lng": 103.843,
     "type": [
       "Neighbourhood"
     ],
@@ -1817,8 +1817,8 @@
     "short": "CHIJ",
     "address": "Blk 414 Toa Payoh Crescent 10, Singapore 374923",
     "postal": "374923",
-    "lat": 1.34,
-    "lng": 103.846,
+    "lat": 1.332818,
+    "lng": 103.841918,
     "type": [
       "Affiliated",
       "Girls"
@@ -1889,8 +1889,8 @@
     "short": "FTP",
     "address": "Blk 736 Toa Payoh Avenue 10, Singapore 132942",
     "postal": "132942",
-    "lat": 1.3385,
-    "lng": 103.8565,
+    "lat": 1.340526,
+    "lng": 103.855668,
     "type": [
       "Neighbourhood"
     ],
@@ -1955,8 +1955,8 @@
     "short": "PCP",
     "address": "Blk 730 Toa Payoh Avenue 6, Singapore 315639",
     "postal": "315639",
-    "lat": 1.342,
-    "lng": 103.8455,
+    "lat": 1.337289,
+    "lng": 103.855473,
     "type": [
       "Neighbourhood"
     ],
@@ -2020,8 +2020,8 @@
     "short": "KC",
     "address": "Blk 622 Toa Payoh Drive 9, Singapore 133126",
     "postal": "133126",
-    "lat": 1.336,
-    "lng": 103.853,
+    "lat": 1.337408,
+    "lng": 103.847761,
     "type": [
       "Neighbourhood"
     ],
@@ -2087,8 +2087,8 @@
     "short": "HW",
     "address": "Blk 751 Kallang Avenue 3, Singapore 337457",
     "postal": "337457",
-    "lat": 1.3225,
-    "lng": 103.8615,
+    "lat": 1.321689,
+    "lng": 103.857652,
     "type": [
       "Neighbourhood"
     ],
@@ -2154,8 +2154,8 @@
     "short": "BEN",
     "address": "Blk 328 Kallang Street 9, Singapore 086891",
     "postal": "086891",
-    "lat": 1.321,
-    "lng": 103.865,
+    "lat": 1.322208,
+    "lng": 103.865351,
     "type": [
       "Neighbourhood"
     ],
@@ -2221,8 +2221,8 @@
     "short": "SAJ",
     "address": "Blk 108 Kallang Street 4, Singapore 080100",
     "postal": "080100",
-    "lat": 1.332,
-    "lng": 103.869,
+    "lat": 1.331389,
+    "lng": 103.865129,
     "type": [
       "Affiliated",
       "Boys"
@@ -2290,8 +2290,8 @@
     "short": "FP",
     "address": "Blk 133 Kallang Street 4, Singapore 333909",
     "postal": "333909",
-    "lat": 1.3135,
-    "lng": 103.854,
+    "lat": 1.312504,
+    "lng": 103.850903,
     "type": [
       "Neighbourhood"
     ],
@@ -2355,8 +2355,8 @@
     "short": "STA",
     "address": "Blk 194 Kallang Drive 1, Singapore 330979",
     "postal": "330979",
-    "lat": 1.312,
-    "lng": 103.8575,
+    "lat": 1.304091,
+    "lng": 103.857393,
     "type": [
       "Neighbourhood"
     ],
@@ -2421,8 +2421,8 @@
     "short": "CH",
     "address": "Blk 431 Bishan Lane 9, Singapore 780664",
     "postal": "780664",
-    "lat": 1.356,
-    "lng": 103.842,
+    "lat": 1.35479,
+    "lng": 103.84493,
     "type": [
       "SAP",
       "Affiliated",
@@ -2491,8 +2491,8 @@
     "short": "KCP",
     "address": "Blk 725 Bishan Walk 2, Singapore 775933",
     "postal": "775933",
-    "lat": 1.3535,
-    "lng": 103.848,
+    "lat": 1.349384,
+    "lng": 103.855171,
     "type": [
       "Affiliated"
     ],
@@ -2557,8 +2557,8 @@
     "short": "GUA",
     "address": "Blk 389 Bishan Lane 4, Singapore 786385",
     "postal": "786385",
-    "lat": 1.3505,
-    "lng": 103.8465,
+    "lat": 1.346043,
+    "lng": 103.849285,
     "type": [
       "Neighbourhood"
     ],
@@ -2624,8 +2624,8 @@
     "short": "MC",
     "address": "Blk 233 Bishan Drive 7, Singapore 265354",
     "postal": "265354",
-    "lat": 1.349,
-    "lng": 103.839,
+    "lat": 1.340427,
+    "lng": 103.839899,
     "type": [
       "Girls"
     ],
@@ -2689,8 +2689,8 @@
     "short": "ZHO",
     "address": "Blk 521 Bishan Drive 6, Singapore 267824",
     "postal": "267824",
-    "lat": 1.3595,
-    "lng": 103.869,
+    "lat": 1.360167,
+    "lng": 103.869696,
     "type": [
       "Neighbourhood"
     ],
@@ -2755,8 +2755,8 @@
     "short": "AT",
     "address": "Blk 523 Ang Mo Kio Walk 3, Singapore 565663",
     "postal": "565663",
-    "lat": 1.3608,
-    "lng": 103.8345,
+    "lat": 1.360736,
+    "lng": 103.833076,
     "type": [
       "SAP",
       "Affiliated"
@@ -2823,8 +2823,8 @@
     "short": "AND",
     "address": "Blk 434 Ang Mo Kio Avenue 12, Singapore 561494",
     "postal": "561494",
-    "lat": 1.3702,
-    "lng": 103.8418,
+    "lat": 1.384666,
+    "lng": 103.841238,
     "type": [
       "Neighbourhood"
     ],
@@ -2888,8 +2888,8 @@
     "short": "CHIJ",
     "address": "Blk 821 Ang Mo Kio Street 4, Singapore 200720",
     "postal": "200720",
-    "lat": 1.3637,
-    "lng": 103.8388,
+    "lat": 1.37373,
+    "lng": 103.83431,
     "type": [
       "SAP",
       "Affiliated",
@@ -2959,8 +2959,8 @@
     "short": "MAY",
     "address": "Blk 641 Ang Mo Kio Street 3, Singapore 572850",
     "postal": "572850",
-    "lat": 1.368,
-    "lng": 103.833,
+    "lat": 1.3764,
+    "lng": 103.84317,
     "type": [
       "Neighbourhood"
     ],
@@ -3024,8 +3024,8 @@
     "short": "JS",
     "address": "Blk 632 Ang Mo Kio Road 1, Singapore 566345",
     "postal": "566345",
-    "lat": 1.3735,
-    "lng": 103.847,
+    "lat": 1.371893,
+    "lng": 103.851811,
     "type": [
       "Neighbourhood"
     ],
@@ -3092,8 +3092,8 @@
     "short": "TOW",
     "address": "Blk 681 Ang Mo Kio Crescent 6, Singapore 202425",
     "postal": "202425",
-    "lat": 1.3625,
-    "lng": 103.8565,
+    "lat": 1.360363,
+    "lng": 103.854186,
     "type": [
       "Neighbourhood"
     ],
@@ -3159,8 +3159,8 @@
     "short": "TG",
     "address": "Blk 338 Ang Mo Kio Street 11, Singapore 563248",
     "postal": "563248",
-    "lat": 1.3725,
-    "lng": 103.85,
+    "lat": 1.365201,
+    "lng": 103.851032,
     "type": [
       "Neighbourhood"
     ],
@@ -3287,8 +3287,8 @@
     "short": "YCK",
     "address": "Blk 663 Seletar Road 10, Singapore 799812",
     "postal": "799812",
-    "lat": 1.38,
-    "lng": 103.846,
+    "lat": 1.377823,
+    "lng": 103.885569,
     "type": [
       "Neighbourhood"
     ],
@@ -3355,8 +3355,8 @@
     "short": "ROS",
     "address": "Blk 220 Serangoon Lane 8, Singapore 192317",
     "postal": "192317",
-    "lat": 1.3705,
-    "lng": 103.873,
+    "lat": 1.372916,
+    "lng": 103.874693,
     "type": [
       "GEP"
     ],
@@ -3422,8 +3422,8 @@
     "short": "YAN",
     "address": "Blk 263 Serangoon Avenue 6, Singapore 196491",
     "postal": "196491",
-    "lat": 1.3565,
-    "lng": 103.872,
+    "lat": 1.348972,
+    "lng": 103.868363,
     "type": [
       "Neighbourhood"
     ],
@@ -3487,8 +3487,8 @@
     "short": "MSH",
     "address": "Blk 465 Serangoon Road 3, Singapore 199699",
     "postal": "199699",
-    "lat": 1.3445,
-    "lng": 103.8745,
+    "lat": 1.34139,
+    "lng": 103.87781,
     "type": [
       "SAP",
       "Affiliated",
@@ -3556,8 +3556,8 @@
     "short": "CHIJ",
     "address": "Blk 512 Serangoon Walk 4, Singapore 194521",
     "postal": "194521",
-    "lat": 1.364,
-    "lng": 103.8665,
+    "lat": 1.357951,
+    "lng": 103.86425,
     "type": [
       "Affiliated",
       "Girls"
@@ -3624,8 +3624,8 @@
     "short": "SG",
     "address": "Blk 310 Serangoon Drive 10, Singapore 196878",
     "postal": "196878",
-    "lat": 1.352,
-    "lng": 103.865,
+    "lat": 1.349246,
+    "lng": 103.862332,
     "type": [
       "Affiliated",
       "Boys"
@@ -3692,8 +3692,8 @@
     "short": "HI",
     "address": "Blk 740 Hougang Lane 9, Singapore 533286",
     "postal": "533286",
-    "lat": 1.3625,
-    "lng": 103.8835,
+    "lat": 1.366738,
+    "lng": 103.893684,
     "type": [
       "Affiliated"
     ],
@@ -3759,8 +3759,8 @@
     "short": "HOU",
     "address": "Blk 476 Hougang Drive 6, Singapore 539530",
     "postal": "539530",
-    "lat": 1.37,
-    "lng": 103.8895,
+    "lat": 1.37804,
+    "lng": 103.881166,
     "type": [
       "Neighbourhood"
     ],
@@ -3823,8 +3823,8 @@
     "short": "MJ",
     "address": "Blk 860 Hougang Crescent 5, Singapore 536979",
     "postal": "536979",
-    "lat": 1.3745,
-    "lng": 103.8895,
+    "lat": 1.373938,
+    "lng": 103.889691,
     "type": [
       "Affiliated",
       "Boys"
@@ -3892,8 +3892,8 @@
     "short": "XIN",
     "address": "Blk 612 Hougang Crescent 1, Singapore 535434",
     "postal": "535434",
-    "lat": 1.3795,
-    "lng": 103.887,
+    "lat": 1.357997,
+    "lng": 103.890216,
     "type": [
       "Neighbourhood"
     ],
@@ -3959,8 +3959,8 @@
     "short": "XIN",
     "address": "Blk 858 Hougang Road 6, Singapore 534784",
     "postal": "534784",
-    "lat": 1.376,
-    "lng": 103.883,
+    "lat": 1.371415,
+    "lng": 103.883039,
     "type": [
       "Neighbourhood"
     ],
@@ -4025,8 +4025,8 @@
     "short": "CHIJ",
     "address": "Blk 207 Hougang Avenue 12, Singapore 530552",
     "postal": "530552",
-    "lat": 1.368,
-    "lng": 103.8865,
+    "lat": 1.373174,
+    "lng": 103.897659,
     "type": [
       "Affiliated",
       "Girls"
@@ -4097,8 +4097,8 @@
     "short": "PLMG",
     "address": "Blk 341 Hougang Road 8, Singapore 537016",
     "postal": "537016",
-    "lat": 1.364,
-    "lng": 103.887,
+    "lat": 1.349842,
+    "lng": 103.884978,
     "type": [
       "Affiliated",
       "Girls"
@@ -4166,8 +4166,8 @@
     "short": "AG",
     "address": "Blk 170 Sengkang Drive 3, Singapore 547893",
     "postal": "547893",
-    "lat": 1.3935,
-    "lng": 103.8865,
+    "lat": 1.390662,
+    "lng": 103.887256,
     "type": [
       "Neighbourhood"
     ],
@@ -4231,8 +4231,8 @@
     "short": "COM",
     "address": "Blk 142 Sengkang Lane 4, Singapore 548483",
     "postal": "548483",
-    "lat": 1.3905,
-    "lng": 103.8985,
+    "lat": 1.39453,
+    "lng": 103.897865,
     "type": [
       "Neighbourhood"
     ],
@@ -4296,8 +4296,8 @@
     "short": "FG",
     "address": "Blk 744 Sengkang Crescent 2, Singapore 547690",
     "postal": "547690",
-    "lat": 1.392,
-    "lng": 103.8755,
+    "lat": 1.397621,
+    "lng": 103.88021,
     "type": [
       "Neighbourhood"
     ],
@@ -4363,8 +4363,8 @@
     "short": "NC",
     "address": "Blk 324 Sengkang Walk 6, Singapore 546871",
     "postal": "546871",
-    "lat": 1.3895,
-    "lng": 103.887,
+    "lat": 1.392065,
+    "lng": 103.890925,
     "type": [
       "SAP"
     ],
@@ -4429,8 +4429,8 @@
     "short": "NS",
     "address": "Blk 226 Sengkang Avenue 5, Singapore 541404",
     "postal": "541404",
-    "lat": 1.394,
-    "lng": 103.89,
+    "lat": 1.387528,
+    "lng": 103.903513,
     "type": [
       "Neighbourhood"
     ],
@@ -4495,8 +4495,8 @@
     "short": "NV",
     "address": "Blk 335 Sengkang Road 4, Singapore 546271",
     "postal": "546271",
-    "lat": 1.388,
-    "lng": 103.899,
+    "lat": 1.382893,
+    "lng": 103.895854,
     "type": [
       "Neighbourhood"
     ],
@@ -4560,8 +4560,8 @@
     "short": "PV",
     "address": "Blk 602 Sengkang Lane 4, Singapore 542330",
     "postal": "542330",
-    "lat": 1.396,
-    "lng": 103.8945,
+    "lat": 1.383841,
+    "lng": 103.891215,
     "type": [
       "Neighbourhood"
     ],
@@ -4625,8 +4625,8 @@
     "short": "SG",
     "address": "Blk 153 Sengkang Road 2, Singapore 544000",
     "postal": "544000",
-    "lat": 1.392,
-    "lng": 103.874,
+    "lat": 1.392839,
+    "lng": 103.875159,
     "type": [
       "Neighbourhood"
     ],
@@ -4693,8 +4693,8 @@
     "short": "SPR",
     "address": "Blk 242 Sengkang Road 3, Singapore 540894",
     "postal": "540894",
-    "lat": 1.395,
-    "lng": 103.8825,
+    "lat": 1.394958,
+    "lng": 103.889897,
     "type": [
       "Neighbourhood"
     ],
@@ -4761,8 +4761,8 @@
     "short": "EDG",
     "address": "Blk 508 Punggol Street 11, Singapore 558549",
     "postal": "558549",
-    "lat": 1.396,
-    "lng": 103.907,
+    "lat": 1.400298,
+    "lng": 103.907431,
     "type": [
       "Neighbourhood"
     ],
@@ -4829,8 +4829,8 @@
     "short": "GRE",
     "address": "Blk 160 Punggol Lane 4, Singapore 551119",
     "postal": "551119",
-    "lat": 1.394,
-    "lng": 103.9105,
+    "lat": 1.396403,
+    "lng": 103.912566,
     "type": [
       "Neighbourhood"
     ],
@@ -4894,8 +4894,8 @@
     "short": "HOR",
     "address": "Blk 697 Punggol Road 10, Singapore 559382",
     "postal": "559382",
-    "lat": 1.401,
-    "lng": 103.899,
+    "lat": 1.400009,
+    "lng": 103.913072,
     "type": [
       "Neighbourhood"
     ],
@@ -4959,8 +4959,8 @@
     "short": "MT",
     "address": "Blk 581 Punggol Crescent 7, Singapore 550903",
     "postal": "550903",
-    "lat": 1.397,
-    "lng": 103.906,
+    "lat": 1.394854,
+    "lng": 103.908573,
     "type": [
       "Neighbourhood"
     ],
@@ -5023,8 +5023,8 @@
     "short": "OAS",
     "address": "Blk 430 Punggol Crescent 10, Singapore 821029",
     "postal": "821029",
-    "lat": 1.403,
-    "lng": 103.908,
+    "lat": 1.404409,
+    "lng": 103.910996,
     "type": [
       "Neighbourhood"
     ],
@@ -5090,8 +5090,8 @@
     "short": "PC",
     "address": "Blk 186 Punggol Crescent 11, Singapore 828193",
     "postal": "828193",
-    "lat": 1.4115,
-    "lng": 103.908,
+    "lat": 1.411564,
+    "lng": 103.89897,
     "type": [
       "Neighbourhood"
     ],
@@ -5156,8 +5156,8 @@
     "short": "PG",
     "address": "Blk 617 Punggol Walk 8, Singapore 558292",
     "postal": "558292",
-    "lat": 1.4015,
-    "lng": 103.8945,
+    "lat": 1.401805,
+    "lng": 103.898773,
     "type": [
       "Neighbourhood"
     ],
@@ -5224,8 +5224,8 @@
     "short": "PUN",
     "address": "Blk 805 Punggol Avenue 1, Singapore 827772",
     "postal": "827772",
-    "lat": 1.4,
-    "lng": 103.9095,
+    "lat": 1.378201,
+    "lng": 103.894753,
     "type": [
       "Neighbourhood"
     ],
@@ -5291,8 +5291,8 @@
     "short": "PV",
     "address": "Blk 140 Punggol Road 1, Singapore 829312",
     "postal": "829312",
-    "lat": 1.4035,
-    "lng": 103.9015,
+    "lat": 1.405333,
+    "lng": 103.905387,
     "type": [
       "Neighbourhood"
     ],
@@ -5358,8 +5358,8 @@
     "short": "VAL",
     "address": "Blk 478 Punggol Road 2, Singapore 820266",
     "postal": "820266",
-    "lat": 1.408,
-    "lng": 103.9035,
+    "lat": 1.40687,
+    "lng": 103.89891,
     "type": [
       "Neighbourhood"
     ],
@@ -5425,8 +5425,8 @@
     "short": "WAT",
     "address": "Blk 567 Punggol Road 12, Singapore 554180",
     "postal": "554180",
-    "lat": 1.4045,
-    "lng": 103.9,
+    "lat": 1.399154,
+    "lng": 103.918671,
     "type": [
       "Neighbourhood"
     ],
@@ -5490,8 +5490,8 @@
     "short": "ANG",
     "address": "Blk 325 Tampines Walk 2, Singapore 189524",
     "postal": "189524",
-    "lat": 1.3475,
-    "lng": 103.945,
+    "lat": 1.348571,
+    "lng": 103.951673,
     "type": [
       "Neighbourhood"
     ],
@@ -5556,8 +5556,8 @@
     "short": "CHO",
     "address": "Blk 384 Tampines Walk 4, Singapore 189096",
     "postal": "189096",
-    "lat": 1.352,
-    "lng": 103.952,
+    "lat": 1.350595,
+    "lng": 103.951225,
     "type": [
       "Neighbourhood"
     ],
@@ -5622,8 +5622,8 @@
     "short": "GON",
     "address": "Blk 642 Tampines Walk 6, Singapore 513360",
     "postal": "513360",
-    "lat": 1.358,
-    "lng": 103.956,
+    "lat": 1.357349,
+    "lng": 103.948872,
     "type": [
       "Neighbourhood"
     ],
@@ -5687,8 +5687,8 @@
     "short": "JUN",
     "address": "Blk 877 Tampines Avenue 10, Singapore 516340",
     "postal": "516340",
-    "lat": 1.349,
-    "lng": 103.948,
+    "lat": 1.347892,
+    "lng": 103.939647,
     "type": [
       "Neighbourhood"
     ],
@@ -5752,8 +5752,8 @@
     "short": "PC",
     "address": "Blk 484 Tampines Lane 4, Singapore 184142",
     "postal": "184142",
-    "lat": 1.358,
-    "lng": 103.941,
+    "lat": 1.358087,
+    "lng": 103.935353,
     "type": [
       "SAP"
     ],
@@ -5820,8 +5820,8 @@
     "short": "SH",
     "address": "Blk 438 Tampines Avenue 8, Singapore 184917",
     "postal": "184917",
-    "lat": 1.353,
-    "lng": 103.941,
+    "lat": 1.349407,
+    "lng": 103.936787,
     "type": [
       "Affiliated"
     ],
@@ -5889,8 +5889,8 @@
     "short": "TAM",
     "address": "Blk 663 Tampines Lane 6, Singapore 182986",
     "postal": "182986",
-    "lat": 1.351,
-    "lng": 103.951,
+    "lat": 1.350486,
+    "lng": 103.943573,
     "type": [
       "Neighbourhood"
     ],
@@ -5957,8 +5957,8 @@
     "short": "TN",
     "address": "Blk 103 Tampines Crescent 4, Singapore 521143",
     "postal": "521143",
-    "lat": 1.362,
-    "lng": 103.943,
+    "lat": 1.360692,
+    "lng": 103.948937,
     "type": [
       "Neighbourhood"
     ],
@@ -6025,8 +6025,8 @@
     "short": "ES",
     "address": "Blk 540 Tampines Street 12, Singapore 528258",
     "postal": "528258",
-    "lat": 1.3565,
-    "lng": 103.962,
+    "lat": 1.353041,
+    "lng": 103.961797,
     "type": [
       "Neighbourhood"
     ],
@@ -6090,8 +6090,8 @@
     "short": "YUM",
     "address": "Blk 332 Tampines Avenue 10, Singapore 187600",
     "postal": "187600",
-    "lat": 1.3505,
-    "lng": 103.9525,
+    "lat": 1.35146,
+    "lng": 103.950716,
     "type": [
       "Neighbourhood"
     ],
@@ -6157,8 +6157,8 @@
     "short": "CAS",
     "address": "Blk 212 Tampines Lane 6, Singapore 525508",
     "postal": "525508",
-    "lat": 1.3735,
-    "lng": 103.927,
+    "lat": 1.372789,
+    "lng": 103.957291,
     "type": [
       "Neighbourhood"
     ],
@@ -6287,8 +6287,8 @@
     "short": "EP",
     "address": "Blk 849 Tampines Walk 6, Singapore 182449",
     "postal": "182449",
-    "lat": 1.376,
-    "lng": 103.93,
+    "lat": 1.375033,
+    "lng": 103.945358,
     "type": [
       "Neighbourhood"
     ],
@@ -6418,8 +6418,8 @@
     "short": "MER",
     "address": "Blk 504 Tampines Street 2, Singapore 519938",
     "postal": "519938",
-    "lat": 1.374,
-    "lng": 103.9395,
+    "lat": 1.375971,
+    "lng": 103.935143,
     "type": [
       "Neighbourhood"
     ],
@@ -6486,8 +6486,8 @@
     "short": "PV",
     "address": "Blk 853 Tampines Street 1, Singapore 518221",
     "postal": "518221",
-    "lat": 1.372,
-    "lng": 103.933,
+    "lat": 1.37777,
+    "lng": 103.939689,
     "type": [
       "Neighbourhood"
     ],
@@ -6552,8 +6552,8 @@
     "short": "PR",
     "address": "Blk 876 Tampines Road 8, Singapore 524420",
     "postal": "524420",
-    "lat": 1.37,
-    "lng": 103.9555,
+    "lat": 1.372309,
+    "lng": 103.962919,
     "type": [
       "Neighbourhood"
     ],
@@ -6618,8 +6618,8 @@
     "short": "WS",
     "address": "Blk 706 Tampines Avenue 3, Singapore 510115",
     "postal": "510115",
-    "lat": 1.3705,
-    "lng": 103.951,
+    "lat": 1.365518,
+    "lng": 103.960948,
     "type": [
       "Neighbourhood"
     ],
@@ -6686,8 +6686,8 @@
     "short": "CHA",
     "address": "Blk 627 Changi Road 2, Singapore 500646",
     "postal": "500646",
-    "lat": 1.345,
-    "lng": 103.956,
+    "lat": 1.340208,
+    "lng": 103.952183,
     "type": [
       "Neighbourhood"
     ],
@@ -6816,8 +6816,8 @@
     "short": "BG",
     "address": "Blk 736 Bedok Lane 3, Singapore 485385",
     "postal": "485385",
-    "lat": 1.33,
-    "lng": 103.935,
+    "lat": 1.323996,
+    "lng": 103.937745,
     "type": [
       "Neighbourhood"
     ],
@@ -6882,8 +6882,8 @@
     "short": "FEN",
     "address": "Blk 310 Bedok Crescent 12, Singapore 486299",
     "postal": "486299",
-    "lat": 1.3315,
-    "lng": 103.9385,
+    "lat": 1.330325,
+    "lng": 103.931885,
     "type": [
       "Neighbourhood"
     ],
@@ -6949,8 +6949,8 @@
     "short": "RS",
     "address": "Blk 678 Bedok Road 1, Singapore 487918",
     "postal": "487918",
-    "lat": 1.334,
-    "lng": 103.941,
+    "lat": 1.333494,
+    "lng": 103.934375,
     "type": [
       "SAP"
     ],
@@ -7015,8 +7015,8 @@
     "short": "SS",
     "address": "Blk 771 Bedok Drive 10, Singapore 469098",
     "postal": "469098",
-    "lat": 1.315,
-    "lng": 103.929,
+    "lat": 1.318816,
+    "lng": 103.917526,
     "type": [
       "Affiliated",
       "Boys"
@@ -7086,8 +7086,8 @@
     "short": "TEM",
     "address": "Blk 658 Bedok Lane 11, Singapore 489323",
     "postal": "489323",
-    "lat": 1.321,
-    "lng": 103.946,
+    "lat": 1.317716,
+    "lng": 103.945695,
     "type": [
       "Neighbourhood"
     ],
@@ -7152,8 +7152,8 @@
     "short": "YN",
     "address": "Blk 574 Bedok Walk 7, Singapore 475210",
     "postal": "475210",
-    "lat": 1.329,
-    "lng": 103.927,
+    "lat": 1.333904,
+    "lng": 103.932034,
     "type": [
       "Neighbourhood"
     ],
@@ -7219,8 +7219,8 @@
     "short": "DAM",
     "address": "Blk 284 Bedok Crescent 9, Singapore 166449",
     "postal": "166449",
-    "lat": 1.336,
-    "lng": 103.92,
+    "lat": 1.335351,
+    "lng": 103.921268,
     "type": [
       "Neighbourhood"
     ],
@@ -7287,8 +7287,8 @@
     "short": "OE",
     "address": "Blk 707 Bedok Walk 6, Singapore 164921",
     "postal": "164921",
-    "lat": 1.3215,
-    "lng": 103.9265,
+    "lat": 1.319969,
+    "lng": 103.923753,
     "type": [
       "Neighbourhood"
     ],
@@ -7354,8 +7354,8 @@
     "short": "TN",
     "address": "Blk 293 Katong Drive 5, Singapore 422260",
     "postal": "422260",
-    "lat": 1.3025,
-    "lng": 103.908,
+    "lat": 1.304632,
+    "lng": 103.911204,
     "type": [
       "SAP",
       "GEP"
@@ -7422,8 +7422,8 @@
     "short": "KH",
     "address": "Blk 578 Geylang Walk 2, Singapore 394322",
     "postal": "394322",
-    "lat": 1.311,
-    "lng": 103.887,
+    "lat": 1.311114,
+    "lng": 103.888209,
     "type": [
       "SAP"
     ],
@@ -7488,8 +7488,8 @@
     "short": "HG",
     "address": "Blk 735 Katong Drive 11, Singapore 430439",
     "postal": "430439",
-    "lat": 1.3105,
-    "lng": 103.899,
+    "lat": 1.311772,
+    "lng": 103.902655,
     "type": [
       "Girls"
     ],
@@ -7555,8 +7555,8 @@
     "short": "CHIJ",
     "address": "Blk 557 Katong Walk 4, Singapore 439294",
     "postal": "439294",
-    "lat": 1.308,
-    "lng": 103.9,
+    "lat": 1.306527,
+    "lng": 103.910922,
     "type": [
       "Affiliated",
       "Girls"
@@ -7625,8 +7625,8 @@
     "short": "TK",
     "address": "Blk 437 Katong Street 9, Singapore 458113",
     "postal": "458113",
-    "lat": 1.311,
-    "lng": 103.8945,
+    "lat": 1.30531,
+    "lng": 103.90053,
     "type": [
       "Neighbourhood"
     ],
@@ -7693,8 +7693,8 @@
     "short": "NA",
     "address": "Blk 487 Katong Crescent 7, Singapore 444490",
     "postal": "444490",
-    "lat": 1.304,
-    "lng": 103.912,
+    "lat": 1.30554,
+    "lng": 103.917755,
     "type": [
       "Neighbourhood"
     ],
@@ -7757,8 +7757,8 @@
     "short": "TK",
     "address": "Blk 270 Katong Road 5, Singapore 436389",
     "postal": "436389",
-    "lat": 1.316,
-    "lng": 103.914,
+    "lat": 1.330913,
+    "lng": 103.911349,
     "type": [
       "Neighbourhood"
     ],
@@ -7822,8 +7822,8 @@
     "short": "GM",
     "address": "Blk 510 Geylang Road 5, Singapore 390645",
     "postal": "390645",
-    "lat": 1.317,
-    "lng": 103.887,
+    "lat": 1.317593,
+    "lng": 103.883893,
     "type": [
       "Affiliated"
     ],
@@ -7889,8 +7889,8 @@
     "short": "CED",
     "address": "Blk 704 Geylang Crescent 1, Singapore 344234",
     "postal": "344234",
-    "lat": 1.33,
-    "lng": 103.881,
+    "lat": 1.335641,
+    "lng": 103.875491,
     "type": [
       "Neighbourhood"
     ],
@@ -7955,8 +7955,8 @@
     "short": "CC",
     "address": "Blk 312 Geylang Drive 6, Singapore 350277",
     "postal": "350277",
-    "lat": 1.321,
-    "lng": 103.8835,
+    "lat": 1.326511,
+    "lng": 103.881757,
     "type": [
       "Affiliated"
     ],
@@ -8022,8 +8022,8 @@
     "short": "MB",
     "address": "Blk 286 Geylang Lane 4, Singapore 343424",
     "postal": "343424",
-    "lat": 1.3255,
-    "lng": 103.899,
+    "lat": 1.328408,
+    "lng": 103.901528,
     "type": [
       "Neighbourhood"
     ],
@@ -8090,8 +8090,8 @@
     "short": "EUN",
     "address": "Blk 368 Geylang Avenue 1, Singapore 149159",
     "postal": "149159",
-    "lat": 1.326,
-    "lng": 103.902,
+    "lat": 1.324388,
+    "lng": 103.904375,
     "type": [
       "Neighbourhood"
     ],
@@ -8225,8 +8225,8 @@
     "short": "FUH",
     "address": "Blk 253 Jurong East Street 7, Singapore 602778",
     "postal": "602778",
-    "lat": 1.346,
-    "lng": 103.733,
+    "lat": 1.336404,
+    "lng": 103.736669,
     "type": [
       "Neighbourhood"
     ],
@@ -8290,8 +8290,8 @@
     "short": "JUR",
     "address": "Blk 201 Jurong East Road 4, Singapore 615717",
     "postal": "615717",
-    "lat": 1.347,
-    "lng": 103.737,
+    "lat": 1.348685,
+    "lng": 103.732975,
     "type": [
       "Neighbourhood"
     ],
@@ -8358,8 +8358,8 @@
     "short": "YUH",
     "address": "Blk 360 Jurong East Drive 12, Singapore 610506",
     "postal": "610506",
-    "lat": 1.3475,
-    "lng": 103.739,
+    "lat": 1.34292,
+    "lng": 103.740861,
     "type": [
       "Neighbourhood"
     ],
@@ -8425,8 +8425,8 @@
     "short": "SHU",
     "address": "Blk 390 Jurong East Avenue 5, Singapore 617860",
     "postal": "617860",
-    "lat": 1.343,
-    "lng": 103.734,
+    "lat": 1.347568,
+    "lng": 103.721558,
     "type": [
       "Neighbourhood"
     ],
@@ -8491,8 +8491,8 @@
     "short": "BLG",
     "address": "Blk 424 Boon Lay Walk 1, Singapore 225421",
     "postal": "225421",
-    "lat": 1.346,
-    "lng": 103.711,
+    "lat": 1.342847,
+    "lng": 103.712969,
     "type": [
       "Neighbourhood"
     ],
@@ -8555,8 +8555,8 @@
     "short": "COR",
     "address": "Blk 573 Jurong West Drive 11, Singapore 636922",
     "postal": "636922",
-    "lat": 1.3445,
-    "lng": 103.722,
+    "lat": 1.351485,
+    "lng": 103.707578,
     "type": [
       "Neighbourhood"
     ],
@@ -8622,8 +8622,8 @@
     "short": "FRO",
     "address": "Blk 780 Jurong West Street 1, Singapore 632991",
     "postal": "632991",
-    "lat": 1.3395,
-    "lng": 103.696,
+    "lat": 1.336643,
+    "lng": 103.699683,
     "type": [
       "Neighbourhood"
     ],
@@ -8688,8 +8688,8 @@
     "short": "JUY",
     "address": "Blk 585 Jurong West Lane 5, Singapore 623243",
     "postal": "623243",
-    "lat": 1.339,
-    "lng": 103.6935,
+    "lat": 1.338951,
+    "lng": 103.687833,
     "type": [
       "Neighbourhood"
     ],
@@ -8754,8 +8754,8 @@
     "short": "LAK",
     "address": "Blk 630 Jurong West Road 2, Singapore 632819",
     "postal": "632819",
-    "lat": 1.337,
-    "lng": 103.722,
+    "lat": 1.338376,
+    "lng": 103.718051,
     "type": [
       "Neighbourhood"
     ],
@@ -8818,8 +8818,8 @@
     "short": "PIO",
     "address": "Blk 643 Boon Lay Lane 5, Singapore 699807",
     "postal": "699807",
-    "lat": 1.342,
-    "lng": 103.697,
+    "lat": 1.348721,
+    "lng": 103.694868,
     "type": [
       "Neighbourhood"
     ],
@@ -8882,8 +8882,8 @@
     "short": "RUL",
     "address": "Blk 842 Jurong West Drive 6, Singapore 623336",
     "postal": "623336",
-    "lat": 1.349,
-    "lng": 103.723,
+    "lat": 1.346844,
+    "lng": 103.71901,
     "type": [
       "Neighbourhood"
     ],
@@ -8948,8 +8948,8 @@
     "short": "WG",
     "address": "Blk 680 Jurong West Avenue 8, Singapore 627805",
     "postal": "627805",
-    "lat": 1.34,
-    "lng": 103.6985,
+    "lat": 1.344712,
+    "lng": 103.698964,
     "type": [
       "Neighbourhood"
     ],
@@ -9014,8 +9014,8 @@
     "short": "WES",
     "address": "Blk 465 Jurong West Drive 9, Singapore 634321",
     "postal": "634321",
-    "lat": 1.3415,
-    "lng": 103.6945,
+    "lat": 1.347155,
+    "lng": 103.700527,
     "type": [
       "Neighbourhood"
     ],
@@ -9079,8 +9079,8 @@
     "short": "XIN",
     "address": "Blk 782 Jurong West Avenue 12, Singapore 624773",
     "postal": "624773",
-    "lat": 1.3375,
-    "lng": 103.697,
+    "lat": 1.342685,
+    "lng": 103.687724,
     "type": [
       "Neighbourhood"
     ],
@@ -9144,8 +9144,8 @@
     "short": "JW",
     "address": "Blk 367 Jurong West Lane 3, Singapore 638702",
     "postal": "638702",
-    "lat": 1.349,
-    "lng": 103.718,
+    "lat": 1.339244,
+    "lng": 103.698896,
     "type": [
       "Neighbourhood"
     ],
@@ -9210,8 +9210,8 @@
     "short": "BV",
     "address": "Blk 258 Bukit Batok Street 11, Singapore 671927",
     "postal": "671927",
-    "lat": 1.3585,
-    "lng": 103.77,
+    "lat": 1.345945,
+    "lng": 103.753589,
     "type": [
       "Neighbourhood"
     ],
@@ -9275,8 +9275,8 @@
     "short": "DAZ",
     "address": "Blk 591 Bukit Batok Road 7, Singapore 672047",
     "postal": "672047",
-    "lat": 1.364,
-    "lng": 103.756,
+    "lat": 1.359059,
+    "lng": 103.748161,
     "type": [
       "Neighbourhood"
     ],
@@ -9342,8 +9342,8 @@
     "short": "KEM",
     "address": "Blk 348 Bukit Batok Street 2, Singapore 674558",
     "postal": "674558",
-    "lat": 1.358,
-    "lng": 103.756,
+    "lat": 1.345245,
+    "lng": 103.756264,
     "type": [
       "Neighbourhood"
     ],
@@ -9409,8 +9409,8 @@
     "short": "LIA",
     "address": "Blk 546 Bukit Batok Walk 11, Singapore 676503",
     "postal": "676503",
-    "lat": 1.3625,
-    "lng": 103.7565,
+    "lat": 1.354155,
+    "lng": 103.75421,
     "type": [
       "Neighbourhood"
     ],
@@ -9476,8 +9476,8 @@
     "short": "PE",
     "address": "Blk 579 Bukit Batok Avenue 3, Singapore 670711",
     "postal": "670711",
-    "lat": 1.349,
-    "lng": 103.756,
+    "lat": 1.349195,
+    "lng": 103.741,
     "type": [
       "Neighbourhood"
     ],
@@ -9542,8 +9542,8 @@
     "short": "SA",
     "address": "Blk 633 Bukit Batok Lane 8, Singapore 670190",
     "postal": "670190",
-    "lat": 1.3525,
-    "lng": 103.7505,
+    "lat": 1.364639,
+    "lng": 103.749294,
     "type": [
       "Affiliated"
     ],
@@ -9609,8 +9609,8 @@
     "short": "BEA",
     "address": "Blk 874 Bukit Panjang Walk 10, Singapore 235205",
     "postal": "235205",
-    "lat": 1.3805,
-    "lng": 103.774,
+    "lat": 1.384237,
+    "lng": 103.773754,
     "type": [
       "Neighbourhood"
     ],
@@ -9675,8 +9675,8 @@
     "short": "BP",
     "address": "Blk 114 Bukit Panjang Lane 9, Singapore 233126",
     "postal": "233126",
-    "lat": 1.385,
-    "lng": 103.767,
+    "lat": 1.373472,
+    "lng": 103.769317,
     "type": [
       "Neighbourhood"
     ],
@@ -9740,8 +9740,8 @@
     "short": "CHIJ",
     "address": "Blk 146 Bukit Panjang Lane 4, Singapore 661676",
     "postal": "661676",
-    "lat": 1.376,
-    "lng": 103.774,
+    "lat": 1.366758,
+    "lng": 103.767695,
     "type": [
       "Affiliated",
       "Girls"
@@ -9809,8 +9809,8 @@
     "short": "GRE",
     "address": "Blk 672 Bukit Panjang Avenue 12, Singapore 659864",
     "postal": "659864",
-    "lat": 1.379,
-    "lng": 103.768,
+    "lat": 1.385874,
+    "lng": 103.767815,
     "type": [
       "Neighbourhood"
     ],
@@ -9876,8 +9876,8 @@
     "short": "SV",
     "address": "Blk 656 Bukit Panjang Road 8, Singapore 652878",
     "postal": "652878",
-    "lat": 1.381,
-    "lng": 103.77,
+    "lat": 1.381767,
+    "lng": 103.74729,
     "type": [
       "Neighbourhood"
     ],
@@ -9942,8 +9942,8 @@
     "short": "TW",
     "address": "Blk 159 Bukit Panjang Avenue 10, Singapore 660006",
     "postal": "660006",
-    "lat": 1.3795,
-    "lng": 103.753,
+    "lat": 1.383558,
+    "lng": 103.753683,
     "type": [
       "Neighbourhood"
     ],
@@ -10010,8 +10010,8 @@
     "short": "WV",
     "address": "Blk 472 Bukit Panjang Lane 11, Singapore 664208",
     "postal": "664208",
-    "lat": 1.383,
-    "lng": 103.772,
+    "lat": 1.383591,
+    "lng": 103.760289,
     "type": [
       "Neighbourhood"
     ],
@@ -10075,8 +10075,8 @@
     "short": "ZHE",
     "address": "Blk 249 Bukit Panjang Crescent 11, Singapore 234414",
     "postal": "234414",
-    "lat": 1.387,
-    "lng": 103.7625,
+    "lat": 1.379802,
+    "lng": 103.769171,
     "type": [
       "Neighbourhood"
     ],
@@ -10141,8 +10141,8 @@
     "short": "CCK",
     "address": "Blk 379 Choa Chu Kang Crescent 9, Singapore 688672",
     "postal": "688672",
-    "lat": 1.3855,
-    "lng": 103.748,
+    "lat": 1.377743,
+    "lng": 103.741861,
     "type": [
       "Neighbourhood"
     ],
@@ -10205,8 +10205,8 @@
     "short": "CON",
     "address": "Blk 574 Choa Chu Kang Road 10, Singapore 681100",
     "postal": "681100",
-    "lat": 1.3835,
-    "lng": 103.743,
+    "lat": 1.380412,
+    "lng": 103.736143,
     "type": [
       "Neighbourhood"
     ],
@@ -10270,8 +10270,8 @@
     "short": "DLS",
     "address": "Blk 876 Choa Chu Kang Walk 10, Singapore 689510",
     "postal": "689510",
-    "lat": 1.379,
-    "lng": 103.745,
+    "lat": 1.395072,
+    "lng": 103.743444,
     "type": [
       "Affiliated"
     ],
@@ -10337,8 +10337,8 @@
     "short": "KRA",
     "address": "Blk 622 Choa Chu Kang Street 12, Singapore 245833",
     "postal": "245833",
-    "lat": 1.3915,
-    "lng": 103.7445,
+    "lat": 1.39391,
+    "lng": 103.747415,
     "type": [
       "Neighbourhood"
     ],
@@ -10405,8 +10405,8 @@
     "short": "UNI",
     "address": "Blk 168 Choa Chu Kang Street 5, Singapore 240210",
     "postal": "240210",
-    "lat": 1.3845,
-    "lng": 103.7395,
+    "lat": 1.402823,
+    "lng": 103.746993,
     "type": [
       "Neighbourhood"
     ],
@@ -10472,8 +10472,8 @@
     "short": "YT",
     "address": "Blk 625 Choa Chu Kang Avenue 5, Singapore 683422",
     "postal": "683422",
-    "lat": 1.3955,
-    "lng": 103.747,
+    "lat": 1.396961,
+    "lng": 103.751195,
     "type": [
       "Neighbourhood"
     ],
@@ -10539,8 +10539,8 @@
     "short": "ADM",
     "address": "Blk 524 Woodlands Crescent 3, Singapore 250459",
     "postal": "250459",
-    "lat": 1.442,
-    "lng": 103.8005,
+    "lat": 1.44268,
+    "lng": 103.800114,
     "type": [
       "Neighbourhood"
     ],
@@ -10604,8 +10604,8 @@
     "short": "EVE",
     "address": "Blk 595 Woodlands Crescent 8, Singapore 727738",
     "postal": "727738",
-    "lat": 1.429,
-    "lng": 103.796,
+    "lat": 1.444148,
+    "lng": 103.794545,
     "type": [
       "Neighbourhood"
     ],
@@ -10671,8 +10671,8 @@
     "short": "FUC",
     "address": "Blk 540 Woodlands Walk 10, Singapore 725990",
     "postal": "725990",
-    "lat": 1.435,
-    "lng": 103.774,
+    "lat": 1.43064,
+    "lng": 103.778175,
     "type": [
       "Neighbourhood"
     ],
@@ -10737,8 +10737,8 @@
     "short": "GRE",
     "address": "Blk 864 Woodlands Street 11, Singapore 737187",
     "postal": "737187",
-    "lat": 1.438,
-    "lng": 103.8,
+    "lat": 1.44011,
+    "lng": 103.804629,
     "type": [
       "Neighbourhood"
     ],
@@ -10804,8 +10804,8 @@
     "short": "INN",
     "address": "Blk 302 Woodlands Walk 3, Singapore 722442",
     "postal": "722442",
-    "lat": 1.433,
-    "lng": 103.79,
+    "lat": 1.429185,
+    "lng": 103.790557,
     "type": [
       "Neighbourhood"
     ],
@@ -10870,8 +10870,8 @@
     "short": "MAR",
     "address": "Blk 564 Woodlands Road 3, Singapore 256579",
     "postal": "256579",
-    "lat": 1.44,
-    "lng": 103.7755,
+    "lat": 1.434423,
+    "lng": 103.773698,
     "type": [
       "Neighbourhood"
     ],
@@ -10936,8 +10936,8 @@
     "short": "QIH",
     "address": "Blk 859 Woodlands Road 8, Singapore 256626",
     "postal": "256626",
-    "lat": 1.44,
-    "lng": 103.792,
+    "lat": 1.442036,
+    "lng": 103.78834,
     "type": [
       "Neighbourhood"
     ],
@@ -11000,8 +11000,8 @@
     "short": "RIV",
     "address": "Blk 543 Woodlands Lane 6, Singapore 250505",
     "postal": "250505",
-    "lat": 1.4435,
-    "lng": 103.7945,
+    "lat": 1.447105,
+    "lng": 103.801921,
     "type": [
       "Neighbourhood"
     ],
@@ -11065,8 +11065,8 @@
     "short": "SL",
     "address": "Blk 272 Woodlands Crescent 3, Singapore 722441",
     "postal": "722441",
-    "lat": 1.438,
-    "lng": 103.779,
+    "lat": 1.4327,
+    "lng": 103.785779,
     "type": [
       "Neighbourhood"
     ],
@@ -11130,8 +11130,8 @@
     "short": "WOO",
     "address": "Blk 686 Woodlands Crescent 9, Singapore 727133",
     "postal": "727133",
-    "lat": 1.441,
-    "lng": 103.7975,
+    "lat": 1.433058,
+    "lng": 103.79039,
     "type": [
       "Neighbourhood"
     ],
@@ -11197,8 +11197,8 @@
     "short": "WOO",
     "address": "Blk 520 Woodlands Road 11, Singapore 728421",
     "postal": "728421",
-    "lat": 1.4395,
-    "lng": 103.7935,
+    "lat": 1.436746,
+    "lng": 103.791772,
     "type": [
       "Neighbourhood"
     ],
@@ -11263,8 +11263,8 @@
     "short": "WR",
     "address": "Blk 365 Woodlands Road 7, Singapore 254860",
     "postal": "254860",
-    "lat": 1.433,
-    "lng": 103.7995,
+    "lat": 1.43477,
+    "lng": 103.797841,
     "type": [
       "Neighbourhood"
     ],
@@ -11330,8 +11330,8 @@
     "short": "CHO",
     "address": "Blk 357 Yishun Lane 10, Singapore 278549",
     "postal": "278549",
-    "lat": 1.4255,
-    "lng": 103.8295,
+    "lat": 1.438462,
+    "lng": 103.839071,
     "type": [
       "SAP"
     ],
@@ -11395,8 +11395,8 @@
     "short": "HUA",
     "address": "Blk 609 Yishun Walk 4, Singapore 755065",
     "postal": "755065",
-    "lat": 1.4225,
-    "lng": 103.8345,
+    "lat": 1.427,
+    "lng": 103.84421,
     "type": [
       "Neighbourhood"
     ],
@@ -11461,8 +11461,8 @@
     "short": "JIE",
     "address": "Blk 346 Yishun Walk 8, Singapore 755425",
     "postal": "755425",
-    "lat": 1.429,
-    "lng": 103.84,
+    "lat": 1.427647,
+    "lng": 103.83048,
     "type": [
       "Neighbourhood"
     ],
@@ -11529,8 +11529,8 @@
     "short": "NV",
     "address": "Blk 330 Yishun Walk 3, Singapore 757088",
     "postal": "757088",
-    "lat": 1.4185,
-    "lng": 103.8345,
+    "lat": 1.427943,
+    "lng": 103.848368,
     "type": [
       "Neighbourhood"
     ],
@@ -11597,8 +11597,8 @@
     "short": "NOR",
     "address": "Blk 851 Yishun Crescent 6, Singapore 754273",
     "postal": "754273",
-    "lat": 1.431,
-    "lng": 103.8245,
+    "lat": 1.421304,
+    "lng": 103.840793,
     "type": [
       "Neighbourhood"
     ],
@@ -11663,8 +11663,8 @@
     "short": "PEI",
     "address": "Blk 262 Yishun Drive 5, Singapore 763275",
     "postal": "763275",
-    "lat": 1.429,
-    "lng": 103.8345,
+    "lat": 1.417408,
+    "lng": 103.830299,
     "type": [
       "Neighbourhood"
     ],
@@ -11727,8 +11727,8 @@
     "short": "XIS",
     "address": "Blk 766 Yishun Crescent 5, Singapore 767353",
     "postal": "767353",
-    "lat": 1.433,
-    "lng": 103.833,
+    "lat": 1.433501,
+    "lng": 103.838289,
     "type": [
       "Neighbourhood"
     ],
@@ -11791,8 +11791,8 @@
     "short": "YIS",
     "address": "Blk 611 Yishun Avenue 12, Singapore 753085",
     "postal": "753085",
-    "lat": 1.425,
-    "lng": 103.8395,
+    "lat": 1.433496,
+    "lng": 103.834027,
     "type": [
       "Neighbourhood"
     ],
@@ -11858,8 +11858,8 @@
     "short": "AI",
     "address": "Blk 729 Yishun Avenue 3, Singapore 769053",
     "postal": "769053",
-    "lat": 1.4225,
-    "lng": 103.826,
+    "lat": 1.433681,
+    "lng": 103.832924,
     "type": [
       "Neighbourhood"
     ],
@@ -11926,8 +11926,8 @@
     "short": "CAN",
     "address": "Blk 315 Yishun Street 1, Singapore 271467",
     "postal": "271467",
-    "lat": 1.449,
-    "lng": 103.817,
+    "lat": 1.451064,
+    "lng": 103.815971,
     "type": [
       "Neighbourhood"
     ],
@@ -11991,8 +11991,8 @@
     "short": "END",
     "address": "Blk 825 Yishun Lane 4, Singapore 759898",
     "postal": "759898",
-    "lat": 1.4525,
-    "lng": 103.8185,
+    "lat": 1.454176,
+    "lng": 103.817427,
     "type": [
       "Neighbourhood"
     ],
@@ -12056,8 +12056,8 @@
     "short": "SEM",
     "address": "Blk 244 Yishun Crescent 8, Singapore 766616",
     "postal": "766616",
-    "lat": 1.4485,
-    "lng": 103.819,
+    "lat": 1.445044,
+    "lng": 103.821022,
     "type": [
       "Neighbourhood"
     ],
@@ -12120,8 +12120,8 @@
     "short": "WEL",
     "address": "Blk 446 Yishun Road 5, Singapore 763629",
     "postal": "763629",
-    "lat": 1.45,
-    "lng": 103.8095,
+    "lat": 1.451934,
+    "lng": 103.822321,
     "type": [
       "Neighbourhood"
     ],
@@ -12186,8 +12186,8 @@
     "short": "NB",
     "address": "Blk 112 Yishun Street 11, Singapore 751443",
     "postal": "751443",
-    "lat": 1.436,
-    "lng": 103.834,
+    "lat": 1.41628,
+    "lng": 103.838798,
     "type": [
       "Neighbourhood"
     ],

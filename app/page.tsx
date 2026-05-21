@@ -3,8 +3,8 @@ import { PostalSearch } from "@/components/PostalSearch";
 
 const SAMPLES = [
   { postal: "569824", area: "Ang Mo Kio" },
-  { postal: "460150", area: "Bedok" },
-  { postal: "650472", area: "Bukit Panjang" },
+  { postal: "460074", area: "Bedok" },
+  { postal: "520103", area: "Tampines" },
 ];
 
 const STEPS = [

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "build:data": "bun scripts/build-schools.ts"
+    "build:data": "bun scripts/build-schools.ts",
+    "build:postal": "bun scripts/build-postal-index.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

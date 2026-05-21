@@ -39,17 +39,25 @@ to a bundled postal-sector centroid table when OneMap is unavailable.
 
 ## Data
 
-`data/schools.json` and `data/postal_sectors.json` are committed. The current
-dataset is **synthetic and illustrative** — generated for development and demos,
-not official MOE figures. Regenerate it with:
+Three data files are committed:
+
+| File | Contents |
+| --- | --- |
+| `data/schools.json` | The 184 schools — real coordinates; ballot history is synthetic. |
+| `data/postal_coords.json` | Offline geocoder: ~120k Singapore postal codes → coordinates. |
+| `data/postal_sectors.json` | Coarse postal-sector centroids (last-resort fallback). |
+
+Regenerate them:
 
 ```bash
-bun scripts/build-schools.ts
+bun run build:postal   # rebuilds data/postal_coords.json from the open dataset
+bun run build:data     # rebuilds data/schools.json
 ```
 
-The production data pipeline (scraping MOE School Finder + geocoding real
-addresses via OneMap) replaces this generator once run in an environment with
-network access to those sources.
+School **coordinates** are real (OneMap-derived); **ballot history** is synthetic
+and illustrative — not official MOE figures. `build:data` geocodes each school
+by name through OneMap when reachable, otherwise it uses the curated coordinates
+baked into the script.
 
 ## Routes
 
