@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { track } from "@/lib/analytics";
 
 type Props = {
@@ -18,7 +18,7 @@ export function PostalSearch({
   const router = useRouter();
   const [value, setValue] = useState(initialValue);
   const [error, setError] = useState<string | null>(null);
-  const [pending, setPending] = useState(false);
+  const [pending, startTransition] = useTransition();
 
   const isHero = variant === "hero";
 
@@ -30,9 +30,10 @@ export function PostalSearch({
       return;
     }
     setError(null);
-    setPending(true);
     track("postal_search", { postal: clean, variant });
-    router.push(`/search?postal=${clean}`);
+    startTransition(() => {
+      router.push(`/search?postal=${clean}`);
+    });
   }
 
   return (
