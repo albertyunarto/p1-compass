@@ -84,3 +84,24 @@ export type PostalSector = {
   lat: number;
   lng: number;
 };
+
+// --- AI recommendations ------------------------------------------------------
+
+export type RecPriority = "high" | "medium" | "low";
+
+/** One actionable suggestion for improving a child's odds at a school. */
+export type Recommendation = {
+  /** Short imperative, e.g. "Volunteer at the school". */
+  action: string;
+  /** 1–2 sentences explaining why, grounded in the ballot data. */
+  detail: string;
+  /** The registration phase the action targets, or "general". */
+  phase: Phase | "general";
+  priority: RecPriority;
+};
+
+export type RecommendResult = {
+  /** One-sentence headline strategy. */
+  summary: string;
+  recommendations: Recommendation[];
+};

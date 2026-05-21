@@ -17,6 +17,7 @@ import {
 } from "@/lib/labels";
 import type { Band, NearbySchool, Phase } from "@/lib/types";
 import { Modal } from "./Modal";
+import { SchoolRecommendations } from "./SchoolRecommendations";
 
 const PHASES: Phase[] = ["2A", "2B", "2C"];
 const BANDS: Band[] = ["near", "mid", "far"];
@@ -155,6 +156,15 @@ export function SchoolDetail({
           </p>
         </div>
       </div>
+
+      {/* AI recommendations — hidden when Gemini is unconfigured */}
+      <SchoolRecommendations
+        key={school.id}
+        schoolId={school.id}
+        schoolName={school.name}
+        band={school.band}
+        distanceKm={school.distanceKm}
+      />
 
       {/* type */}
       {school.type.length > 0 ? (

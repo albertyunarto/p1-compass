@@ -35,6 +35,8 @@ to a bundled postal-sector centroid table when OneMap is unavailable.
 | --- | --- |
 | `ONEMAP_TOKEN` | A ready OneMap access token (expires ~3 days). |
 | `ONEMAP_EMAIL` / `ONEMAP_PASSWORD` | OneMap credentials — the app fetches and caches tokens itself. |
+| `GEMINI_API_KEY` | Enables AI admission recommendations in the school detail view. The section is hidden when unset. |
+| `GEMINI_MODEL` | Overrides the Gemini model (defaults to `gemini-2.5-flash`). |
 | `NEXT_PUBLIC_POSTHOG_KEY` | Enables PostHog event tracking when set. |
 
 ## Data
@@ -66,5 +68,6 @@ baked into the script.
 - `/about` — methodology and data sources
 - `/api/geocode?postal=NNNNNN` — postal → `{ lat, lng, address }`
 - `/api/schools` — the static school dataset
+- `/api/recommend` — `POST` school + distance → AI admission recommendations (Gemini)
 
 P1 Compass is a planning aid only. Registration happens on MOE's official portal.
