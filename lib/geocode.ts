@@ -8,7 +8,7 @@
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import sectorData from "@/data/postal_sectors.json";
-import { onemapSearchPostal } from "./onemap";
+import { onemapSearch, onemapSearchPostal } from "./onemap";
 import type { GeoResult, PostalSector } from "./types";
 
 const sectors = sectorData as Record<string, PostalSector>;
@@ -103,4 +103,37 @@ export async function geocode(postal: string): Promise<GeoResult> {
   };
   cache.set(clean, result);
   return result;
+}
+
+/**
+ * Resolve a free-text query — a 6-digit postal code, an address, a building
+ * name or an area (e.g. "Ang Mo Kio") — to a location. Postal codes route
+ * through the offline index; everything else goes through OneMap's search.
+ * Throws when nothing can be resolved.
+ */
+export async function geocodeQuery(query: string): Promise<GeoResult> {
+  const clean = query.trim();
+  if (!clean) throw new Error("Enter a postal code, address or area.");
+  if (isValidPostal(clean)) return geocode(clean);
+
+  const hit = await onemapSearch(clean);
+  if (!hit) throw new Error("Could not find that address or place.");
+
+  // When OneMap returns a postal code, prefer the exact offline index entry.
+  if (hit.postal && isValidPostal(hit.postal)) {
+    try {
+      return await geocode(hit.postal);
+    } catch {
+      // fall through to the raw OneMap hit
+    }
+  }
+
+  return {
+    postal: hit.postal && isValidPostal(hit.postal) ? hit.postal : "",
+    address: hit.address,
+    lat: hit.lat,
+    lng: hit.lng,
+    cached: false,
+    source: "onemap",
+  };
 }

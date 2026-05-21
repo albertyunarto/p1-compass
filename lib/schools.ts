@@ -17,7 +17,7 @@ export function getSchoolById(id: string): School | undefined {
 export type SearchResult = {
   /** Schools within MOE's 2 km distance bands, nearest first. */
   within: NearbySchool[];
-  /** When nothing is within 2 km, the closest few beyond it (empty-state). */
+  /** Every school beyond 2 km, nearest first — for the look-up-anything panel. */
   beyond: NearbySchool[];
 };
 
@@ -43,7 +43,7 @@ export function searchSchools(
     .sort((a, b) => a.distanceKm - b.distanceKm);
 
   const within = ranked.filter((s) => s.distanceKm <= 2);
-  const beyond = within.length === 0 ? ranked.slice(0, 4) : [];
+  const beyond = ranked.filter((s) => s.distanceKm > 2);
 
   return { within, beyond };
 }

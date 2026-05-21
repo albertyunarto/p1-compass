@@ -95,13 +95,11 @@ export type Recommendation = {
   action: string;
   /** 1–2 sentences explaining why, grounded in the ballot data. */
   detail: string;
-  /** The registration phase the action targets, or "general". */
-  phase: Phase | "general";
   priority: RecPriority;
 };
 
 export type RecommendResult = {
-  /** One-sentence headline strategy. */
+  /** One-sentence headline strategy for the focused phase. */
   summary: string;
   recommendations: Recommendation[];
 };

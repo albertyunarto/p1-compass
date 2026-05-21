@@ -1,9 +1,10 @@
 # P1 Compass
 
 A free web tool that helps Singapore parents make data-driven Primary 1 school
-choices. Enter a postal code to see every primary school within 2 km, plotted on
-a distance-band map, with multi-year ballot history and a personalised read on
-each school's Phase 2C feasibility.
+choices. Enter a postal code, address or area to see every primary school within
+2 km, plotted on a distance-band map, with multi-year ballot history and a
+personalised read on each school's registration odds — plus a look-up panel for
+any school further away.
 
 ## Stack
 
@@ -28,8 +29,9 @@ bun run lint     # eslint
 
 ## Environment
 
-Copy `.env.example` to `.env.local`. Everything is optional — the app falls back
-to a bundled postal-sector centroid table when OneMap is unavailable.
+Copy `.env.example` to `.env.local`. Postal-code search works fully offline via
+a bundled index; **address and area search needs a OneMap token**, and AI
+recommendations need a Gemini key.
 
 | Variable | Purpose |
 | --- | --- |
@@ -63,11 +65,11 @@ baked into the script.
 
 ## Routes
 
-- `/` — landing page with the postal-code search
-- `/search?postal=NNNNNN` — results: distance map + school list + detail modals
+- `/` — landing page with the location search
+- `/search?postal=NNNNNN` or `/search?q=<address>` — results: distance map + school list + detail modals
 - `/about` — methodology and data sources
 - `/api/geocode?postal=NNNNNN` — postal → `{ lat, lng, address }`
 - `/api/schools` — the static school dataset
-- `/api/recommend` — `POST` school + distance → AI admission recommendations (Gemini)
+- `/api/recommend` — `GET` reports availability; `POST` school + phase → AI admission recommendations (Gemini)
 
 P1 Compass is a planning aid only. Registration happens on MOE's official portal.

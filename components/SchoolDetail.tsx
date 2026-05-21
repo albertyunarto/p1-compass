@@ -157,13 +157,14 @@ export function SchoolDetail({
         </div>
       </div>
 
-      {/* AI recommendations — hidden when Gemini is unconfigured */}
+      {/* AI recommendations — button-triggered, hidden when Gemini is unconfigured */}
       <SchoolRecommendations
-        key={school.id}
+        key={`${school.id}:${phase}`}
         schoolId={school.id}
         schoolName={school.name}
         band={school.band}
         distanceKm={school.distanceKm}
+        phase={phase}
       />
 
       {/* type */}

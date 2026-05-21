@@ -28,7 +28,7 @@ export function ResultsView({ within, beyond }: Props) {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [phase, setPhase] = useState<Phase>("2C");
 
-  const mapSchools = within.length > 0 ? within : beyond;
+  const mapSchools = within.length > 0 ? within : beyond.slice(0, 6);
   const all = [...within, ...beyond];
   const selected = all.find((s) => s.id === selectedId) ?? null;
 

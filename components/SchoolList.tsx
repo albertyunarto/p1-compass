@@ -1,5 +1,6 @@
 import { BAND_COLOR } from "@/lib/labels";
 import type { Band, NearbySchool, Phase } from "@/lib/types";
+import { BeyondPanel } from "./BeyondPanel";
 import { SchoolRow } from "./SchoolRow";
 
 type Props = {
@@ -78,26 +79,17 @@ export function SchoolList({
           </h3>
           <p className="mt-1 text-sm text-ink-soft">
             For every school here you fall in the beyond-2 km distance band, the
-            lowest-priority group. You can still review their ballot history
-            below.
+            lowest-priority group. You can still look up any school&rsquo;s
+            ballot history and odds below.
           </p>
         </div>
-        <section>
-          <h3 className="mb-3 font-display text-lg font-semibold text-ink">
-            Closest schools beyond 2 km
-          </h3>
-          <div className="flex flex-col gap-2">
-            {beyond.map((school) => (
-              <SchoolRow
-                key={school.id}
-                school={school}
-                phase={phase}
-                selected={school.id === selectedId}
-                onSelect={() => onSelect(school.id)}
-              />
-            ))}
-          </div>
-        </section>
+        <BeyondPanel
+          schools={beyond}
+          phase={phase}
+          selectedId={selectedId}
+          onSelect={onSelect}
+          defaultOpen
+        />
       </div>
     );
   }
@@ -127,6 +119,12 @@ export function SchoolList({
           onSelect={onSelect}
         />
       ) : null}
+      <BeyondPanel
+        schools={beyond}
+        phase={phase}
+        selectedId={selectedId}
+        onSelect={onSelect}
+      />
     </div>
   );
 }
