@@ -19,9 +19,16 @@ export type Insight = {
 };
 
 export const TONE_COLOR: Record<InsightTone, string> = {
-  good: "#3f9b6e",
-  caution: "#e0792f",
-  unlikely: "#d24a3f",
+  good: "#1f7a56",
+  caution: "#b45a1d",
+  unlikely: "#a8362a",
+};
+
+/** Soft tinted background per tone — verdict cards. */
+export const TONE_SOFT: Record<InsightTone, string> = {
+  good: "#e0f0e8",
+  caution: "#fbeada",
+  unlikely: "#f8dad5",
 };
 
 type Cell = { tone: InsightTone; headline: string; verdict: string };

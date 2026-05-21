@@ -7,11 +7,11 @@ import type { NearbySchool, Phase } from "@/lib/types";
 
 const VB = 360;
 const C = VB / 2;
-const R1 = 75; // 1 km ring
-const R2 = 150; // 2 km ring
+const R1 = 80; // 1 km ring
+const R2 = 160; // 2 km ring
 
 function plotRadius(km: number): number {
-  if (km > 2) return R2 + 13;
+  if (km > 2) return R2 + 14;
   return (km / 2) * R2;
 }
 
@@ -50,7 +50,7 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
 
   const activeId = hoverId ?? selectedId;
   const active = placed.find((p) => p.school.id === activeId) ?? null;
-  const tooltipBelow = active !== null && active.y < 92;
+  const tooltipBelow = active !== null && active.y < 96;
 
   return (
     <div className="relative">
@@ -60,23 +60,33 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
         role="group"
         aria-label="Polar map of nearby primary schools by distance and direction from your home"
       >
-        {/* distance bands */}
-        <circle cx={C} cy={C} r={R2} fill="#f1e7d2" />
-        <circle cx={C} cy={C} r={R2} fill="#cf9f33" opacity={0.1} />
-        <circle cx={C} cy={C} r={R1} fill="#3f9b6e" opacity={0.12} />
+        <defs>
+          <radialGradient id="p1-map-bg" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stopColor="#f4ebd6" />
+            <stop offset="60%" stopColor="#f0e6cd" />
+            <stop offset="100%" stopColor="#eadbb8" />
+          </radialGradient>
+        </defs>
+
+        {/* far halo + 2 km disc */}
+        <circle cx={C} cy={C} r={R2 + 22} fill="#f8f1e0" opacity={0.65} />
+        <circle cx={C} cy={C} r={R2} fill="url(#p1-map-bg)" />
+        {/* 1 km good zone */}
+        <circle cx={C} cy={C} r={R1} fill="#1f7a56" opacity={0.085} />
 
         {/* spokes */}
-        {[0, 90, 180, 270].map((deg) => {
+        {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => {
           const rad = (deg * Math.PI) / 180;
           return (
             <line
               key={deg}
               x1={C}
               y1={C}
-              x2={C + R2 * Math.sin(rad)}
-              y2={C - R2 * Math.cos(rad)}
-              stroke="#d8ccb4"
-              strokeWidth={1}
+              x2={C + (R2 + 8) * Math.sin(rad)}
+              y2={C - (R2 + 8) * Math.cos(rad)}
+              stroke="#d9c99a"
+              strokeWidth={deg % 90 === 0 ? 1 : 0.5}
+              opacity={deg % 90 === 0 ? 0.7 : 0.4}
             />
           );
         })}
@@ -87,35 +97,38 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
           cy={C}
           r={R1}
           fill="none"
-          stroke="#bfae8d"
-          strokeWidth={1.25}
-          strokeDasharray="3 4"
+          stroke="#b89c5c"
+          strokeWidth={1}
+          strokeDasharray="4 4"
+          opacity={0.7}
         />
         <circle
           cx={C}
           cy={C}
           r={R2}
           fill="none"
-          stroke="#bfae8d"
-          strokeWidth={1.5}
+          stroke="#b89c5c"
+          strokeWidth={1.25}
+          opacity={0.85}
         />
 
         {/* ring labels */}
-        {[
-          { r: R1, label: "1 km" },
-          { r: R2, label: "2 km" },
-        ].map(({ r, label }) => (
+        {(
+          [
+            [R1, "1 km"],
+            [R2, "2 km"],
+          ] as [number, string][]
+        ).map(([r, label]) => (
           <text
             key={label}
             x={C}
-            y={C - r + 11}
+            y={C - r + 12}
             textAnchor="middle"
-            className="font-sans"
-            fontSize={9}
-            fontWeight={600}
-            fill="#8a7d5f"
+            fontSize={9.5}
+            fontWeight={700}
+            fill="#7c6d43"
             paintOrder="stroke"
-            stroke="#f1e7d2"
+            stroke="#f4ebd6"
             strokeWidth={3}
           >
             {label}
@@ -124,8 +137,8 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
 
         {/* compass labels */}
         {[
-          { t: "N", x: C, y: 13 },
-          { t: "S", x: C, y: VB - 6 },
+          { t: "N", x: C, y: 14 },
+          { t: "S", x: C, y: VB - 5 },
           { t: "E", x: VB - 8, y: C + 4 },
           { t: "W", x: 8, y: C + 4 },
         ].map(({ t, x, y }) => (
@@ -134,9 +147,9 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
             x={x}
             y={y}
             textAnchor="middle"
-            fontSize={11}
+            fontSize={10}
             fontWeight={700}
-            fill="#9b9070"
+            fill="#9e8a55"
           >
             {t}
           </text>
@@ -149,7 +162,7 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
             y1={C}
             x2={active.x}
             y2={active.y}
-            stroke="#1c6b5a"
+            stroke="#0e5346"
             strokeWidth={1.5}
             strokeDasharray="2 3"
           />
@@ -180,14 +193,12 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
                 }
               }}
             >
-              {isActive ? (
-                <circle r={11} fill={color} opacity={0.25} />
-              ) : null}
+              {isActive ? <circle r={12} fill={color} opacity={0.22} /> : null}
               <circle
-                r={isActive ? 7 : 5.5}
+                r={isActive ? 7.5 : 6}
                 fill={color}
-                stroke="#faf6ef"
-                strokeWidth={2}
+                stroke="#fbf7ee"
+                strokeWidth={2.2}
               />
             </g>
           );
@@ -195,15 +206,15 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
 
         {/* home marker */}
         <g aria-label="Your home">
-          <circle r={6} cx={C} cy={C} fill="#23201a" />
-          <circle r={2.4} cx={C} cy={C} fill="#faf6ef" />
+          <circle r={7.5} cx={C} cy={C} fill="#13231d" />
+          <circle r={2.6} cx={C} cy={C} fill="#fbf7ee" />
         </g>
       </svg>
 
       {/* hover / selection tooltip */}
       {active ? (
         <div
-          className="anim-fade pointer-events-none absolute z-10 w-max max-w-[170px] -translate-x-1/2 rounded-lg bg-ink px-2.5 py-1.5 text-xs text-paper shadow-lg"
+          className="anim-fade pointer-events-none absolute z-10 w-max max-w-[180px] -translate-x-1/2 rounded-lg bg-ink px-2.5 py-1.5 text-xs text-paper shadow-lg"
           style={{
             left: `${(active.x / VB) * 100}%`,
             top: `${(active.y / VB) * 100}%`,
@@ -220,9 +231,9 @@ export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
       ) : null}
 
       {/* legend */}
-      <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs text-ink-soft">
+      <div className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-1.5 text-xs text-ink-muted">
         <span className="flex items-center gap-1.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-ink" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#13231d]" />
           Your home
         </span>
         {LEGEND.map(({ tone, label }) => (

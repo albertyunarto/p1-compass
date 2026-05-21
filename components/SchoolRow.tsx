@@ -1,15 +1,14 @@
+"use client";
+
 import { latestOutcome } from "@/lib/ballot";
 import { compassPoint } from "@/lib/geo";
-import { personalisedInsight, TONE_COLOR } from "@/lib/insight";
-import { ballotColor, STATUS_LABEL } from "@/lib/labels";
-import type { Band, NearbySchool, Phase } from "@/lib/types";
+import { personalisedInsight } from "@/lib/insight";
+import { ballotColor, BAND_COLOR, STATUS_LABEL } from "@/lib/labels";
+import type { NearbySchool, Phase } from "@/lib/types";
 import { BallotStrip } from "./BallotStrip";
-
-const BADGE_BG: Record<Band, string> = {
-  near: "#2f7d57",
-  mid: "#b07d22",
-  far: "#6f6a5e",
-};
+import { useShortlist } from "./ShortlistContext";
+import { StarButton } from "./StarButton";
+import { VerdictPill } from "./VerdictPill";
 
 type Props = {
   school: NearbySchool;
@@ -19,29 +18,35 @@ type Props = {
 };
 
 export function SchoolRow({ school, phase, selected, onSelect }: Props) {
+  const { has, toggle } = useShortlist();
   const insight = personalisedInsight(school, school.band, phase);
   const { year, outcome } = latestOutcome(school, phase);
-  const tone = TONE_COLOR[insight.tone];
   const tags = school.type.filter((t) => t !== "Neighbourhood");
   const ratio = outcome.vacancy > 0 ? outcome.totalApplied / outcome.vacancy : 0;
 
   return (
-    <button
-      type="button"
+    <div
+      role="button"
+      tabIndex={0}
       onClick={onSelect}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          onSelect();
+        }
+      }}
       aria-label={`${school.name}, ${school.distanceKm.toFixed(2)} kilometres away. Phase ${phase}: ${insight.headline}.`}
       className={
-        "flex w-full items-start gap-3 rounded-xl border p-3 text-left transition " +
-        "hover:border-primary/50 hover:bg-surface focus:outline-none focus-visible:ring-2 " +
-        "focus-visible:ring-primary/40 " +
+        "flex w-full cursor-pointer items-start gap-3.5 rounded-[14px] border p-4 text-left transition " +
+        "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 " +
         (selected
           ? "border-primary bg-surface shadow-sm"
-          : "border-line bg-surface/60")
+          : "border-line bg-surface hover:border-primary/40")
       }
     >
       <span
-        style={{ background: BADGE_BG[school.band] }}
-        className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-[11px] font-bold tracking-tight text-white"
+        style={{ background: BAND_COLOR[school.band] }}
+        className="flex h-[46px] w-[46px] shrink-0 items-center justify-center rounded-[10px] text-[11px] font-extrabold tracking-tight text-white"
       >
         {school.short}
       </span>
@@ -50,27 +55,31 @@ export function SchoolRow({ school, phase, selected, onSelect }: Props) {
         <span className="block font-semibold leading-snug text-ink">
           {school.name}
         </span>
-        <span className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-ink-soft">
-          <span className="font-medium text-ink">
+        <span className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-ink-muted">
+          <span className="font-semibold text-ink">
             {school.distanceKm.toFixed(2)} km
           </span>
-          <span aria-hidden>·</span>
+          <span aria-hidden className="text-line">
+            ·
+          </span>
           <span>{compassPoint(school.bearingDeg)}</span>
           {tags.length > 0 ? (
             <>
-              <span aria-hidden>·</span>
+              <span aria-hidden className="text-line">
+                ·
+              </span>
               <span className="truncate">{tags.join(" · ")}</span>
             </>
           ) : null}
         </span>
-        <span className="mt-2 flex items-center gap-2">
+        <span className="mt-2.5 flex items-center gap-3">
           <BallotStrip school={school} phase={phase} />
           <span
-            className="inline-flex items-center gap-1.5 text-xs text-ink-soft"
+            className="inline-flex items-center gap-1.5 text-xs text-ink-muted"
             title={`Phase ${phase} ${year}: ${STATUS_LABEL[outcome.status]}`}
           >
             <span
-              className="h-2 w-2 rounded-full"
+              className="h-1.5 w-1.5 rounded-full"
               style={{ background: ballotColor(outcome.status, outcome.intensity) }}
             />
             {year}: {STATUS_LABEL[outcome.status]}
@@ -81,12 +90,13 @@ export function SchoolRow({ school, phase, selected, onSelect }: Props) {
         </span>
       </span>
 
-      <span
-        style={{ background: `${tone}1f`, color: tone }}
-        className="shrink-0 rounded-full px-2.5 py-1 text-xs font-semibold"
-      >
-        {insight.headline}
+      <span className="flex shrink-0 flex-col items-end gap-2">
+        <VerdictPill tone={insight.tone} label={insight.headline} />
+        <StarButton
+          active={has(school.id)}
+          onToggle={() => toggle(school.id)}
+        />
       </span>
-    </button>
+    </div>
   );
 }

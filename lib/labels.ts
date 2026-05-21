@@ -14,10 +14,11 @@ export const BAND_SHORT: Record<Band, string> = {
   far: ">2 km",
 };
 
+/** Solid badge / section-dot colour per distance band. */
 export const BAND_COLOR: Record<Band, string> = {
-  near: "#3f9b6e",
-  mid: "#cf9f33",
-  far: "#8a8578",
+  near: "#0e5346",
+  mid: "#b57a24",
+  far: "#7b7466",
 };
 
 export const STATUS_LABEL: Record<BallotStatus, string> = {
@@ -37,9 +38,9 @@ export const STATUS_DESC: Record<BallotStatus, string> = {
 /** Flat reference colour per status (legends, dots). */
 export const STATUS_COLOR: Record<BallotStatus, string> = {
   open: "#3f9b6e",
-  b_far: "#cf9f33",
-  b_mid: "#e0792f",
-  b_near: "#d24a3f",
+  b_far: "#c9982e",
+  b_mid: "#d9762b",
+  b_near: "#c8412f",
 };
 
 /** 0–3 depth for charting (open shallowest, b_near deepest). */
@@ -66,10 +67,10 @@ export const PHASE_META: Record<Phase, { label: string; who: string }> = {
 // Same hue per status; deeper as the balloted band gets more oversubscribed.
 
 const RAMP: Record<BallotStatus, [string, string]> = {
-  open: ["#4aa478", "#4aa478"],
-  b_far: ["#e6cf86", "#b9870f"],
-  b_mid: ["#edb083", "#c85f0e"],
-  b_near: ["#ec9a90", "#a82a20"],
+  open: ["#4fa882", "#3f9b6e"],
+  b_far: ["#e0cc8a", "#c9982e"],
+  b_mid: ["#e9a77e", "#d9762b"],
+  b_near: ["#e0978c", "#a8362a"],
 };
 
 function lerpHex(from: string, to: string, t: number): string {

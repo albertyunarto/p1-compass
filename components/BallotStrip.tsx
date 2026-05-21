@@ -1,6 +1,14 @@
 import { BALLOT_YEARS, outcomeFor } from "@/lib/ballot";
-import { ballotColor, STATUS_DEPTH, STATUS_LABEL } from "@/lib/labels";
-import type { Phase, School } from "@/lib/types";
+import { ballotColor, STATUS_LABEL } from "@/lib/labels";
+import type { BallotStatus, Phase, School } from "@/lib/types";
+
+// Bar height (px) added on top of a 6px base, per ballot depth.
+const DEPTH: Record<BallotStatus, number> = {
+  open: 0,
+  b_far: 6,
+  b_mid: 11,
+  b_near: 18,
+};
 
 /** Compact 5-year ballot history for one phase — one bar per year. */
 export function BallotStrip({
@@ -19,7 +27,7 @@ export function BallotStrip({
     <div
       role="img"
       aria-label={`Phase ${phase} ballot history — ${summary}`}
-      className="flex h-6 items-end gap-[3px]"
+      className="flex h-[26px] items-end gap-[3px]"
     >
       {BALLOT_YEARS.map((y) => {
         const o = outcomeFor(school, phase, y);
@@ -29,10 +37,10 @@ export function BallotStrip({
             key={y}
             title={`${y}: ${STATUS_LABEL[status]}`}
             style={{
-              height: 7 + STATUS_DEPTH[status] * 5,
+              height: 6 + DEPTH[status],
               background: ballotColor(status, o?.intensity ?? 0),
             }}
-            className="w-[7px] rounded-[2px]"
+            className="w-[9px] rounded-[2px]"
           />
         );
       })}

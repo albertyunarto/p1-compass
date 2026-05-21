@@ -1,20 +1,19 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
-type Props = {
-  open: boolean;
-  onClose: () => void;
-  labelledBy: string;
-  children: React.ReactNode;
-};
+import { useEffect } from "react";
 
 const FOCUSABLE =
-  'a[href], button:not([disabled]), input, [tabindex]:not([tabindex="-1"])';
+  'a[href], button:not([disabled]), input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-export function Modal({ open, onClose, labelledBy, children }: Props) {
-  const panelRef = useRef<HTMLDivElement>(null);
-
+/**
+ * Traps Tab focus inside `panelRef` while `open`, locks body scroll, closes on
+ * Escape, and restores focus to the previously-focused element on close.
+ */
+export function useFocusTrap(
+  panelRef: React.RefObject<HTMLElement | null>,
+  open: boolean,
+  onClose: () => void,
+): void {
   useEffect(() => {
     if (!open) return;
 
@@ -51,27 +50,5 @@ export function Modal({ open, onClose, labelledBy, children }: Props) {
       document.body.style.overflow = "";
       previouslyFocused?.focus?.();
     };
-  }, [open, onClose]);
-
-  if (!open) return null;
-
-  return (
-    <div className="fixed inset-0 z-50 flex items-end justify-center sm:items-center">
-      <div
-        className="anim-fade absolute inset-0 bg-ink/45"
-        onClick={onClose}
-        aria-hidden
-      />
-      <div
-        ref={panelRef}
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby={labelledBy}
-        tabIndex={-1}
-        className="anim-pop scroll-slim relative max-h-[92vh] w-full overflow-y-auto rounded-t-2xl bg-paper shadow-2xl outline-none sm:max-h-[88vh] sm:max-w-lg sm:rounded-2xl"
-      >
-        {children}
-      </div>
-    </div>
-  );
+  }, [panelRef, open, onClose]);
 }

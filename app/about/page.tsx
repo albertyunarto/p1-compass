@@ -36,7 +36,7 @@ const SOURCES = [
 
 function Heading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="mt-10 font-display text-2xl font-semibold text-ink">
+    <h2 className="mt-10 font-display text-2xl font-medium text-ink">
       {children}
     </h2>
   );
@@ -45,7 +45,7 @@ function Heading({ children }: { children: React.ReactNode }) {
 export default function AboutPage() {
   return (
     <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
-      <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+      <h1 className="font-display text-3xl font-medium text-ink sm:text-4xl">
         How P1 Compass works
       </h1>
       <p className="mt-3 leading-relaxed text-ink-soft">
@@ -129,7 +129,7 @@ export default function AboutPage() {
       </ul>
 
       <div className="mt-10 rounded-card border border-line bg-sand/70 p-5">
-        <h2 className="font-display text-lg font-semibold text-ink">
+        <h2 className="font-display text-lg font-medium text-ink">
           Important
         </h2>
         <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">

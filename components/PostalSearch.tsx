@@ -32,7 +32,6 @@ export function PostalSearch({
       setError("Enter a postal code, address or area.");
       return;
     }
-    // A purely numeric query is treated as a postal code — it must be 6 digits.
     const isPostal = ALL_DIGITS.test(query);
     if (isPostal && query.length !== 6) {
       setError("A postal code must be exactly 6 digits.");
@@ -51,17 +50,28 @@ export function PostalSearch({
 
   return (
     <form onSubmit={handleSubmit} className="w-full" noValidate>
-      <div
-        className={
-          isHero
-            ? "flex flex-col gap-3 sm:flex-row"
-            : "flex flex-row gap-2"
-        }
-      >
+      <div className={isHero ? "flex flex-col gap-3 sm:flex-row" : "flex gap-2"}>
         <div className="relative flex-1">
           <label htmlFor={`location-${variant}`} className="sr-only">
             Postal code, address or area
           </label>
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden
+            className={
+              "pointer-events-none absolute left-4 top-1/2 -translate-y-1/2 text-ink-muted " +
+              (isHero ? "h-5 w-5" : "h-4 w-4")
+            }
+          >
+            <path
+              d="M12 21s-6.5-5.2-6.5-10.5a6.5 6.5 0 1 1 13 0C18.5 15.8 12 21 12 21z"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinejoin="round"
+            />
+            <circle cx="12" cy="10.5" r="2.4" fill="currentColor" />
+          </svg>
           <input
             id={`location-${variant}`}
             type="search"
@@ -71,7 +81,7 @@ export function PostalSearch({
             placeholder={
               isHero
                 ? "Postal code, address or area — e.g. Ang Mo Kio"
-                : "Postal code, address or area"
+                : "Postal code or address"
             }
             value={value}
             onChange={(e) => {
@@ -81,10 +91,12 @@ export function PostalSearch({
             aria-invalid={error ? "true" : undefined}
             aria-describedby={error ? `location-err-${variant}` : undefined}
             className={
-              "w-full rounded-xl border bg-surface text-ink placeholder:text-ink-soft/60 " +
-              "outline-none transition focus:border-primary focus:ring-2 focus:ring-primary/25 " +
+              "w-full bg-surface text-ink outline-none transition " +
+              "placeholder:text-ink-muted/60 focus:border-primary focus:ring-2 focus:ring-primary/20 " +
               (error ? "border-near " : "border-line ") +
-              (isHero ? "h-14 px-5 text-lg" : "h-11 px-4 text-base")
+              (isHero
+                ? "h-14 rounded-[14px] border-[1.5px] pl-12 pr-4 text-lg"
+                : "h-11 rounded-xl border pl-10 pr-3 text-base")
             }
           />
         </div>
@@ -92,12 +104,12 @@ export function PostalSearch({
           type="submit"
           disabled={pending}
           className={
-            "shrink-0 rounded-xl bg-primary font-semibold text-white shadow-sm " +
+            "shrink-0 rounded-[14px] bg-primary font-bold text-white shadow-sm " +
             "transition hover:bg-primary-dark active:scale-[0.99] disabled:opacity-60 " +
-            (isHero ? "h-14 px-7 text-lg" : "h-11 px-5 text-sm")
+            (isHero ? "h-14 px-7 text-base" : "h-11 rounded-xl px-5 text-sm")
           }
         >
-          {pending ? "Finding…" : isHero ? "Find schools" : "Search"}
+          {pending ? "Finding…" : isHero ? "Find schools →" : "Search"}
         </button>
       </div>
       {error ? (

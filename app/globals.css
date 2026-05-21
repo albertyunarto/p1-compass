@@ -7,23 +7,33 @@
 
 @theme {
   /* surfaces */
-  --color-paper: #faf6ef;
-  --color-surface: #ffffff;
-  --color-sand: #f1eadd;
-  --color-ink: #23201a;
-  --color-ink-soft: #6f6a5e;
-  --color-line: #e7e1d5;
+  --color-paper: #fbf7ee;
+  --color-surface: #fffcf4;
+  --color-sand: #f2e8cf;
+  --color-ink: #1b1812;
+  --color-ink-soft: #5a5448;
+  --color-ink-muted: #7b7466;
+  --color-line: #e7dfc9;
+  --color-eyebrow: #7c6d43;
 
   /* brand */
-  --color-primary: #1c6b5a;
-  --color-primary-dark: #14503f;
+  --color-primary: #0e5346;
+  --color-primary-dark: #0a4339;
   --color-accent: #e0922f;
 
-  /* ballot / band semantics */
+  /* ballot status semantics */
   --color-safe: #3f9b6e;
-  --color-far: #cf9f33;
-  --color-mid: #e0792f;
-  --color-near: #d24a3f;
+  --color-far: #c9982e;
+  --color-mid: #d9762b;
+  --color-near: #c8412f;
+
+  /* verdict tones */
+  --color-good: #1f7a56;
+  --color-caution: #b45a1d;
+  --color-unlikely: #a8362a;
+  --color-good-soft: #e0f0e8;
+  --color-caution-soft: #fbeada;
+  --color-unlikely-soft: #f8dad5;
 
   --radius-card: 1rem;
 }
@@ -48,7 +58,7 @@ body {
   background: color-mix(in srgb, var(--color-primary) 22%, transparent);
 }
 
-/* thin scrollbar inside the school list */
+/* thin scrollbar inside scrolling panels */
 .scroll-slim {
   scrollbar-width: thin;
   scrollbar-color: var(--color-line) transparent;
@@ -60,6 +70,17 @@ body {
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-x {
+  from {
+    transform: translateX(28px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -95,10 +116,36 @@ body {
   animation: sheet-up 0.26s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.anim-drawer {
+  animation: slide-in-x 0.22s ease-out;
+}
+
+/* detail panel: bottom-sheet on mobile, side-drawer from the lg breakpoint */
+.detail-panel-anim {
+  animation: sheet-up 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (min-width: 1024px) {
+  .detail-panel-anim {
+    animation: slide-in-x 0.22s ease-out;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .anim-fade,
   .anim-pop,
-  .anim-sheet {
+  .anim-sheet,
+  .anim-drawer,
+  .detail-panel-anim {
     animation: none;
+  }
+}
+
+@media print {
+  body {
+    background: #ffffff;
+  }
+  .print-hide {
+    display: none !important;
   }
 }

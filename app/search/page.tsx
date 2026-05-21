@@ -56,7 +56,7 @@ function SearchPrompt({
 }) {
   return (
     <div className="mx-auto max-w-lg px-4 py-20 text-center sm:px-6">
-      <h1 className="font-display text-3xl font-semibold text-ink">
+      <h1 className="font-display text-3xl font-medium text-ink">
         {notFound ? "We couldn’t find that place" : "Find your schools"}
       </h1>
       <p className="mt-2 text-ink-soft">
@@ -92,27 +92,22 @@ export default async function SearchPage({
   const { within, beyond } = searchSchools(geo);
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-      <div className="mb-7 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+    <div className="mx-auto max-w-6xl px-4 py-7 sm:px-6">
+      <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <p className="text-sm font-medium text-ink-soft">
+          <p className="text-[11.5px] font-bold uppercase tracking-[0.08em] text-eyebrow">
             Primary schools near
           </p>
-          <h1 className="mt-0.5 font-display text-2xl font-semibold leading-tight text-ink sm:text-3xl">
+          <h1 className="mt-1 font-display text-2xl font-medium leading-tight text-ink sm:text-3xl">
             {geo.address}
           </h1>
-          <p className="mt-1 text-sm text-ink-soft">
+          <p className="mt-1.5 text-sm text-ink-muted">
             {geo.postal ? <>Postal {geo.postal} · </> : null}
-            {within.length > 0
-              ? `${within.length} school${
-                  within.length === 1 ? "" : "s"
-                } within 2 km`
-              : "no schools within 2 km"}
+            <strong className="text-ink">
+              {within.length} school{within.length === 1 ? "" : "s"} within 2 km
+            </strong>
             {geo.source === "sector" ? (
-              <span className="text-ink-soft/75">
-                {" "}
-                · approximate location from postal sector
-              </span>
+              <span> · approximate location from postal sector</span>
             ) : null}
           </p>
         </div>
@@ -124,7 +119,16 @@ export default async function SearchPage({
         </div>
       </div>
 
-      <ResultsView within={within} beyond={beyond} />
+      <ResultsView
+        within={within}
+        beyond={beyond}
+        origin={{
+          postal: geo.postal,
+          address: geo.address,
+          lat: geo.lat,
+          lng: geo.lng,
+        }}
+      />
     </div>
   );
 }

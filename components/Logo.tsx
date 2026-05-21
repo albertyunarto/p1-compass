@@ -12,11 +12,12 @@ export function CompassMark({ className = "" }: { className?: string }) {
         r="14"
         fill="none"
         stroke="currentColor"
-        strokeWidth="2"
+        strokeWidth="1.75"
       />
-      <path d="M16 4 L19.2 14.4 L16 16 Z" fill="currentColor" />
-      <path d="M16 28 L12.8 17.6 L16 16 Z" fill="currentColor" opacity="0.45" />
+      <path d="M16 3.5 L19.8 15 L16 16 Z" fill="currentColor" />
+      <path d="M16 28.5 L12.2 17 L16 16 Z" fill="currentColor" opacity="0.4" />
       <circle cx="16" cy="16" r="2.4" fill="currentColor" />
+      <circle cx="16" cy="16" r="0.9" fill="#fbf7ee" />
     </svg>
   );
 }
