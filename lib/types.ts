@@ -1,6 +1,6 @@
 // Core data shapes for P1 Compass.
 // NOTE: the `School` shape is a stable contract — `data/schools.json` and every
-// component downstream depend on it. Add fields, do not rename or remove.
+// component downstream depend on it.
 
 export type SchoolType =
   | "SAP"
@@ -11,28 +11,33 @@ export type SchoolType =
   | "IP"
   | "Neighbourhood";
 
-export type Phase = "2A" | "2B" | "2C" | "2CS";
+/** Registration phases P1 Compass covers (Phase 1 is sibling-only, not balloted). */
+export type Phase = "2A" | "2B" | "2C";
+
+/** Distance band — relative to the user's home, and to a school for balloting. */
+export type Band = "near" | "mid" | "far";
 
 /**
- * How deep a school had to ballot in a given phase.
+ * Derived ballot outcome for one phase.
  *  open   = no ballot needed (all applicants admitted)
- *  b_far  = ballot resolved within the >2km band
- *  b_mid  = ballot reached the 1-2km band
- *  b_near = ballot reached the <1km band (most competitive)
+ *  b_far  = ballot resolved within the >2 km band
+ *  b_mid  = balloting reached the 1–2 km band
+ *  b_near = balloting reached inside the <1 km band (most competitive)
  */
 export type BallotStatus = "open" | "b_far" | "b_mid" | "b_near";
 
-export type BallotHistory = {
-  [year: number]: Partial<Record<Phase, BallotStatus>>;
+/**
+ * Raw balloting inputs for one phase in one year: how many places were
+ * contested, and how many children applied from each distance band. The
+ * outcome (which band balloted, how oversubscribed) is derived from this.
+ */
+export type PhaseBallot = {
+  vacancy: number;
+  applied: { near: number; mid: number; far: number };
 };
 
-export type Vacancies = {
-  year: number;
-  total: number;
-  phase1: number;
-  phase2a: number;
-  phase2b: number;
-  phase2c: number;
+export type BallotHistory = {
+  [year: number]: Partial<Record<Phase, PhaseBallot>>;
 };
 
 export type School = {
@@ -48,12 +53,8 @@ export type School = {
   affiliations: string[];
   ccas: string[];
   programmes: string[];
-  vacancies: Vacancies;
   ballot: BallotHistory;
 };
-
-/** Distance band relative to the user's home. */
-export type Band = "near" | "mid" | "far";
 
 /** A school annotated with its position relative to a specific search. */
 export type NearbySchool = School & {

@@ -34,6 +34,7 @@ export const STATUS_DESC: Record<BallotStatus, string> = {
   b_near: "Balloting reached inside the 1 km band — the most competitive outcome.",
 };
 
+/** Flat reference colour per status (legends, dots). */
 export const STATUS_COLOR: Record<BallotStatus, string> = {
   open: "#3f9b6e",
   b_far: "#cf9f33",
@@ -53,5 +54,39 @@ export const PHASE_LABEL: Record<Phase, string> = {
   "2A": "Phase 2A",
   "2B": "Phase 2B",
   "2C": "Phase 2C",
-  "2CS": "Phase 2C (S)",
 };
+
+export const PHASE_META: Record<Phase, { label: string; who: string }> = {
+  "2A": { label: "Phase 2A", who: "Alumni & staff children" },
+  "2B": { label: "Phase 2B", who: "Volunteers & community ties" },
+  "2C": { label: "Phase 2C", who: "Open to all" },
+};
+
+// --- intensity colour ramp ---------------------------------------------------
+// Same hue per status; deeper as the balloted band gets more oversubscribed.
+
+const RAMP: Record<BallotStatus, [string, string]> = {
+  open: ["#4aa478", "#4aa478"],
+  b_far: ["#e6cf86", "#b9870f"],
+  b_mid: ["#edb083", "#c85f0e"],
+  b_near: ["#ec9a90", "#a82a20"],
+};
+
+function lerpHex(from: string, to: string, t: number): string {
+  const c = Math.max(0, Math.min(1, t));
+  const parse = (h: string) => [
+    parseInt(h.slice(1, 3), 16),
+    parseInt(h.slice(3, 5), 16),
+    parseInt(h.slice(5, 7), 16),
+  ];
+  const a = parse(from);
+  const b = parse(to);
+  const mix = a.map((v, i) => Math.round(v + (b[i] - v) * c));
+  return `#${mix.map((v) => v.toString(16).padStart(2, "0")).join("")}`;
+}
+
+/** Colour for a ballot cell, deepening with how oversubscribed it was. */
+export function ballotColor(status: BallotStatus, intensity: number): string {
+  const [lo, hi] = RAMP[status];
+  return lerpHex(lo, hi, intensity);
+}

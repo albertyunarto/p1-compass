@@ -2,8 +2,8 @@
 
 import { useMemo, useState } from "react";
 import { compassPoint } from "@/lib/geo";
-import { BAND_COLOR } from "@/lib/labels";
-import type { NearbySchool } from "@/lib/types";
+import { personalisedInsight, TONE_COLOR } from "@/lib/insight";
+import type { NearbySchool, Phase } from "@/lib/types";
 
 const VB = 360;
 const C = VB / 2;
@@ -17,11 +17,18 @@ function plotRadius(km: number): number {
 
 type Props = {
   schools: NearbySchool[];
+  phase: Phase;
   selectedId: string | null;
   onSelect: (id: string) => void;
 };
 
-export function DistanceMap({ schools, selectedId, onSelect }: Props) {
+const LEGEND: { tone: keyof typeof TONE_COLOR; label: string }[] = [
+  { tone: "good", label: "Good odds" },
+  { tone: "caution", label: "Borderline" },
+  { tone: "unlikely", label: "Unlikely" },
+];
+
+export function DistanceMap({ schools, phase, selectedId, onSelect }: Props) {
   const [hoverId, setHoverId] = useState<string | null>(null);
 
   const placed = useMemo(
@@ -29,18 +36,21 @@ export function DistanceMap({ schools, selectedId, onSelect }: Props) {
       schools.map((school) => {
         const r = plotRadius(school.distanceKm);
         const rad = (school.bearingDeg * Math.PI) / 180;
+        const insight = personalisedInsight(school, school.band, phase);
         return {
           school,
+          insight,
+          color: TONE_COLOR[insight.tone],
           x: C + r * Math.sin(rad),
           y: C - r * Math.cos(rad),
         };
       }),
-    [schools],
+    [schools, phase],
   );
 
   const activeId = hoverId ?? selectedId;
   const active = placed.find((p) => p.school.id === activeId) ?? null;
-  const tooltipBelow = active !== null && active.y < 84;
+  const tooltipBelow = active !== null && active.y < 92;
 
   return (
     <div className="relative">
@@ -52,8 +62,8 @@ export function DistanceMap({ schools, selectedId, onSelect }: Props) {
       >
         {/* distance bands */}
         <circle cx={C} cy={C} r={R2} fill="#f1e7d2" />
-        <circle cx={C} cy={C} r={R2} fill={BAND_COLOR.mid} opacity={0.12} />
-        <circle cx={C} cy={C} r={R1} fill={BAND_COLOR.near} opacity={0.16} />
+        <circle cx={C} cy={C} r={R2} fill="#cf9f33" opacity={0.1} />
+        <circle cx={C} cy={C} r={R1} fill="#3f9b6e" opacity={0.12} />
 
         {/* spokes */}
         {[0, 90, 180, 270].map((deg) => {
@@ -146,9 +156,8 @@ export function DistanceMap({ schools, selectedId, onSelect }: Props) {
         ) : null}
 
         {/* school dots */}
-        {placed.map(({ school, x, y }) => {
+        {placed.map(({ school, x, y, color }) => {
           const isActive = school.id === activeId;
-          const color = BAND_COLOR[school.band];
           return (
             <g
               key={school.id}
@@ -194,7 +203,7 @@ export function DistanceMap({ schools, selectedId, onSelect }: Props) {
       {/* hover / selection tooltip */}
       {active ? (
         <div
-          className="anim-fade pointer-events-none absolute z-10 w-max max-w-[160px] -translate-x-1/2 rounded-lg bg-ink px-2.5 py-1.5 text-xs text-paper shadow-lg"
+          className="anim-fade pointer-events-none absolute z-10 w-max max-w-[170px] -translate-x-1/2 rounded-lg bg-ink px-2.5 py-1.5 text-xs text-paper shadow-lg"
           style={{
             left: `${(active.x / VB) * 100}%`,
             top: `${(active.y / VB) * 100}%`,
@@ -206,7 +215,7 @@ export function DistanceMap({ schools, selectedId, onSelect }: Props) {
           <span className="font-semibold">{active.school.name}</span>
           <br />
           {active.school.distanceKm.toFixed(2)} km ·{" "}
-          {compassPoint(active.school.bearingDeg)}
+          {compassPoint(active.school.bearingDeg)} · {active.insight.headline}
         </div>
       ) : null}
 
@@ -216,20 +225,15 @@ export function DistanceMap({ schools, selectedId, onSelect }: Props) {
           <span className="h-2.5 w-2.5 rounded-full bg-ink" />
           Your home
         </span>
-        <span className="flex items-center gap-1.5">
-          <span
-            className="h-2.5 w-2.5 rounded-full"
-            style={{ background: BAND_COLOR.near }}
-          />
-          Within 1 km
-        </span>
-        <span className="flex items-center gap-1.5">
-          <span
-            className="h-2.5 w-2.5 rounded-full"
-            style={{ background: BAND_COLOR.mid }}
-          />
-          1–2 km
-        </span>
+        {LEGEND.map(({ tone, label }) => (
+          <span key={tone} className="flex items-center gap-1.5">
+            <span
+              className="h-2.5 w-2.5 rounded-full"
+              style={{ background: TONE_COLOR[tone] }}
+            />
+            {label}
+          </span>
+        ))}
       </div>
     </div>
   );

@@ -1,7 +1,8 @@
+import { latestOutcome } from "@/lib/ballot";
 import { compassPoint } from "@/lib/geo";
-import { latestPhase2C, personalisedInsight, TONE_COLOR } from "@/lib/insight";
-import { STATUS_COLOR, STATUS_LABEL } from "@/lib/labels";
-import type { Band, NearbySchool } from "@/lib/types";
+import { personalisedInsight, TONE_COLOR } from "@/lib/insight";
+import { ballotColor, STATUS_LABEL } from "@/lib/labels";
+import type { Band, NearbySchool, Phase } from "@/lib/types";
 import { BallotStrip } from "./BallotStrip";
 
 const BADGE_BG: Record<Band, string> = {
@@ -12,21 +13,23 @@ const BADGE_BG: Record<Band, string> = {
 
 type Props = {
   school: NearbySchool;
+  phase: Phase;
   selected: boolean;
   onSelect: () => void;
 };
 
-export function SchoolRow({ school, selected, onSelect }: Props) {
-  const insight = personalisedInsight(school, school.band);
-  const latest = latestPhase2C(school);
+export function SchoolRow({ school, phase, selected, onSelect }: Props) {
+  const insight = personalisedInsight(school, school.band, phase);
+  const { year, outcome } = latestOutcome(school, phase);
   const tone = TONE_COLOR[insight.tone];
   const tags = school.type.filter((t) => t !== "Neighbourhood");
+  const ratio = outcome.vacancy > 0 ? outcome.totalApplied / outcome.vacancy : 0;
 
   return (
     <button
       type="button"
       onClick={onSelect}
-      aria-label={`${school.name}, ${school.distanceKm.toFixed(2)} kilometres away. ${insight.headline}.`}
+      aria-label={`${school.name}, ${school.distanceKm.toFixed(2)} kilometres away. Phase ${phase}: ${insight.headline}.`}
       className={
         "flex w-full items-start gap-3 rounded-xl border p-3 text-left transition " +
         "hover:border-primary/50 hover:bg-surface focus:outline-none focus-visible:ring-2 " +
@@ -61,16 +64,19 @@ export function SchoolRow({ school, selected, onSelect }: Props) {
           ) : null}
         </span>
         <span className="mt-2 flex items-center gap-2">
-          <BallotStrip ballot={school.ballot} />
+          <BallotStrip school={school} phase={phase} />
           <span
             className="inline-flex items-center gap-1.5 text-xs text-ink-soft"
-            title={STATUS_LABEL[latest.status]}
+            title={`Phase ${phase} ${year}: ${STATUS_LABEL[outcome.status]}`}
           >
             <span
               className="h-2 w-2 rounded-full"
-              style={{ background: STATUS_COLOR[latest.status] }}
+              style={{ background: ballotColor(outcome.status, outcome.intensity) }}
             />
-            {latest.year}: {STATUS_LABEL[latest.status]}
+            {year}: {STATUS_LABEL[outcome.status]}
+            {outcome.status !== "open" && ratio >= 1
+              ? ` · ${ratio.toFixed(1)}× applied`
+              : ""}
           </span>
         </span>
       </span>

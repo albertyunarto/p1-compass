@@ -20,7 +20,8 @@ import { join } from "node:path";
 import { onemapSearch } from "../lib/onemap";
 import type {
   BallotHistory,
-  BallotStatus,
+  Phase,
+  PhaseBallot,
   School,
   SchoolType,
 } from "../lib/types";
@@ -403,28 +404,55 @@ function makeId(name: string, used: Set<string>): string {
 // --- ballot model ------------------------------------------------------------
 
 const YEARS = [2021, 2022, 2023, 2024, 2025];
+const PHASES: Phase[] = ["2A", "2B", "2C"];
 
-function statusFromScore(score: number): BallotStatus {
-  if (score < 0.32) return "open";
-  if (score < 0.56) return "b_far";
-  if (score < 0.79) return "b_mid";
-  return "b_near";
+// Phase 2C is the headline; 2A and 2B are generally (not always) less contested.
+const PHASE_FACTOR: Record<Phase, number> = { "2A": 0.78, "2B": 0.86, "2C": 1 };
+
+/** Build one phase's applied-vs-places figures from a 0–1 competitiveness score. */
+function buildPhaseBallot(
+  rng: () => number,
+  score: number,
+  vacancy: number,
+): PhaseBallot {
+  const s = Math.max(0, Math.min(1, score));
+  // demand < 1 means undersubscribed (no ballot); elite schools run ~2.5–3x.
+  const demand = Math.max(0.1, -0.14 + s * 3.1) * (0.82 + rng() * 0.4);
+  const totalApplied = Math.round(vacancy * demand);
+  const nearFrac = 0.32 + s * 0.34;
+  const midFrac = 0.32 - s * 0.07;
+  const near = Math.round(totalApplied * nearFrac);
+  const mid = Math.round(totalApplied * midFrac);
+  const far = Math.max(0, totalApplied - near - mid);
+  return { vacancy, applied: { near, mid, far } };
 }
 
-function buildBallot(rng: () => number, comp: number): BallotHistory {
+function buildBallot(
+  rng: () => number,
+  comp: number,
+  intake: number,
+): BallotHistory {
+  // baseline places contested in each phase (Phase 1 takes siblings first)
+  const baseVacancy: Record<Phase, number> = {
+    "2A": Math.round(intake * (0.16 + rng() * 0.1)),
+    "2B": Math.max(20, Math.round(intake * (0.07 + rng() * 0.05))),
+    "2C": Math.max(40, Math.round(intake * (0.3 + rng() * 0.12))),
+  };
+
   const history: BallotHistory = {};
   for (let i = 0; i < YEARS.length; i++) {
-    const year = YEARS[i];
-    // gentle upward drift in competitiveness over the years
-    const drift = (i - 2) * 0.03;
-    const yearNoise = gaussian(rng) * 0.16;
-    const base = comp + drift + yearNoise;
-    history[year] = {
-      "2A": statusFromScore(base * 0.55 + gaussian(rng) * 0.1),
-      "2B": statusFromScore(base * 0.78 + gaussian(rng) * 0.1),
-      "2C": statusFromScore(base + gaussian(rng) * 0.06),
-      "2CS": statusFromScore(base * 0.45 + gaussian(rng) * 0.12),
-    };
+    const drift = (i - 2) * 0.03; // gentle upward trend over the years
+    const base = comp + drift + gaussian(rng) * 0.14;
+    const entry: Partial<Record<Phase, PhaseBallot>> = {};
+    for (const phase of PHASES) {
+      const score = base * PHASE_FACTOR[phase] + gaussian(rng) * 0.05;
+      const vacancy = Math.max(
+        12,
+        Math.round(baseVacancy[phase] * (0.92 + rng() * 0.16)),
+      );
+      entry[phase] = buildPhaseBallot(rng, score, vacancy);
+    }
+    history[YEARS[i]] = entry;
   }
   return history;
 }
@@ -513,12 +541,8 @@ async function buildSchools(): Promise<School[]> {
       await sleep(80);
     }
 
-    // vacancies (latest cycle)
-    const total = 180 + Math.floor(rng() * 150);
-    const phase1 = Math.round(total * (0.2 + rng() * 0.14));
-    const phase2a = Math.round(total * (0.06 + rng() * 0.1));
-    const phase2b = Math.round(total * (0.05 + rng() * 0.07));
-    const phase2c = Math.max(15, total - phase1 - phase2a - phase2b);
+    // P1 intake size — scales the per-phase vacancy figures
+    const intake = 200 + Math.floor(rng() * 130);
 
     schools.push({
       id: makeId(name, usedIds),
@@ -533,8 +557,7 @@ async function buildSchools(): Promise<School[]> {
       affiliations: tags.includes("affiliated") ? affiliationsFor(name) : [],
       ccas: sample(rng, CCAS, 5 + Math.floor(rng() * 4)),
       programmes: sample(rng, PROGRAMMES, 1 + Math.floor(rng() * 2)),
-      vacancies: { year: 2025, total, phase1, phase2a, phase2b, phase2c },
-      ballot: buildBallot(rng, compFor(tier, rng)),
+      ballot: buildBallot(rng, compFor(tier, rng), intake),
     } satisfies School);
   }
 

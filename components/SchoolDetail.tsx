@@ -1,23 +1,25 @@
 "use client";
 
 import {
-  latestPhase2C,
-  personalisedInsight,
-  TONE_COLOR,
-} from "@/lib/insight";
+  BALLOT_YEARS,
+  type BandOutcome,
+  latestOutcome,
+  outcomeFor,
+} from "@/lib/ballot";
+import { personalisedInsight, TONE_COLOR } from "@/lib/insight";
 import {
   BAND_LABEL,
+  ballotColor,
   PHASE_LABEL,
-  STATUS_COLOR,
+  PHASE_META,
   STATUS_DEPTH,
   STATUS_LABEL,
 } from "@/lib/labels";
-import type { NearbySchool, Phase } from "@/lib/types";
+import type { Band, NearbySchool, Phase } from "@/lib/types";
 import { Modal } from "./Modal";
 
-const YEARS = [2021, 2022, 2023, 2024, 2025];
-const PHASES: Phase[] = ["2A", "2B", "2C", "2CS"];
-const STATUSES = ["open", "b_far", "b_mid", "b_near"] as const;
+const PHASES: Phase[] = ["2A", "2B", "2C"];
+const BANDS: Band[] = ["near", "mid", "far"];
 
 function Section({
   title,
@@ -51,17 +53,27 @@ function Chips({ items }: { items: string[] }) {
   );
 }
 
+function bandOutcomeText(b: BandOutcome): string {
+  if (b.balloted) return `Balloted — ${(b.applied / b.places).toFixed(1)}×`;
+  if (b.applied === 0) return "No applicants";
+  if (b.taken >= b.applied) return `All ${b.applied} admitted`;
+  return "Missed out — no places";
+}
+
 export function SchoolDetail({
   school,
+  phase,
   onClose,
 }: {
   school: NearbySchool;
+  phase: Phase;
   onClose: () => void;
 }) {
-  const insight = personalisedInsight(school, school.band);
-  const latest = latestPhase2C(school);
+  const insight = personalisedInsight(school, school.band, phase);
   const tone = TONE_COLOR[insight.tone];
-  const v = school.vacancies;
+  const { year, outcome } = latestOutcome(school, phase);
+  const ratio =
+    outcome.vacancy > 0 ? outcome.totalApplied / outcome.vacancy : 0;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -121,13 +133,13 @@ export function SchoolDetail({
         </button>
       </div>
 
-      {/* personalised insight — the headline verdict */}
+      {/* personalised insight for the selected phase */}
       <div className="px-5 py-4 sm:px-6">
         <div
           className="rounded-card border p-4"
           style={{ background: `${tone}14`, borderColor: `${tone}45` }}
         >
-          <div className="flex items-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span
               className="rounded-full px-2.5 py-0.5 text-xs font-bold text-white"
               style={{ background: tone }}
@@ -135,7 +147,7 @@ export function SchoolDetail({
               {insight.headline}
             </span>
             <span className="text-xs font-semibold uppercase tracking-wider text-ink-soft">
-              What this means for you
+              {PHASE_META[phase].label} — {PHASE_META[phase].who}
             </span>
           </div>
           <p className="mt-2 text-[15px] leading-relaxed text-ink">
@@ -151,40 +163,104 @@ export function SchoolDetail({
         </Section>
       ) : null}
 
-      {/* ballot chart */}
-      <Section title="Phase 2C ballot depth (2021–2025)">
+      {/* per-band breakdown for the selected phase */}
+      <Section
+        title={`${PHASE_LABEL[phase]} balloting — ${year} cycle`}
+      >
+        <p className="mb-2.5 text-sm text-ink-soft">
+          {outcome.totalApplied} applied for {outcome.vacancy} place
+          {outcome.vacancy === 1 ? "" : "s"}
+          {ratio > 0 ? (
+            <span className="font-semibold text-ink">
+              {" "}
+              — {ratio.toFixed(1)}× subscribed
+            </span>
+          ) : null}
+          .
+        </p>
+        <div className="overflow-hidden rounded-lg border border-line">
+          <table className="w-full border-collapse text-sm">
+            <thead>
+              <tr className="bg-sand text-left text-xs text-ink-soft">
+                <th className="px-3 py-1.5 font-semibold">Distance band</th>
+                <th className="px-3 py-1.5 text-right font-semibold">
+                  Applied
+                </th>
+                <th className="px-3 py-1.5 text-right font-semibold">Places</th>
+                <th className="px-3 py-1.5 font-semibold">Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              {BANDS.map((b) => {
+                const bo = outcome.bands[b];
+                const here = school.band === b;
+                return (
+                  <tr
+                    key={b}
+                    className="border-t border-line"
+                    style={
+                      bo.balloted
+                        ? { background: `${ballotColor(outcome.status, outcome.intensity)}26` }
+                        : undefined
+                    }
+                  >
+                    <td className="px-3 py-1.5 font-medium text-ink">
+                      {BAND_LABEL[b]}
+                      {here ? (
+                        <span className="ml-1.5 rounded bg-primary px-1.5 py-0.5 text-[10px] font-bold text-white">
+                          YOU
+                        </span>
+                      ) : null}
+                    </td>
+                    <td className="px-3 py-1.5 text-right tabular-nums text-ink">
+                      {bo.applied}
+                    </td>
+                    <td className="px-3 py-1.5 text-right tabular-nums text-ink-soft">
+                      {bo.places}
+                    </td>
+                    <td className="px-3 py-1.5 text-ink-soft">
+                      {bandOutcomeText(bo)}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </Section>
+
+      {/* ballot depth chart for the selected phase */}
+      <Section title={`${PHASE_LABEL[phase]} ballot depth (2021–2025)`}>
         <div className="flex h-[104px] items-end gap-2">
-          {YEARS.map((year) => {
-            const status = school.ballot[year]?.["2C"] ?? "open";
+          {BALLOT_YEARS.map((y) => {
+            const o = outcomeFor(school, phase, y);
+            const status = o?.status ?? "open";
             return (
               <div
-                key={year}
+                key={y}
                 className="flex flex-1 flex-col items-center gap-1"
               >
                 <div
-                  title={`${year}: ${STATUS_LABEL[status]}`}
+                  title={`${y}: ${STATUS_LABEL[status]}`}
                   style={{
                     height: 14 + STATUS_DEPTH[status] * 21,
-                    background: STATUS_COLOR[status],
+                    background: ballotColor(status, o?.intensity ?? 0),
                   }}
                   className="w-full rounded-t-md"
                 />
-                <span className="text-xs text-ink-soft">{year}</span>
+                <span className="text-xs text-ink-soft">{y}</span>
               </div>
             );
           })}
         </div>
         <p className="mt-2 text-xs text-ink-soft">
-          Taller bars mean balloting reached closer in. Latest cycle ({latest.year}):{" "}
-          <span className="font-semibold text-ink">
-            {STATUS_LABEL[latest.status]}
-          </span>
-          .
+          Taller, deeper bars mean balloting reached closer in and was more
+          oversubscribed.
         </p>
       </Section>
 
-      {/* full history grid */}
-      <Section title="Ballot history by phase">
+      {/* all-phase history grid */}
+      <Section title="All phases by year">
         <div className="overflow-hidden rounded-lg border border-line">
           <table className="w-full border-collapse text-center text-xs">
             <thead>
@@ -200,18 +276,28 @@ export function SchoolDetail({
               </tr>
             </thead>
             <tbody>
-              {[...YEARS].reverse().map((year) => (
-                <tr key={year} className="border-t border-line">
+              {[...BALLOT_YEARS].reverse().map((y) => (
+                <tr key={y} className="border-t border-line">
                   <td className="px-2 py-1.5 text-left font-medium text-ink">
-                    {year}
+                    {y}
                   </td>
-                  {PHASES.map((phase) => {
-                    const status = school.ballot[year]?.[phase] ?? "open";
+                  {PHASES.map((p) => {
+                    const o = outcomeFor(school, p, y);
+                    const status = o?.status ?? "open";
                     return (
-                      <td key={phase} className="p-1">
+                      <td key={p} className="p-1">
                         <span
-                          title={`${PHASE_LABEL[phase]} ${year}: ${STATUS_LABEL[status]}`}
-                          style={{ background: STATUS_COLOR[status] }}
+                          title={`${PHASE_LABEL[p]} ${y}: ${STATUS_LABEL[status]}${
+                            o
+                              ? ` (${o.totalApplied} applied / ${o.vacancy} places)`
+                              : ""
+                          }`}
+                          style={{
+                            background: ballotColor(
+                              status,
+                              o?.intensity ?? 0,
+                            ),
+                          }}
                           className="block h-6 rounded"
                         />
                       </td>
@@ -222,43 +308,10 @@ export function SchoolDetail({
             </tbody>
           </table>
         </div>
-        <div className="mt-2.5 flex flex-wrap gap-x-3 gap-y-1">
-          {STATUSES.map((s) => (
-            <span
-              key={s}
-              className="flex items-center gap-1.5 text-xs text-ink-soft"
-            >
-              <span
-                className="h-2.5 w-2.5 rounded-sm"
-                style={{ background: STATUS_COLOR[s] }}
-              />
-              {STATUS_LABEL[s]}
-            </span>
-          ))}
-        </div>
-      </Section>
-
-      {/* vacancies */}
-      <Section title={`Vacancies — ${v.year} cycle`}>
-        <div className="grid grid-cols-3 gap-2 sm:grid-cols-5">
-          {[
-            { label: "Total", value: v.total },
-            { label: "Phase 1", value: v.phase1 },
-            { label: "Phase 2A", value: v.phase2a },
-            { label: "Phase 2B", value: v.phase2b },
-            { label: "Phase 2C", value: v.phase2c },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-lg bg-sand px-2 py-2 text-center"
-            >
-              <div className="font-display text-lg font-semibold text-ink">
-                {stat.value}
-              </div>
-              <div className="text-[11px] text-ink-soft">{stat.label}</div>
-            </div>
-          ))}
-        </div>
+        <p className="mt-2 text-xs text-ink-soft">
+          Each cell is the phase outcome that year — deeper colour means a
+          tougher ballot. Hover for the numbers.
+        </p>
       </Section>
 
       {/* affiliations */}

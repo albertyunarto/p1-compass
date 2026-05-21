@@ -63,10 +63,11 @@ export default function AboutPage() {
         into three bands: within 1 km, 1–2 km, and beyond 2 km.
       </p>
 
-      <Heading>Ballot history</Heading>
+      <Heading>Phases &amp; ballot history</Heading>
       <p className="mt-2 leading-relaxed text-ink-soft">
-        For each school we track how deep Phase 2C balloting reached in recent
-        years:
+        Use the phase toggle to view your situation for Phase 2A (alumni),
+        2B (volunteer/community) or 2C (open) — each balloting separately. For
+        every phase and year we track how deep balloting reached:
       </p>
       <ul className="mt-3 space-y-1.5 text-ink-soft">
         <li>
@@ -86,6 +87,11 @@ export default function AboutPage() {
           reached inside 1 km, the most competitive outcome.
         </li>
       </ul>
+      <p className="mt-3 leading-relaxed text-ink-soft">
+        Colour intensity reflects how oversubscribed the balloted band was —
+        applicants versus places. A deeper shade means a tougher ballot. Open
+        any school to see the applied-vs-places numbers for each distance band.
+      </p>
 
       <Heading>Personalised insight</Heading>
       <p className="mt-2 leading-relaxed text-ink-soft">

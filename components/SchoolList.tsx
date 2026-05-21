@@ -1,10 +1,11 @@
 import { BAND_COLOR } from "@/lib/labels";
-import type { Band, NearbySchool } from "@/lib/types";
+import type { Band, NearbySchool, Phase } from "@/lib/types";
 import { SchoolRow } from "./SchoolRow";
 
 type Props = {
   within: NearbySchool[];
   beyond: NearbySchool[];
+  phase: Phase;
   selectedId: string | null;
   onSelect: (id: string) => void;
 };
@@ -19,12 +20,14 @@ function BandGroup({
   band,
   label,
   schools,
+  phase,
   selectedId,
   onSelect,
 }: {
   band: Band;
   label: string;
   schools: NearbySchool[];
+  phase: Phase;
   selectedId: string | null;
   onSelect: (id: string) => void;
 }) {
@@ -49,6 +52,7 @@ function BandGroup({
           <SchoolRow
             key={school.id}
             school={school}
+            phase={phase}
             selected={school.id === selectedId}
             onSelect={() => onSelect(school.id)}
           />
@@ -58,7 +62,13 @@ function BandGroup({
   );
 }
 
-export function SchoolList({ within, beyond, selectedId, onSelect }: Props) {
+export function SchoolList({
+  within,
+  beyond,
+  phase,
+  selectedId,
+  onSelect,
+}: Props) {
   if (within.length === 0) {
     return (
       <div className="flex flex-col gap-5">
@@ -67,9 +77,9 @@ export function SchoolList({ within, beyond, selectedId, onSelect }: Props) {
             No primary schools within 2 km
           </h3>
           <p className="mt-1 text-sm text-ink-soft">
-            For every school here you fall in the beyond-2 km Phase 2C band, the
-            lowest distance-priority group. You can still review their ballot
-            history below.
+            For every school here you fall in the beyond-2 km distance band, the
+            lowest-priority group. You can still review their ballot history
+            below.
           </p>
         </div>
         <section>
@@ -81,6 +91,7 @@ export function SchoolList({ within, beyond, selectedId, onSelect }: Props) {
               <SchoolRow
                 key={school.id}
                 school={school}
+                phase={phase}
                 selected={school.id === selectedId}
                 onSelect={() => onSelect(school.id)}
               />
@@ -101,6 +112,7 @@ export function SchoolList({ within, beyond, selectedId, onSelect }: Props) {
           band="near"
           label="Within 1 km"
           schools={near}
+          phase={phase}
           selectedId={selectedId}
           onSelect={onSelect}
         />
@@ -110,6 +122,7 @@ export function SchoolList({ within, beyond, selectedId, onSelect }: Props) {
           band="mid"
           label="1–2 km"
           schools={mid}
+          phase={phase}
           selectedId={selectedId}
           onSelect={onSelect}
         />
