@@ -1,0 +1,407 @@
+{
+  "10": {
+    "area": "Holland & Bukit Timah",
+    "lat": 1.322824,
+    "lng": 103.792644
+  },
+  "11": {
+    "area": "Novena",
+    "lat": 1.3163,
+    "lng": 103.843018
+  },
+  "12": {
+    "area": "Novena",
+    "lat": 1.318154,
+    "lng": 103.846375
+  },
+  "13": {
+    "area": "Toa Payoh",
+    "lat": 1.335981,
+    "lng": 103.85293
+  },
+  "14": {
+    "area": "Geylang & Paya Lebar",
+    "lat": 1.317962,
+    "lng": 103.887547
+  },
+  "15": {
+    "area": "Katong & Marine Parade",
+    "lat": 1.307601,
+    "lng": 103.901961
+  },
+  "16": {
+    "area": "Bedok",
+    "lat": 1.322448,
+    "lng": 103.926169
+  },
+  "17": {
+    "area": "Changi & Simei",
+    "lat": 1.340154,
+    "lng": 103.951899
+  },
+  "18": {
+    "area": "Tampines",
+    "lat": 1.350596,
+    "lng": 103.959441
+  },
+  "19": {
+    "area": "Serangoon",
+    "lat": 1.356,
+    "lng": 103.876955
+  },
+  "20": {
+    "area": "Ang Mo Kio",
+    "lat": 1.373652,
+    "lng": 103.847032
+  },
+  "21": {
+    "area": "Holland & Bukit Timah",
+    "lat": 1.328347,
+    "lng": 103.793809
+  },
+  "22": {
+    "area": "Boon Lay & Pioneer",
+    "lat": 1.337965,
+    "lng": 103.697
+  },
+  "23": {
+    "area": "Bukit Panjang",
+    "lat": 1.374015,
+    "lng": 103.769769
+  },
+  "24": {
+    "area": "Choa Chu Kang",
+    "lat": 1.380378,
+    "lng": 103.748697
+  },
+  "25": {
+    "area": "Woodlands",
+    "lat": 1.437671,
+    "lng": 103.792965
+  },
+  "26": {
+    "area": "Bishan",
+    "lat": 1.35565,
+    "lng": 103.837788
+  },
+  "27": {
+    "area": "Yishun",
+    "lat": 1.434226,
+    "lng": 103.834231
+  },
+  "28": {
+    "area": "Seletar & Yio Chu Kang",
+    "lat": 1.397084,
+    "lng": 103.86515
+  },
+  "29": {
+    "area": "Holland & Bukit Timah",
+    "lat": 1.322345,
+    "lng": 103.793008
+  },
+  "30": {
+    "area": "Kallang & Whampoa",
+    "lat": 1.307048,
+    "lng": 103.865617
+  },
+  "31": {
+    "area": "Toa Payoh",
+    "lat": 1.332684,
+    "lng": 103.852959
+  },
+  "32": {
+    "area": "Toa Payoh",
+    "lat": 1.336506,
+    "lng": 103.852637
+  },
+  "33": {
+    "area": "Kallang & Whampoa",
+    "lat": 1.315,
+    "lng": 103.864947
+  },
+  "34": {
+    "area": "Geylang & Paya Lebar",
+    "lat": 1.316116,
+    "lng": 103.883606
+  },
+  "35": {
+    "area": "Geylang & Paya Lebar",
+    "lat": 1.312287,
+    "lng": 103.883385
+  },
+  "36": {
+    "area": "Toa Payoh",
+    "lat": 1.330333,
+    "lng": 103.848788
+  },
+  "37": {
+    "area": "Toa Payoh",
+    "lat": 1.331726,
+    "lng": 103.852362
+  },
+  "38": {
+    "area": "Geylang & Paya Lebar",
+    "lat": 1.315185,
+    "lng": 103.89082
+  },
+  "39": {
+    "area": "Geylang & Paya Lebar",
+    "lat": 1.317855,
+    "lng": 103.888067
+  },
+  "40": {
+    "area": "Geylang & Paya Lebar",
+    "lat": 1.31698,
+    "lng": 103.884332
+  },
+  "41": {
+    "area": "Katong & Marine Parade",
+    "lat": 1.304366,
+    "lng": 103.901051
+  },
+  "42": {
+    "area": "Katong & Marine Parade",
+    "lat": 1.301334,
+    "lng": 103.9034
+  },
+  "43": {
+    "area": "Katong & Marine Parade",
+    "lat": 1.301673,
+    "lng": 103.90722
+  },
+  "44": {
+    "area": "Katong & Marine Parade",
+    "lat": 1.305071,
+    "lng": 103.908999
+  },
+  "45": {
+    "area": "Katong & Marine Parade",
+    "lat": 1.308404,
+    "lng": 103.907101
+  },
+  "46": {
+    "area": "Bedok",
+    "lat": 1.327207,
+    "lng": 103.928271
+  },
+  "47": {
+    "area": "Bedok",
+    "lat": 1.324094,
+    "lng": 103.926031
+  },
+  "48": {
+    "area": "Bedok",
+    "lat": 1.320527,
+    "lng": 103.927439
+  },
+  "49": {
+    "area": "Changi & Simei",
+    "lat": 1.340185,
+    "lng": 103.954202
+  },
+  "50": {
+    "area": "Changi & Simei",
+    "lat": 1.342951,
+    "lng": 103.95686
+  },
+  "51": {
+    "area": "Tampines",
+    "lat": 1.356281,
+    "lng": 103.959769
+  },
+  "52": {
+    "area": "Tampines",
+    "lat": 1.357547,
+    "lng": 103.956148
+  },
+  "53": {
+    "area": "Hougang",
+    "lat": 1.372784,
+    "lng": 103.888727
+  },
+  "54": {
+    "area": "Sengkang",
+    "lat": 1.388865,
+    "lng": 103.892083
+  },
+  "55": {
+    "area": "Punggol",
+    "lat": 1.400301,
+    "lng": 103.902289
+  },
+  "56": {
+    "area": "Ang Mo Kio",
+    "lat": 1.367914,
+    "lng": 103.848813
+  },
+  "57": {
+    "area": "Ang Mo Kio",
+    "lat": 1.371745,
+    "lng": 103.848999
+  },
+  "58": {
+    "area": "Holland & Bukit Timah",
+    "lat": 1.328971,
+    "lng": 103.796477
+  },
+  "59": {
+    "area": "Clementi",
+    "lat": 1.318747,
+    "lng": 103.761816
+  },
+  "60": {
+    "area": "Jurong East",
+    "lat": 1.331681,
+    "lng": 103.73979
+  },
+  "61": {
+    "area": "Jurong East",
+    "lat": 1.329036,
+    "lng": 103.742568
+  },
+  "62": {
+    "area": "Jurong West",
+    "lat": 1.337443,
+    "lng": 103.711694
+  },
+  "63": {
+    "area": "Jurong West",
+    "lat": 1.341069,
+    "lng": 103.712944
+  },
+  "64": {
+    "area": "Boon Lay & Pioneer",
+    "lat": 1.34168,
+    "lng": 103.702567
+  },
+  "65": {
+    "area": "Bukit Panjang",
+    "lat": 1.380707,
+    "lng": 103.76965
+  },
+  "66": {
+    "area": "Bukit Panjang",
+    "lat": 1.377294,
+    "lng": 103.767901
+  },
+  "67": {
+    "area": "Bukit Batok",
+    "lat": 1.355578,
+    "lng": 103.761629
+  },
+  "68": {
+    "area": "Choa Chu Kang",
+    "lat": 1.380408,
+    "lng": 103.748761
+  },
+  "69": {
+    "area": "Boon Lay & Pioneer",
+    "lat": 1.337541,
+    "lng": 103.704974
+  },
+  "70": {
+    "area": "Boon Lay & Pioneer",
+    "lat": 1.341096,
+    "lng": 103.703533
+  },
+  "71": {
+    "area": "Boon Lay & Pioneer",
+    "lat": 1.341804,
+    "lng": 103.699764
+  },
+  "72": {
+    "area": "Woodlands",
+    "lat": 1.439215,
+    "lng": 103.785131
+  },
+  "73": {
+    "area": "Woodlands",
+    "lat": 1.435493,
+    "lng": 103.786055
+  },
+  "75": {
+    "area": "Yishun",
+    "lat": 1.428849,
+    "lng": 103.839087
+  },
+  "76": {
+    "area": "Yishun",
+    "lat": 1.432664,
+    "lng": 103.838697
+  },
+  "77": {
+    "area": "Bishan",
+    "lat": 1.356598,
+    "lng": 103.835076
+  },
+  "78": {
+    "area": "Bishan",
+    "lat": 1.354656,
+    "lng": 103.831769
+  },
+  "79": {
+    "area": "Seletar & Yio Chu Kang",
+    "lat": 1.394224,
+    "lng": 103.865416
+  },
+  "80": {
+    "area": "Seletar & Yio Chu Kang",
+    "lat": 1.392024,
+    "lng": 103.868558
+  },
+  "81": {
+    "area": "Changi & Simei",
+    "lat": 1.34148,
+    "lng": 103.956107
+  },
+  "82": {
+    "area": "Punggol",
+    "lat": 1.405553,
+    "lng": 103.905999
+  },
+  "01": {
+    "area": "City & Marina",
+    "lat": 1.292366,
+    "lng": 103.854161
+  },
+  "02": {
+    "area": "City & Marina",
+    "lat": 1.292637,
+    "lng": 103.850335
+  },
+  "06": {
+    "area": "City & Marina",
+    "lat": 1.287882,
+    "lng": 103.855841
+  },
+  "07": {
+    "area": "City & Marina",
+    "lat": 1.291628,
+    "lng": 103.855016
+  },
+  "03": {
+    "area": "Bukit Merah",
+    "lat": 1.282564,
+    "lng": 103.81904
+  },
+  "04": {
+    "area": "Bukit Merah",
+    "lat": 1.278973,
+    "lng": 103.820385
+  },
+  "05": {
+    "area": "Queenstown",
+    "lat": 1.290364,
+    "lng": 103.807235
+  },
+  "09": {
+    "area": "Orchard & River Valley",
+    "lat": 1.304648,
+    "lng": 103.829355
+  },
+  "08": {
+    "area": "Kallang & Whampoa",
+    "lat": 1.314957,
+    "lng": 103.864418
+  }
+}

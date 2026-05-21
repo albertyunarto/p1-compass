@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+  --font-display: var(--font-fraunces);
+}
+
+@theme {
+  /* surfaces */
+  --color-paper: #faf6ef;
+  --color-surface: #ffffff;
+  --color-sand: #f1eadd;
+  --color-ink: #23201a;
+  --color-ink-soft: #6f6a5e;
+  --color-line: #e7e1d5;
+
+  /* brand */
+  --color-primary: #1c6b5a;
+  --color-primary-dark: #14503f;
+  --color-accent: #e0922f;
+
+  /* ballot / band semantics */
+  --color-safe: #3f9b6e;
+  --color-far: #cf9f33;
+  --color-mid: #e0792f;
+  --color-near: #d24a3f;
+
+  --radius-card: 1rem;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-primary) 22%, transparent);
+}
+
+/* thin scrollbar inside the school list */
+.scroll-slim {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-line) transparent;
+}
+
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.anim-fade {
+  animation: fade-in 0.18s ease-out;
+}
+
+.anim-pop {
+  animation: pop-in 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.anim-sheet {
+  animation: sheet-up 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-fade,
+  .anim-pop,
+  .anim-sheet {
+    animation: none;
+  }
+}

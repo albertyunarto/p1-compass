@@ -1,0 +1,156 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "How it works & data sources",
+  description:
+    "How P1 Compass calculates distance bands, reads ballot history and generates personalised Phase 2C insight — and where its data comes from.",
+};
+
+const PHASES = [
+  ["Phase 1", "For children with a sibling currently in the school."],
+  ["Phase 2A", "For children of alumni, staff or school-connected families."],
+  [
+    "Phase 2B",
+    "For children whose parents are volunteers, community leaders or have church/clan ties.",
+  ],
+  [
+    "Phase 2C",
+    "Open to all remaining children. When demand exceeds places, admission is balloted with distance priority: within 1 km, then 1–2 km, then beyond 2 km.",
+  ],
+  [
+    "Phase 2C Supplementary",
+    "A final round for children not yet placed after Phase 2C.",
+  ],
+];
+
+const SOURCES = [
+  ["OneMap SG", "Postal code and school-address geocoding.", "https://www.onemap.gov.sg/apidocs/"],
+  ["MOE School Finder", "School profiles, programmes and addresses.", "https://www.moe.gov.sg/schoolfinder"],
+  [
+    "MOE P1 Vacancies & Balloting",
+    "Annual ballot history per school and phase.",
+    "https://www.moe.gov.sg/primary/p1-registration/past-vacancies-and-balloting-data",
+  ],
+];
+
+function Heading({ children }: { children: React.ReactNode }) {
+  return (
+    <h2 className="mt-10 font-display text-2xl font-semibold text-ink">
+      {children}
+    </h2>
+  );
+}
+
+export default function AboutPage() {
+  return (
+    <div className="mx-auto max-w-2xl px-4 py-12 sm:px-6">
+      <h1 className="font-display text-3xl font-semibold text-ink sm:text-4xl">
+        How P1 Compass works
+      </h1>
+      <p className="mt-3 leading-relaxed text-ink-soft">
+        P1 Compass turns a postal code into a clear read on your Primary 1
+        Phase 2C chances. It combines two things the official tools keep
+        separate: how far you live from each school, and how deep that school
+        has had to ballot in past years.
+      </p>
+
+      <Heading>Distance</Heading>
+      <p className="mt-2 leading-relaxed text-ink-soft">
+        Distances are straight-line (great-circle) measurements between your
+        home and each school — the same methodology MOE uses for Phase 2C
+        priority. We do not use walking or driving distance. Schools are sorted
+        into three bands: within 1 km, 1–2 km, and beyond 2 km.
+      </p>
+
+      <Heading>Ballot history</Heading>
+      <p className="mt-2 leading-relaxed text-ink-soft">
+        For each school we track how deep Phase 2C balloting reached in recent
+        years:
+      </p>
+      <ul className="mt-3 space-y-1.5 text-ink-soft">
+        <li>
+          <strong className="text-ink">No ballot</strong> — every applicant was
+          admitted.
+        </li>
+        <li>
+          <strong className="text-ink">Balloted &gt;2 km</strong> — a ballot was
+          needed, resolved in the outer band.
+        </li>
+        <li>
+          <strong className="text-ink">Balloted 1–2 km</strong> — balloting
+          reached into the 1–2 km band.
+        </li>
+        <li>
+          <strong className="text-ink">Balloted &lt;1 km</strong> — balloting
+          reached inside 1 km, the most competitive outcome.
+        </li>
+      </ul>
+
+      <Heading>Personalised insight</Heading>
+      <p className="mt-2 leading-relaxed text-ink-soft">
+        Your distance band and a school&apos;s most recent ballot depth are
+        combined into a plain-language verdict — twelve possible cases covering
+        every band-and-outcome pairing, plus a note on multi-year trend. The
+        logic is transparent and rule-based, not a black box.
+      </p>
+
+      <Heading>The registration phases</Heading>
+      <dl className="mt-3 space-y-3">
+        {PHASES.map(([name, desc]) => (
+          <div key={name}>
+            <dt className="font-semibold text-ink">{name}</dt>
+            <dd className="text-sm leading-relaxed text-ink-soft">{desc}</dd>
+          </div>
+        ))}
+      </dl>
+
+      <Heading>Data sources</Heading>
+      <ul className="mt-3 space-y-3">
+        {SOURCES.map(([name, desc, url]) => (
+          <li key={name}>
+            <a
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              className="font-semibold text-primary underline underline-offset-2"
+            >
+              {name}
+            </a>
+            <span className="block text-sm text-ink-soft">{desc}</span>
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-10 rounded-card border border-line bg-sand/70 p-5">
+        <h2 className="font-display text-lg font-semibold text-ink">
+          Important
+        </h2>
+        <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
+          This build uses an illustrative dataset for demonstration — school
+          figures and ballot outcomes are not official. Always confirm
+          vacancies and balloting against{" "}
+          <a
+            href="https://www.moe.gov.sg/primary/p1-registration"
+            target="_blank"
+            rel="noreferrer"
+            className="text-primary underline underline-offset-2"
+          >
+            MOE&apos;s official P1 registration site
+          </a>
+          . P1 Compass is a planning aid only; registration happens on
+          MOE&apos;s portal.
+        </p>
+      </div>
+
+      <p className="mt-8">
+        <Link
+          href="/"
+          className="text-sm font-semibold text-primary underline underline-offset-2"
+        >
+          ← Back to search
+        </Link>
+      </p>
+    </div>
+  );
+}
