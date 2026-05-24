@@ -146,3 +146,26 @@ export async function onemapSearch(
   }
   return null;
 }
+
+/**
+ * Return up to `limit` deduplicated candidates for a free-text query —
+ * powers the typeahead dropdown on the postal search input.
+ */
+export async function onemapSuggest(
+  searchVal: string,
+  limit = 8,
+): Promise<OneMapHit[]> {
+  const results = await rawSearch(searchVal);
+  const out: OneMapHit[] = [];
+  const seen = new Set<string>();
+  for (const r of results) {
+    const hit = toHit(r);
+    if (!hit) continue;
+    const key = `${hit.postal ?? ""}|${hit.address}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(hit);
+    if (out.length >= limit) break;
+  }
+  return out;
+}
