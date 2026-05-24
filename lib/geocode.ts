@@ -1,8 +1,9 @@
 // Resolve a Singapore postal code to a location.
 //
 // Resolution order:
-//   1. data/postal_coords.json — an exact, offline index of ~120k postal codes.
-//   2. OneMap — covers postals missing from the index (e.g. very new buildings).
+//   1. OneMap — live, exact, always up-to-date (~150ms, cached per-process).
+//   2. data/postal_coords.json — bundled offline index, fallback when OneMap
+//      is unreachable or times out.
 //   3. Postal-sector centroid — an approximate last resort.
 
 import { readFileSync } from "node:fs";
@@ -58,7 +59,22 @@ export async function geocode(postal: string): Promise<GeoResult> {
   const hit = cache.get(clean);
   if (hit) return { ...hit, cached: true };
 
-  // 1. exact offline lookup
+  // 1. OneMap — live, exact, always up-to-date.
+  const onemap = await onemapSearchPostal(clean);
+  if (onemap) {
+    const result: GeoResult = {
+      postal: clean,
+      address: onemap.address,
+      lat: onemap.lat,
+      lng: onemap.lng,
+      cached: false,
+      source: "onemap",
+    };
+    cache.set(clean, result);
+    return result;
+  }
+
+  // 2. Bundled offline index — fallback when OneMap is unreachable.
   const entry = loadPostalIndex()[clean];
   if (entry) {
     const [lat, lng, addr] = entry;
@@ -69,21 +85,6 @@ export async function geocode(postal: string): Promise<GeoResult> {
       lng,
       cached: false,
       source: "index",
-    };
-    cache.set(clean, result);
-    return result;
-  }
-
-  // 2. OneMap — for postals not in the bundled index
-  const onemap = await onemapSearchPostal(clean);
-  if (onemap) {
-    const result: GeoResult = {
-      postal: clean,
-      address: onemap.address,
-      lat: onemap.lat,
-      lng: onemap.lng,
-      cached: false,
-      source: "onemap",
     };
     cache.set(clean, result);
     return result;

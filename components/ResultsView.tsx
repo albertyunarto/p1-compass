@@ -6,7 +6,7 @@ import { personalisedInsight } from "@/lib/insight";
 import type { InsightTone } from "@/lib/insight";
 import type { NearbySchool, Phase } from "@/lib/types";
 import { BeyondPanel } from "./BeyondPanel";
-import { DistanceMap } from "./DistanceMap";
+import { GeoMapLazy } from "./GeoMapLazy";
 import { MapErrorBoundary } from "./MapErrorBoundary";
 import {
   ResultsFilterBar,
@@ -144,17 +144,18 @@ export function ResultsView({ within, beyond, origin }: Props) {
         <div className="lg:sticky lg:top-20 lg:self-start">
           <div className="rounded-card border border-line bg-surface p-4 shadow-sm">
             <MapErrorBoundary fallback={<MapFallback />}>
-              <DistanceMap
+              <GeoMapLazy
                 schools={mapSchools}
                 phase={phase}
                 selectedId={selectedId}
                 onSelect={handleSelect}
+                origin={{ lat: origin.lat, lng: origin.lng }}
               />
             </MapErrorBoundary>
           </div>
           <p className="mt-2 px-1 text-xs text-ink-muted">
-            Dots are coloured by your Phase {phase} odds; distance from the
-            centre is real.
+            Pins are coloured by your Phase {phase} odds. Tap a pin or a row to
+            see school details.
           </p>
           <div className="mt-3">
             <ShortlistPreview schools={all} phase={phase} />

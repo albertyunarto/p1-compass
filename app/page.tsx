@@ -35,12 +35,20 @@ const STATS = [
   { v: "Free", l: "No sign-up, no ads" },
 ];
 
-async function demoSchools(): Promise<NearbySchool[]> {
+type Demo = {
+  schools: NearbySchool[];
+  origin: { lat: number; lng: number };
+};
+
+async function demoSchools(): Promise<Demo | null> {
   try {
     const geo = await geocode("569824");
-    return searchSchools(geo).within.slice(0, 7);
+    return {
+      schools: searchSchools(geo).within.slice(0, 7),
+      origin: { lat: geo.lat, lng: geo.lng },
+    };
   } catch {
-    return [];
+    return null;
   }
 }
 
@@ -97,7 +105,7 @@ export default async function HomePage() {
           </div>
         </div>
 
-        <HeroDemo schools={demo} />
+        {demo ? <HeroDemo schools={demo.schools} origin={demo.origin} /> : null}
       </section>
 
       {/* HOW IT WORKS */}

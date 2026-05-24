@@ -67,3 +67,20 @@ writeFileSync(join(dataDir, "postal_coords.json"), JSON.stringify(index));
 console.log(
   `Wrote ${Object.keys(index).length} postal codes (skipped ${skipped}).`,
 );
+
+// Coverage breakdown by first-2-digit postal sector — newer / under-built
+// sectors with low counts often produce runtime fallbacks. Runtime now
+// fronts this index with OneMap (see lib/geocode.ts), but the bundled file
+// still serves offline / OneMap-unreachable users.
+const bySector: Record<string, number> = {};
+for (const p of Object.keys(index)) {
+  const s = p.slice(0, 2);
+  bySector[s] = (bySector[s] ?? 0) + 1;
+}
+const sectors = Object.keys(bySector).sort();
+console.log(
+  `Per-sector coverage (${sectors.length} sectors). Low counts in active residential sectors usually mean missing postals:`,
+);
+for (const s of sectors) {
+  console.log(`  ${s} → ${bySector[s]}`);
+}

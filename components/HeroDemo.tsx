@@ -3,11 +3,19 @@
 import { useState } from "react";
 import { personalisedInsight } from "@/lib/insight";
 import type { NearbySchool } from "@/lib/types";
-import { DistanceMap } from "./DistanceMap";
+import { GeoMapLazy } from "./GeoMapLazy";
 import { VerdictPill } from "./VerdictPill";
 
-/** Live polar-map preview shown in the landing hero, using real data. */
-export function HeroDemo({ schools }: { schools: NearbySchool[] }) {
+type Origin = { lat: number; lng: number };
+
+/** Live geographic-map preview shown in the landing hero, using real data. */
+export function HeroDemo({
+  schools,
+  origin,
+}: {
+  schools: NearbySchool[];
+  origin: Origin;
+}) {
   const [selectedId, setSelectedId] = useState<string | null>(
     schools[0]?.id ?? null,
   );
@@ -27,11 +35,12 @@ export function HeroDemo({ schools }: { schools: NearbySchool[] }) {
           {schools.length} schools within 2 km
         </div>
       </div>
-      <DistanceMap
+      <GeoMapLazy
         schools={schools}
         phase="2C"
         selectedId={selectedId}
         onSelect={setSelectedId}
+        origin={origin}
       />
       <div className="mt-3 rounded-xl border border-line bg-surface p-3">
         <VerdictPill tone={insight.tone} label={insight.headline} size="sm" />

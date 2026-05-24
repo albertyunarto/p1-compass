@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ShortlistProvider } from "@/components/ShortlistContext";
+import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
 const manrope = Manrope({

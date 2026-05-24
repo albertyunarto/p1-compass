@@ -17,7 +17,8 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import { onemapSearch } from "../lib/onemap";
+import { haversineKm } from "../lib/geo";
+import { onemapSearch, onemapSearchPostal } from "../lib/onemap";
 import type {
   BallotHistory,
   Phase,
@@ -108,6 +109,11 @@ type Def = [
   tags: string,
   lat: number,
   lng: number,
+  // Optional real MOE-published address + postal. When supplied, both are
+  // used verbatim (no synthesis) AND coordinates are derived from the
+  // postal via OneMap (more reliable than name-based geocoding).
+  postal?: string,
+  address?: string,
 ];
 
 const SCHOOL_DEFS: Def[] = [
@@ -497,9 +503,24 @@ async function buildSchools(): Promise<School[]> {
   const usedIds = new Set<string>();
   const schools: School[] = [];
   let geocoded = 0;
+  const drift: { name: string; km: number }[] = [];
+  const truthCount = SCHOOL_DEFS.filter((d) => d[5] && d[6]).length;
+  if (truthCount > 0) {
+    console.log(
+      `${truthCount}/${SCHOOL_DEFS.length} schools have real address + postal overrides.`,
+    );
+  }
 
   for (let i = 0; i < SCHOOL_DEFS.length; i++) {
-    const [name, regionKey, tagStr, curatedLat, curatedLng] = SCHOOL_DEFS[i];
+    const [
+      name,
+      regionKey,
+      tagStr,
+      curatedLat,
+      curatedLng,
+      truthPostal,
+      truthAddress,
+    ] = SCHOOL_DEFS[i];
     const region = REGIONS[regionKey];
     const tags = tagStr.split(/\s+/);
     const tier: Tier = tags.includes("elite")
@@ -518,25 +539,37 @@ async function buildSchools(): Promise<School[]> {
     if (tags.includes("gep")) type.push("GEP");
     if (type.length === 0) type.push("Neighbourhood");
 
-    // synthetic address + postal (fallback when OneMap is unavailable)
-    const sector = pick(rng, region.sectors);
-    let postal = sector + String(Math.floor(rng() * 10000)).padStart(4, "0");
-    const block = 100 + Math.floor(rng() * 780);
-    const streetArea = region.name.split(" & ")[0];
-    const street = `${streetArea} ${pick(rng, STREETS)} ${1 + Math.floor(rng() * 12)}`;
-    let address = `Blk ${block} ${street}, Singapore ${postal}`;
+    // Address + postal: real values when supplied; synthesised otherwise.
+    let postal: string;
+    let address: string;
+    if (truthPostal && truthAddress) {
+      postal = truthPostal;
+      address = truthAddress;
+    } else {
+      const sector = pick(rng, region.sectors);
+      postal = sector + String(Math.floor(rng() * 10000)).padStart(4, "0");
+      const block = 100 + Math.floor(rng() * 780);
+      const streetArea = region.name.split(" & ")[0];
+      const street = `${streetArea} ${pick(rng, STREETS)} ${1 + Math.floor(rng() * 12)}`;
+      address = `Blk ${block} ${street}, Singapore ${postal}`;
+    }
 
-    // location: curated coordinates, overridden by OneMap when reachable
+    // Coordinates: prefer postal-based OneMap geocoding (most reliable) when
+    // a real postal is supplied; fall back to name-based geocoding; finally
+    // the curated coords.
     let lat = curatedLat;
     let lng = curatedLng;
     if (onemapOk) {
-      const hit = await geocodeSchool(name);
+      let hit = truthPostal ? await onemapSearchPostal(truthPostal) : null;
+      if (!hit) hit = await geocodeSchool(name);
       if (hit) {
         lat = hit.lat;
         lng = hit.lng;
-        address = hit.address;
-        if (hit.postal) postal = hit.postal;
+        if (!truthAddress) address = hit.address;
+        if (!truthPostal && hit.postal) postal = hit.postal;
         geocoded++;
+        const km = haversineKm(curatedLat, curatedLng, lat, lng);
+        if (km > 0.2) drift.push({ name, km });
       }
       await sleep(80);
     }
@@ -563,6 +596,18 @@ async function buildSchools(): Promise<School[]> {
 
   if (onemapOk) {
     console.log(`Geocoded ${geocoded}/${SCHOOL_DEFS.length} schools via OneMap.`);
+  }
+  if (drift.length > 0) {
+    console.log(
+      `\n⚠  Coordinate drift > 200 m vs the curated value (${drift.length} schools):`,
+    );
+    drift.sort((a, b) => b.km - a.km);
+    for (const d of drift) {
+      console.log(`  ${d.km.toFixed(2)} km  ${d.name}`);
+    }
+    console.log(
+      "Consider adding a real postal override (6th tuple element) to lock the location.",
+    );
   }
   return schools;
 }
