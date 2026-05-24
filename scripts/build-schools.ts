@@ -15,7 +15,7 @@
  * Writes data/schools.json and data/postal_sectors.json. Re-running is safe.
  */
 
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { haversineKm } from "../lib/geo";
 import { onemapSearch, onemapSearchPostal } from "../lib/onemap";
@@ -145,9 +145,9 @@ const SCHOOL_DEFS: Def[] = [
   ["Anglo-Chinese School (Primary)", "orchard", "elite boys affiliated", 1.318719, 103.835345],
   ["Anglo-Chinese School (Junior)", "novena", "elite boys affiliated", 1.309321, 103.840644],
   ["Singapore Chinese Girls' Primary School", "orchard", "elite girls", 1.32103, 103.82808],
-  ["St. Margaret's School (Primary)", "orchard", "popular girls affiliated", 1.3015, 103.847],
+  ["St. Margaret's School (Primary)", "orchard", "popular girls affiliated", 1.30172, 103.84884, "228091", "99 Wilkie Road, Singapore 228091"],
   ["St. Joseph's Institution Junior", "novena", "popular boys affiliated", 1.317702, 103.84567],
-  ["Balestier Hill Primary School", "novena", "standard", 1.326, 103.843],
+  // Balestier Hill Primary School merged with Bendemeer Primary in 2017 — removed.
   // Toa Payoh
   ["CHIJ Primary (Toa Payoh)", "toapayoh", "popular girls affiliated", 1.332818, 103.841918],
   ["First Toa Payoh Primary School", "toapayoh", "standard", 1.340526, 103.855668],
@@ -172,7 +172,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Jing Shan Primary School", "amk", "standard", 1.371893, 103.851811],
   ["Townsville Primary School", "amk", "standard", 1.360363, 103.854186],
   ["Teck Ghee Primary School", "amk", "standard", 1.365201, 103.851032],
-  ["Da Qiao Primary School", "amk", "standard", 1.3768, 103.853],
+  ["Da Qiao Primary School", "amk", "standard", 1.37726, 103.84865, "569726", "6 Jalan Sinar Bulan, Singapore 569726"],
   ["Yio Chu Kang Primary School", "seletar", "standard", 1.377823, 103.885569],
   // Serangoon / Hougang
   ["Rosyth School", "serangoon", "elite gep", 1.372916, 103.874693],
@@ -222,16 +222,16 @@ const SCHOOL_DEFS: Def[] = [
   ["Yumin Primary School", "tampines", "standard", 1.35146, 103.950716],
   // Pasir Ris (mapped under Tampines region)
   ["Casuarina Primary School", "tampines", "standard", 1.372789, 103.957291],
-  ["Coral Primary School", "tampines", "standard", 1.3725, 103.942],
+  // Coral Primary School merged with Casuarina Primary in 2017 — removed.
   ["Elias Park Primary School", "tampines", "standard", 1.375033, 103.945358],
-  ["Loyang Primary School", "changi", "standard", 1.368, 103.959],
+  // Loyang Primary School merged with Casuarina Primary in 2017 — removed.
   ["Meridian Primary School", "tampines", "standard", 1.375971, 103.935143],
   ["Park View Primary School", "tampines", "standard", 1.37777, 103.939689],
   ["Pasir Ris Primary School", "tampines", "standard", 1.372309, 103.962919],
   ["White Sands Primary School", "tampines", "popular", 1.365518, 103.960948],
   // Changi / Simei
   ["Changkat Primary School", "changi", "standard", 1.340208, 103.952183],
-  ["East View Primary School", "changi", "standard", 1.362, 103.946],
+  // East View Primary School merged with Casuarina Primary in 2017 — removed.
   // Bedok
   ["Bedok Green Primary School", "bedok", "standard", 1.323996, 103.937745],
   ["Fengshan Primary School", "bedok", "standard", 1.330325, 103.931885],
@@ -254,7 +254,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Canossa Catholic Primary School", "geylang", "popular affiliated", 1.326511, 103.881757],
   ["Maha Bodhi School", "geylang", "popular", 1.328408, 103.901528],
   ["Eunos Primary School", "geylang", "standard", 1.324388, 103.904375],
-  ["MacPherson Primary School", "geylang", "standard", 1.3265, 103.887],
+  // MacPherson Primary School merged with Cedar Primary in 2018 — removed.
   // Jurong East
   ["Fuhua Primary School", "jurongeast", "standard", 1.336404, 103.736669],
   ["Jurong Primary School", "jurongeast", "standard", 1.348685, 103.732975],
@@ -490,6 +490,26 @@ async function geocodeSchool(name: string) {
 
 // --- generation --------------------------------------------------------------
 
+type TruthEntry = { postal: string; address: string; lat: number; lng: number };
+type TruthFile = Record<string, TruthEntry> & { _unmatched?: string[] };
+
+function loadTruth(): Record<string, TruthEntry> {
+  try {
+    const path = join(import.meta.dirname, "..", "data", "schools-truth.json");
+    const raw = JSON.parse(
+      readFileSync(path, "utf8"),
+    ) as TruthFile;
+    const out: Record<string, TruthEntry> = {};
+    for (const [k, v] of Object.entries(raw)) {
+      if (k.startsWith("_")) continue;
+      out[k] = v as TruthEntry;
+    }
+    return out;
+  } catch {
+    return {};
+  }
+}
+
 async function buildSchools(): Promise<School[]> {
   // Probe OneMap once — if reachable, geocode every school precisely.
   const probe = await onemapSearch("Raffles Place MRT");
@@ -500,14 +520,22 @@ async function buildSchools(): Promise<School[]> {
       : "OneMap unavailable — using curated coordinates.",
   );
 
+  const truth = loadTruth();
+  const truthIds = Object.keys(truth);
+  if (truthIds.length > 0) {
+    console.log(
+      `Loaded ${truthIds.length} school address/postal entries from data/schools-truth.json.`,
+    );
+  }
+
   const usedIds = new Set<string>();
   const schools: School[] = [];
   let geocoded = 0;
   const drift: { name: string; km: number }[] = [];
-  const truthCount = SCHOOL_DEFS.filter((d) => d[5] && d[6]).length;
-  if (truthCount > 0) {
+  const tupleOverrides = SCHOOL_DEFS.filter((d) => d[5] && d[6]).length;
+  if (tupleOverrides > 0) {
     console.log(
-      `${truthCount}/${SCHOOL_DEFS.length} schools have real address + postal overrides.`,
+      `${tupleOverrides}/${SCHOOL_DEFS.length} schools have inline tuple overrides (win over truth file).`,
     );
   }
 
@@ -529,6 +557,7 @@ async function buildSchools(): Promise<School[]> {
         ? "popular"
         : "standard";
     const rng = mulberry32(4001 + i * 131);
+    const id = makeId(name, usedIds);
 
     // school type
     const type: SchoolType[] = [];
@@ -539,12 +568,20 @@ async function buildSchools(): Promise<School[]> {
     if (tags.includes("gep")) type.push("GEP");
     if (type.length === 0) type.push("Neighbourhood");
 
-    // Address + postal: real values when supplied; synthesised otherwise.
+    // Address + postal resolution order:
+    //   1. Inline tuple override (truthPostal + truthAddress columns).
+    //   2. data/schools-truth.json entry (auto-generated from SLA buildings).
+    //   3. Synthesised fallback (last resort — only for genuinely unmatched
+    //      schools; the address strip will be obviously fake).
+    const truthEntry = truth[id];
     let postal: string;
     let address: string;
     if (truthPostal && truthAddress) {
       postal = truthPostal;
       address = truthAddress;
+    } else if (truthEntry) {
+      postal = truthEntry.postal;
+      address = truthEntry.address;
     } else {
       const sector = pick(rng, region.sectors);
       postal = sector + String(Math.floor(rng() * 10000)).padStart(4, "0");
@@ -554,19 +591,22 @@ async function buildSchools(): Promise<School[]> {
       address = `Blk ${block} ${street}, Singapore ${postal}`;
     }
 
-    // Coordinates: prefer postal-based OneMap geocoding (most reliable) when
-    // a real postal is supplied; fall back to name-based geocoding; finally
-    // the curated coords.
-    let lat = curatedLat;
-    let lng = curatedLng;
+    // Coordinates: prefer truth-file coords (already SLA-derived), then
+    // postal-based OneMap geocoding when reachable, then name-based, finally
+    // the curated tuple coords.
+    let lat = truthEntry?.lat ?? curatedLat;
+    let lng = truthEntry?.lng ?? curatedLng;
     if (onemapOk) {
-      let hit = truthPostal ? await onemapSearchPostal(truthPostal) : null;
+      const postalForLookup = truthPostal ?? truthEntry?.postal;
+      let hit = postalForLookup
+        ? await onemapSearchPostal(postalForLookup)
+        : null;
       if (!hit) hit = await geocodeSchool(name);
       if (hit) {
         lat = hit.lat;
         lng = hit.lng;
-        if (!truthAddress) address = hit.address;
-        if (!truthPostal && hit.postal) postal = hit.postal;
+        if (!truthAddress && !truthEntry) address = hit.address;
+        if (!truthPostal && !truthEntry && hit.postal) postal = hit.postal;
         geocoded++;
         const km = haversineKm(curatedLat, curatedLng, lat, lng);
         if (km > 0.2) drift.push({ name, km });
@@ -578,7 +618,7 @@ async function buildSchools(): Promise<School[]> {
     const intake = 200 + Math.floor(rng() * 130);
 
     schools.push({
-      id: makeId(name, usedIds),
+      id,
       code: 7001 + i,
       name,
       short: makeShort(name),
@@ -630,19 +670,27 @@ function buildPostalSectors() {
 
 // --- write -------------------------------------------------------------------
 
-const dataDir = join(import.meta.dirname, "..", "data");
-mkdirSync(dataDir, { recursive: true });
+export { SCHOOL_DEFS, REGIONS, makeId, makeShort };
+export type { Def, Tier };
 
-const schools = await buildSchools();
-const sectors = buildPostalSectors();
+if ((import.meta as { main?: boolean }).main) {
+  const dataDir = join(import.meta.dirname, "..", "data");
+  mkdirSync(dataDir, { recursive: true });
 
-writeFileSync(join(dataDir, "schools.json"), JSON.stringify(schools, null, 2) + "\n");
-writeFileSync(
-  join(dataDir, "postal_sectors.json"),
-  JSON.stringify(sectors, null, 2) + "\n",
-);
+  const schools = await buildSchools();
+  const sectors = buildPostalSectors();
 
-console.log(
-  `Wrote ${schools.length} schools across ${Object.keys(REGIONS).length} regions, ` +
-    `${Object.keys(sectors).length} postal sectors.`,
-);
+  writeFileSync(
+    join(dataDir, "schools.json"),
+    JSON.stringify(schools, null, 2) + "\n",
+  );
+  writeFileSync(
+    join(dataDir, "postal_sectors.json"),
+    JSON.stringify(sectors, null, 2) + "\n",
+  );
+
+  console.log(
+    `Wrote ${schools.length} schools across ${Object.keys(REGIONS).length} regions, ` +
+      `${Object.keys(sectors).length} postal sectors.`,
+  );
+}

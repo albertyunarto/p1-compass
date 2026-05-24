@@ -1,0 +1,1242 @@
+{
+  "cantonment-primary-school": {
+    "postal": "088256",
+    "address": "1 Cantonment Close, Singapore 088256",
+    "lat": 1.275505,
+    "lng": 103.839923,
+    "matchedName": "CANTONMENT PRIMARY SCHOOL"
+  },
+  "river-valley-primary": {
+    "postal": "237993",
+    "address": "2 River Valley Green, Singapore 237993",
+    "lat": 1.294183,
+    "lng": 103.836019,
+    "matchedName": "RIVER VALLEY PRIMARY SCHOOL"
+  },
+  "radin-mas-primary": {
+    "postal": "099840",
+    "address": "1 Bukit Purmei Avenue, Singapore 099840",
+    "lat": 1.274962,
+    "lng": 103.82418,
+    "matchedName": "RADIN MAS PRIMARY SCHOOL"
+  },
+  "gan-eng-seng": {
+    "postal": "158901",
+    "address": "100 Redhill Close, Singapore 158901",
+    "lat": 1.285955,
+    "lng": 103.815228,
+    "matchedName": "GAN ENG SENG PRIMARY SCHOOL"
+  },
+  "zhangde-primary-school": {
+    "postal": "169485",
+    "address": "51 Jalan Membina, Singapore 169485",
+    "lat": 1.284498,
+    "lng": 103.826149,
+    "matchedName": "ZHANGDE PRIMARY SCHOOL"
+  },
+  "chij-kellock": {
+    "postal": "099757",
+    "address": "1 Bukit Teresa Road, Singapore 099757",
+    "lat": 1.274845,
+    "lng": 103.82807,
+    "matchedName": "CHIJ (KELLOCK)"
+  },
+  "blangah-rise-primary": {
+    "postal": "109100",
+    "address": "91 Telok Blangah Heights, Singapore 109100",
+    "lat": 1.27613,
+    "lng": 103.808639,
+    "matchedName": "BLANGAH RISE PRIMARY SCHOOL"
+  },
+  "alexandra-primary-school": {
+    "postal": "159016",
+    "address": "2a Prince Charles Crescent, Singapore 159016",
+    "lat": 1.291299,
+    "lng": 103.823941,
+    "matchedName": "ALEXANDRA PRIMARY SCHOOL"
+  },
+  "queenstown-primary-school": {
+    "postal": "149303",
+    "address": "310 Margaret Drive, Singapore 149303",
+    "lat": 1.295988,
+    "lng": 103.807902,
+    "matchedName": "QUEENSTOWN PRIMARY SCHOOL"
+  },
+  "new-town-primary": {
+    "postal": "148812",
+    "address": "300 Tanglin Halt Road, Singapore 148812",
+    "lat": 1.299811,
+    "lng": 103.799965,
+    "matchedName": "NEW TOWN PRIMARY SCHOOL"
+  },
+  "fairfield-methodist-school": {
+    "postal": "139648",
+    "address": "100 Dover Road, Singapore 139648",
+    "lat": 1.300799,
+    "lng": 103.785692,
+    "matchedName": "FAIRFIELD METHODIST SCHOOL (PRIMARY)"
+  },
+  "clementi-primary-school": {
+    "postal": "129903",
+    "address": "8 Clementi Avenue 3, Singapore 129903",
+    "lat": 1.315809,
+    "lng": 103.763055,
+    "matchedName": "CLEMENTI PRIMARY SCHOOL"
+  },
+  "nan-hua-primary": {
+    "postal": "128806",
+    "address": "30 Jalan Lempeng, Singapore 128806",
+    "lat": 1.319837,
+    "lng": 103.761404,
+    "matchedName": "NAN HUA PRIMARY SCHOOL (U/C)"
+  },
+  "pei-tong-primary": {
+    "postal": "129857",
+    "address": "15 Clementi Avenue 5, Singapore 129857",
+    "lat": 1.316148,
+    "lng": 103.767576,
+    "matchedName": "PEI TONG PRIMARY SCHOOL"
+  },
+  "qifa-primary-school": {
+    "postal": "128104",
+    "address": "50 West Coast Avenue, Singapore 128104",
+    "lat": 1.312622,
+    "lng": 103.75703,
+    "matchedName": "QIFA PRIMARY SCHOOL"
+  },
+  "henry-park-primary": {
+    "postal": "278790",
+    "address": "1 Holland Grove Road, Singapore 278790",
+    "lat": 1.316726,
+    "lng": 103.784208,
+    "matchedName": "HENRY PARK PRIMARY SCHOOL"
+  },
+  "nanyang-primary-school": {
+    "postal": "268097",
+    "address": "52 King'S Road, Singapore 268097",
+    "lat": 1.321246,
+    "lng": 103.807795,
+    "matchedName": "NANYANG PRIMARY SCHOOL"
+  },
+  "raffles-girls-primary": {
+    "postal": "289072",
+    "address": "21 Hillcrest Road, Singapore 289072",
+    "lat": 1.330074,
+    "lng": 103.806221,
+    "matchedName": "RAFFLES GIRLS' PRIMARY SCHOOL"
+  },
+  "methodist-girls-school": {
+    "postal": "599986",
+    "address": "11 Blackmore Drive, Singapore 599986",
+    "lat": 1.332863,
+    "lng": 103.783363,
+    "matchedName": "METHODIST GIRLS' SCHOOL"
+  },
+  "pei-hwa-presbyterian": {
+    "postal": "597610",
+    "address": "7 Pei Wah Avenue, Singapore 597610",
+    "lat": 1.338055,
+    "lng": 103.776108,
+    "matchedName": "PEI HWA PRESBYTERIAN PRIMARY SCHOOL"
+  },
+  "bukit-timah-primary": {
+    "postal": "598112",
+    "address": "111 Lorong Kismis, Singapore 598112",
+    "lat": 1.33775,
+    "lng": 103.766855,
+    "matchedName": "BUKIT TIMAH PRIMARY SCHOOL"
+  },
+  "anglo-chinese-school": {
+    "postal": "309918",
+    "address": "50 Barker Road, Singapore 309918",
+    "lat": 1.318719,
+    "lng": 103.835345,
+    "matchedName": "ANGLO-CHINESE SCHOOL (PRIMARY)"
+  },
+  "anglo-chinese-school-2": {
+    "postal": "227988",
+    "address": "16 Winstedt Road, Singapore 227988",
+    "lat": 1.309321,
+    "lng": 103.840644,
+    "matchedName": "ANGLO-CHINESE SCHOOL (JUNIOR)"
+  },
+  "singapore-chinese-girls": {
+    "postal": "309434",
+    "address": "60 Dunearn Road, Singapore 309434",
+    "lat": 1.320463,
+    "lng": 103.829944,
+    "matchedName": "SINGAPORE CHINESE GIRLS' PRIMARY SCHOOL (JAN 2018 - DEC 2019)"
+  },
+  "st-joseph-s": {
+    "postal": "309331",
+    "address": "3 Essex Road, Singapore 309331",
+    "lat": 1.317702,
+    "lng": 103.84567,
+    "matchedName": "SAINT JOSEPH'S INSTITUTION JUNIOR"
+  },
+  "chij-primary-toa": {
+    "postal": "319765",
+    "address": "628 Lorong 1 Toa Payoh, Singapore 319765",
+    "lat": 1.332818,
+    "lng": 103.841918,
+    "matchedName": "CHIJ PRIMARY (TOA PAYOH)"
+  },
+  "first-toa-payoh": {
+    "postal": "319252",
+    "address": "7 Lorong 8 Toa Payoh, Singapore 319252",
+    "lat": 1.340526,
+    "lng": 103.855668,
+    "matchedName": "FIRST TOA PAYOH PRIMARY SCHOOL"
+  },
+  "pei-chun-public": {
+    "postal": "319320",
+    "address": "16 Lorong 7 Toa Payoh, Singapore 319320",
+    "lat": 1.337289,
+    "lng": 103.855473,
+    "matchedName": "PEI CHUN PUBLIC SCHOOL"
+  },
+  "kheng-cheng-school": {
+    "postal": "319580",
+    "address": "15 Lorong 3 Toa Payoh, Singapore 319580",
+    "lat": 1.337408,
+    "lng": 103.847761,
+    "matchedName": "KHENG CHENG SCHOOL"
+  },
+  "hong-wen-school": {
+    "postal": "327829",
+    "address": "30 Towner Road, Singapore 327829",
+    "lat": 1.321689,
+    "lng": 103.857652,
+    "matchedName": "HONG WEN SCHOOL"
+  },
+  "bendemeer-primary-school": {
+    "postal": "339948",
+    "address": "91 Bendemeer Road, Singapore 339948",
+    "lat": 1.322208,
+    "lng": 103.865351,
+    "matchedName": "BENDEMEER PRIMARY SCHOOL"
+  },
+  "st-andrew-s": {
+    "postal": "359337",
+    "address": "2 Francis Thomas Drive, Singapore 359337",
+    "lat": 1.331389,
+    "lng": 103.865129,
+    "matchedName": "SAINT ANDREW'S JUNIOR SCHOOL"
+  },
+  "farrer-park-primary": {
+    "postal": "217567",
+    "address": "2 Farrer Park Road, Singapore 217567",
+    "lat": 1.312504,
+    "lng": 103.850903,
+    "matchedName": "FARRER PARK PRIMARY SCHOOL"
+  },
+  "stamford-primary-school": {
+    "postal": "198423",
+    "address": "1 Victoria Lane, Singapore 198423",
+    "lat": 1.304091,
+    "lng": 103.857393,
+    "matchedName": "STAMFORD PRIMARY SCHOOL"
+  },
+  "catholic-high-school": {
+    "postal": "579767",
+    "address": "9 Bishan Street 22, Singapore 579767",
+    "lat": 1.354789,
+    "lng": 103.844934,
+    "matchedName": "CATHOLIC HIGH SCHOOL"
+  },
+  "kuo-chuan-presbyterian": {
+    "postal": "579793",
+    "address": "8 Bishan Street 13, Singapore 579793",
+    "lat": 1.349384,
+    "lng": 103.855171,
+    "matchedName": "KUO CHUAN PRESBYTERIAN PRIMARY SCHOOL"
+  },
+  "guangyang-primary-school": {
+    "postal": "579806",
+    "address": "6 Bishan Street 12, Singapore 579806",
+    "lat": 1.346043,
+    "lng": 103.849285,
+    "matchedName": "GUANGYANG PRIMARY SCHOOL"
+  },
+  "marymount-convent-school": {
+    "postal": "297754",
+    "address": "20 Marymount Road, Singapore 297754",
+    "lat": 1.340427,
+    "lng": 103.839899,
+    "matchedName": "MARYMOUNT CONVENT SCHOOL"
+  },
+  "zhonghua-primary-school": {
+    "postal": "556095",
+    "address": "12 Serangoon Avenue 4, Singapore 556095",
+    "lat": 1.360167,
+    "lng": 103.869696,
+    "matchedName": "ZHONGHUA PRIMARY SCHOOL"
+  },
+  "ai-tong-school": {
+    "postal": "579646",
+    "address": "100 Bright Hill Drive, Singapore 579646",
+    "lat": 1.360736,
+    "lng": 103.833076,
+    "matchedName": "AI TONG SCHOOL"
+  },
+  "anderson-primary-school": {
+    "postal": "569785",
+    "address": "19 Ang Mo Kio Avenue 9, Singapore 569785",
+    "lat": 1.384666,
+    "lng": 103.841238,
+    "matchedName": "ANDERSON PRIMARY SCHOOL"
+  },
+  "chij-st-nicholas": {
+    "postal": "569405",
+    "address": "501 Ang Mo Kio Street 13, Singapore 569405",
+    "lat": 1.37373,
+    "lng": 103.834309,
+    "matchedName": "CHIJ SAINT NICHOLAS GIRLS' SCHOOL"
+  },
+  "mayflower-primary-school": {
+    "postal": "569878",
+    "address": "200 Ang Mo Kio Avenue 5, Singapore 569878",
+    "lat": 1.376399,
+    "lng": 103.843166,
+    "matchedName": "MAYFLOWER PRIMARY SCHOOL (U/C)"
+  },
+  "jing-shan-primary": {
+    "postal": "569228",
+    "address": "5 Ang Mo Kio Street 52, Singapore 569228",
+    "lat": 1.371893,
+    "lng": 103.851811,
+    "matchedName": "JING SHAN PRIMARY SCHOOL"
+  },
+  "townsville-primary-school": {
+    "postal": "569730",
+    "address": "3 Ang Mo Kio Avenue 10, Singapore 569730",
+    "lat": 1.360363,
+    "lng": 103.854186,
+    "matchedName": "TOWNSVILLE PRIMARY SCHOOL"
+  },
+  "teck-ghee-primary": {
+    "postal": "569299",
+    "address": "1 Ang Mo Kio Street 32, Singapore 569299",
+    "lat": 1.365201,
+    "lng": 103.851032,
+    "matchedName": "TECK GHEE PRIMARY SCHOOL"
+  },
+  "yio-chu-kang": {
+    "postal": "538720",
+    "address": "1 Hougang Street 51, Singapore 538720",
+    "lat": 1.377823,
+    "lng": 103.885569,
+    "matchedName": "YIO CHU KANG PRIMARY SCHOOL"
+  },
+  "rosyth-school": {
+    "postal": "555855",
+    "address": "21 Serangoon North Avenue 4, Singapore 555855",
+    "lat": 1.372916,
+    "lng": 103.874693,
+    "matchedName": "ROSYTH SCHOOL"
+  },
+  "yangzheng-primary-school": {
+    "postal": "556108",
+    "address": "15 Serangoon Avenue 3, Singapore 556108",
+    "lat": 1.348972,
+    "lng": 103.868363,
+    "matchedName": "YANGZHENG PRIMARY SCHOOL"
+  },
+  "maris-stella-high": {
+    "postal": "368051",
+    "address": "25 Mount Vernon Road, Singapore 368051",
+    "lat": 1.341389,
+    "lng": 103.877814,
+    "matchedName": "MARIS STELLA HIGH SCHOOL"
+  },
+  "chij-our-lady": {
+    "postal": "558979",
+    "address": "2c Burghley Drive, Singapore 558979",
+    "lat": 1.357951,
+    "lng": 103.86425,
+    "matchedName": "CHIJ OUR LADY OF GOOD COUNSEL"
+  },
+  "st-gabriel-s": {
+    "postal": "556742",
+    "address": "220 Lorong Chuan, Singapore 556742",
+    "lat": 1.349246,
+    "lng": 103.862332,
+    "matchedName": "SAINT GABRIEL'S PRIMARY SCHOOL"
+  },
+  "holy-innocents-primary": {
+    "postal": "536451",
+    "address": "5 Lorong Low Koon, Singapore 536451",
+    "lat": 1.366738,
+    "lng": 103.893684,
+    "matchedName": "HOLY INNOCENTS' PRIMARY SCHOOL"
+  },
+  "hougang-primary-school": {
+    "postal": "534238",
+    "address": "1 Hougang Street 93, Singapore 534238",
+    "lat": 1.37804,
+    "lng": 103.881166,
+    "matchedName": "HOUGANG PRIMARY SCHOOL"
+  },
+  "montfort-junior-school": {
+    "postal": "538786",
+    "address": "52 Hougang Avenue 8, Singapore 538786",
+    "lat": 1.373938,
+    "lng": 103.889691,
+    "matchedName": "MONTFORT JUNIOR SCHOOL"
+  },
+  "xinghua-primary-school": {
+    "postal": "538882",
+    "address": "45 Hougang Avenue 1, Singapore 538882",
+    "lat": 1.357997,
+    "lng": 103.890216,
+    "matchedName": "XINGHUA PRIMARY SCHOOL"
+  },
+  "xinmin-primary-school": {
+    "postal": "538784",
+    "address": "9 Hougang Avenue 8, Singapore 538784",
+    "lat": 1.371415,
+    "lng": 103.883039,
+    "matchedName": "XINMIN PRIMARY SCHOOL"
+  },
+  "chij-our-lady-2": {
+    "postal": "534793",
+    "address": "1257 Upper Serangoon Road, Singapore 534793",
+    "lat": 1.373174,
+    "lng": 103.897659,
+    "matchedName": "CHIJ OUR LADY OF THE NATIVITY"
+  },
+  "paya-lebar-methodist": {
+    "postal": "536741",
+    "address": "298 Lorong Ah Soo, Singapore 536741",
+    "lat": 1.349842,
+    "lng": 103.884978,
+    "matchedName": "PAYA LEBAR METHODIST GIRLS' SCHOOL (PRIMARY)"
+  },
+  "anchor-green-primary": {
+    "postal": "544969",
+    "address": "31 Anchorvale Drive, Singapore 544969",
+    "lat": 1.390662,
+    "lng": 103.887256,
+    "matchedName": "ANCHOR GREEN PRIMARY SCHOOL"
+  },
+  "compassvale-primary-school": {
+    "postal": "545091",
+    "address": "21 Compassvale Street, Singapore 545091",
+    "lat": 1.39453,
+    "lng": 103.897865,
+    "matchedName": "COMPASSVALE PRIMARY SCHOOL"
+  },
+  "fern-green-primary": {
+    "postal": "797538",
+    "address": "70 Fernvale Link, Singapore 797538",
+    "lat": 1.397621,
+    "lng": 103.88021,
+    "matchedName": "FERN GREEN PRIMARY SCHOOL"
+  },
+  "nan-chiau-primary": {
+    "postal": "545080",
+    "address": "50 Anchorvale Link, Singapore 545080",
+    "lat": 1.392065,
+    "lng": 103.890925,
+    "matchedName": "NAN CHIAU PRIMARY SCHOOL"
+  },
+  "north-spring-primary": {
+    "postal": "545088",
+    "address": "1 Rivervale Street, Singapore 545088",
+    "lat": 1.387528,
+    "lng": 103.903513,
+    "matchedName": "NORTH SPRING PRIMARY SCHOOL"
+  },
+  "north-vista-primary": {
+    "postal": "544974",
+    "address": "20 Compassvale Link, Singapore 544974",
+    "lat": 1.382893,
+    "lng": 103.895854,
+    "matchedName": "NORTH VISTA PRIMARY SCHOOL"
+  },
+  "palm-view-primary": {
+    "postal": "544822",
+    "address": "150 Compassvale Bow, Singapore 544822",
+    "lat": 1.383841,
+    "lng": 103.891215,
+    "matchedName": "PALM VIEW PRIMARY SCHOOL"
+  },
+  "sengkang-green-primary": {
+    "postal": "797636",
+    "address": "15 Fernvale Road, Singapore 797636",
+    "lat": 1.392839,
+    "lng": 103.875159,
+    "matchedName": "SENGKANG GREEN PRIMARY SCHOOL"
+  },
+  "springdale-primary-school": {
+    "postal": "544799",
+    "address": "71 Anchorvale Link, Singapore 544799",
+    "lat": 1.394958,
+    "lng": 103.889897,
+    "matchedName": "SPRINGDALE PRIMARY SCHOOL"
+  },
+  "edgefield-primary-school": {
+    "postal": "828869",
+    "address": "41 Edgefield Plains, Singapore 828869",
+    "lat": 1.400298,
+    "lng": 103.907431,
+    "matchedName": "EDGEFIELD PRIMARY SCHOOL"
+  },
+  "greendale-primary-school": {
+    "postal": "828848",
+    "address": "50 Edgedale Plains, Singapore 828848",
+    "lat": 1.396403,
+    "lng": 103.912566,
+    "matchedName": "GREENDALE PRIMARY SCHOOL"
+  },
+  "horizon-primary-school": {
+    "postal": "828819",
+    "address": "61 Edgedale Plains, Singapore 828819",
+    "lat": 1.400009,
+    "lng": 103.913072,
+    "matchedName": "HORIZON PRIMARY SCHOOL"
+  },
+  "mee-toh-school": {
+    "postal": "828867",
+    "address": "21 Edgedale Plains, Singapore 828867",
+    "lat": 1.394854,
+    "lng": 103.908573,
+    "matchedName": "MEE TOH SCHOOL"
+  },
+  "oasis-primary-school": {
+    "postal": "828716",
+    "address": "71 Edgefield Plains, Singapore 828716",
+    "lat": 1.404409,
+    "lng": 103.910996,
+    "matchedName": "OASIS PRIMARY SCHOOL"
+  },
+  "punggol-cove-primary": {
+    "postal": "828674",
+    "address": "52 Sumang Walk, Singapore 828674",
+    "lat": 1.411564,
+    "lng": 103.89897,
+    "matchedName": "PUNGGOL COVE PRIMARY SCHOOL"
+  },
+  "punggol-green-primary": {
+    "postal": "828772",
+    "address": "98 Punggol Walk, Singapore 828772",
+    "lat": 1.401805,
+    "lng": 103.898773,
+    "matchedName": "PUNGGOL GREEN PRIMARY SCHOOL"
+  },
+  "punggol-primary-school": {
+    "postal": "538787",
+    "address": "61 Hougang Avenue 8, Singapore 538787",
+    "lat": 1.378201,
+    "lng": 103.894753,
+    "matchedName": "PUNGGOL PRIMARY SCHOOL"
+  },
+  "punggol-view-primary": {
+    "postal": "828845",
+    "address": "9 Punggol Place, Singapore 828845",
+    "lat": 1.405333,
+    "lng": 103.905387,
+    "matchedName": "PUNGGOL VIEW PRIMARY SCHOOL"
+  },
+  "valour-primary-school": {
+    "postal": "828728",
+    "address": "49 Punggol Central, Singapore 828728",
+    "lat": 1.406871,
+    "lng": 103.898911,
+    "matchedName": "VALOUR PRIMARY SCHOOL (U/C)"
+  },
+  "waterway-primary-school": {
+    "postal": "828802",
+    "address": "70 Punggol Drive, Singapore 828802",
+    "lat": 1.399154,
+    "lng": 103.918671,
+    "matchedName": "WATERWAY PRIMARY SCHOOL"
+  },
+  "angsana-primary-school": {
+    "postal": "529366",
+    "address": "3 Tampines Street 22, Singapore 529366",
+    "lat": 1.348571,
+    "lng": 103.951673,
+    "matchedName": "ANGSANA PRIMARY SCHOOL"
+  },
+  "chongzheng-primary-school": {
+    "postal": "529392",
+    "address": "1 Tampines Street 21, Singapore 529392",
+    "lat": 1.350595,
+    "lng": 103.951225,
+    "matchedName": "CHONGZHENG PRIMARY SCHOOL"
+  },
+  "gongshang-primary-school": {
+    "postal": "529176",
+    "address": "1 Tampines Street 42, Singapore 529176",
+    "lat": 1.357349,
+    "lng": 103.948872,
+    "matchedName": "GONGSHANG PRIMARY SCHOOL"
+  },
+  "junyuan-primary-school": {
+    "postal": "528906",
+    "address": "2 Tampines Street 91, Singapore 528906",
+    "lat": 1.347892,
+    "lng": 103.939647,
+    "matchedName": "JUNYUAN PRIMARY SCHOOL"
+  },
+  "poi-ching-school": {
+    "postal": "529067",
+    "address": "21 Tampines Street 71, Singapore 529067",
+    "lat": 1.358087,
+    "lng": 103.935353,
+    "matchedName": "POI CHING SCHOOL"
+  },
+  "st-hilda-s": {
+    "postal": "529706",
+    "address": "2 Tampines Avenue 3, Singapore 529706",
+    "lat": 1.349407,
+    "lng": 103.936787,
+    "matchedName": "SAINT HILDA'S PRIMARY SCHOOL"
+  },
+  "tampines-primary-school": {
+    "postal": "529426",
+    "address": "250 Tampines Street 12, Singapore 529426",
+    "lat": 1.350486,
+    "lng": 103.943573,
+    "matchedName": "TAMPINES PRIMARY SCHOOL"
+  },
+  "tampines-north-primary": {
+    "postal": "529565",
+    "address": "30 Tampines Avenue 9, Singapore 529565",
+    "lat": 1.360692,
+    "lng": 103.948937,
+    "matchedName": "TAMPINES NORTH PRIMARY SCHOOL"
+  },
+  "east-spring-primary": {
+    "postal": "529258",
+    "address": "31 Tampines Street 33, Singapore 529258",
+    "lat": 1.353041,
+    "lng": 103.961797,
+    "matchedName": "EAST SPRING PRIMARY SCHOOL"
+  },
+  "yumin-primary-school": {
+    "postal": "529393",
+    "address": "3 Tampines Street 21, Singapore 529393",
+    "lat": 1.35146,
+    "lng": 103.950716,
+    "matchedName": "YUMIN PRIMARY SCHOOL"
+  },
+  "casuarina-primary-school": {
+    "postal": "518935",
+    "address": "30 Pasir Ris Street 41, Singapore 518935",
+    "lat": 1.372789,
+    "lng": 103.957291,
+    "matchedName": "CASUARINA PRIMARY SCHOOL"
+  },
+  "elias-park-primary": {
+    "postal": "518866",
+    "address": "11 Pasir Ris Street 52, Singapore 518866",
+    "lat": 1.375033,
+    "lng": 103.945358,
+    "matchedName": "ELIAS PARK PRIMARY SCHOOL"
+  },
+  "meridian-primary-school": {
+    "postal": "518798",
+    "address": "20 Pasir Ris Street 71, Singapore 518798",
+    "lat": 1.375971,
+    "lng": 103.935143,
+    "matchedName": "MERIDIAN PRIMARY SCHOOL"
+  },
+  "park-view-primary": {
+    "postal": "519524",
+    "address": "60 Pasir Ris Drive 1, Singapore 519524",
+    "lat": 1.37777,
+    "lng": 103.939689,
+    "matchedName": "PARK VIEW PRIMARY SCHOOL"
+  },
+  "pasir-ris-primary": {
+    "postal": "518968",
+    "address": "5 Pasir Ris Street 21, Singapore 518968",
+    "lat": 1.372309,
+    "lng": 103.962919,
+    "matchedName": "PASIR RIS PRIMARY SCHOOL"
+  },
+  "white-sands-primary": {
+    "postal": "519075",
+    "address": "2 Pasir Ris Street 11, Singapore 519075",
+    "lat": 1.365518,
+    "lng": 103.960948,
+    "matchedName": "WHITE SANDS PRIMARY SCHOOL"
+  },
+  "changkat-primary-school": {
+    "postal": "529896",
+    "address": "11 Simei Street 3, Singapore 529896",
+    "lat": 1.340208,
+    "lng": 103.952183,
+    "matchedName": "CHANGKAT PRIMARY SCHOOL"
+  },
+  "bedok-green-primary": {
+    "postal": "469317",
+    "address": "1 Bedok South Avenue 2, Singapore 469317",
+    "lat": 1.323996,
+    "lng": 103.937745,
+    "matchedName": "BEDOK GREEN PRIMARY SCHOOL"
+  },
+  "fengshan-primary-school": {
+    "postal": "469680",
+    "address": "307 Bedok North Road, Singapore 469680",
+    "lat": 1.330325,
+    "lng": 103.931885,
+    "matchedName": "FENGSHAN PRIMARY SCHOOL"
+  },
+  "red-swastika-school": {
+    "postal": "469719",
+    "address": "350 Bedok North Avenue 3, Singapore 469719",
+    "lat": 1.333494,
+    "lng": 103.934375,
+    "matchedName": "RED SWASTIKA SCHOOL"
+  },
+  "st-stephen-s": {
+    "postal": "455789",
+    "address": "20 Siglap View, Singapore 455789",
+    "lat": 1.318816,
+    "lng": 103.917526,
+    "matchedName": "SAINT STEPHEN'S SCHOOL"
+  },
+  "temasek-primary-school": {
+    "postal": "469300",
+    "address": "501 Bedok South Avenue 3, Singapore 469300",
+    "lat": 1.317716,
+    "lng": 103.945695,
+    "matchedName": "TEMASEK PRIMARY SCHOOL"
+  },
+  "yu-neng-primary": {
+    "postal": "469623",
+    "address": "56 Bedok North Street 3, Singapore 469623",
+    "lat": 1.333904,
+    "lng": 103.932034,
+    "matchedName": "YU NENG PRIMARY SCHOOL"
+  },
+  "damai-primary-school": {
+    "postal": "479226",
+    "address": "52 Bedok Reservoir Crescent, Singapore 479226",
+    "lat": 1.335351,
+    "lng": 103.921268,
+    "matchedName": "DAMAI PRIMARY SCHOOL"
+  },
+  "opera-estate-primary": {
+    "postal": "458436",
+    "address": "48 Fidelio Street, Singapore 458436",
+    "lat": 1.319969,
+    "lng": 103.923753,
+    "matchedName": "OPERA ESTATE PRIMARY SCHOOL"
+  },
+  "tao-nan-school": {
+    "postal": "449761",
+    "address": "49 Marine Crescent, Singapore 449761",
+    "lat": 1.304632,
+    "lng": 103.911204,
+    "matchedName": "TAO NAN SCHOOL"
+  },
+  "kong-hwa-school": {
+    "postal": "399772",
+    "address": "350 Guillemard Road, Singapore 399772",
+    "lat": 1.311114,
+    "lng": 103.888209,
+    "matchedName": "KONG HWA SCHOOL"
+  },
+  "haig-girls-school": {
+    "postal": "427072",
+    "address": "51 Koon Seng Road, Singapore 427072",
+    "lat": 1.311772,
+    "lng": 103.902655,
+    "matchedName": "HAIG GIRLS' SCHOOL"
+  },
+  "chij-katong-primary": {
+    "postal": "424821",
+    "address": "17 Martia Road, Singapore 424821",
+    "lat": 1.306527,
+    "lng": 103.910922,
+    "matchedName": "CHIJ (KATONG) PRIMARY"
+  },
+  "tanjong-katong-primary": {
+    "postal": "437259",
+    "address": "10 Seraya Road, Singapore 437259",
+    "lat": 1.305307,
+    "lng": 103.900532,
+    "matchedName": "TANJONG KATONG PRIMARY SCHOOL (U/C)"
+  },
+  "ngee-ann-primary": {
+    "postal": "449149",
+    "address": "344 Marine Terrace, Singapore 449149",
+    "lat": 1.30554,
+    "lng": 103.917755,
+    "matchedName": "NGEE ANN PRIMARY SCHOOL"
+  },
+  "telok-kurau-primary": {
+    "postal": "479239",
+    "address": "50 Bedok Reservoir Road, Singapore 479239",
+    "lat": 1.330913,
+    "lng": 103.911349,
+    "matchedName": "TELOK KURAU PRIMARY SCHOOL"
+  },
+  "geylang-methodist-school": {
+    "postal": "389706",
+    "address": "4 Geylang East Central, Singapore 389706",
+    "lat": 1.317593,
+    "lng": 103.883893,
+    "matchedName": "GEYLANG METHODIST SCHOOL (PRIMARY)"
+  },
+  "cedar-primary-school": {
+    "postal": "349700",
+    "address": "15 Cedar Avenue, Singapore 349700",
+    "lat": 1.335641,
+    "lng": 103.875491,
+    "matchedName": "CEDAR PRIMARY SCHOOL"
+  },
+  "canossa-catholic-primary": {
+    "postal": "387621",
+    "address": "1 Sallim Road, Singapore 387621",
+    "lat": 1.326511,
+    "lng": 103.881757,
+    "matchedName": "CANOSSA CATHOLIC PRIMARY SCHOOL"
+  },
+  "maha-bodhi-school": {
+    "postal": "408931",
+    "address": "10 Ubi Avenue 1, Singapore 408931",
+    "lat": 1.328408,
+    "lng": 103.901528,
+    "matchedName": "MAHA BODHI SCHOOL"
+  },
+  "eunos-primary-school": {
+    "postal": "419529",
+    "address": "95 Jalan Eunos, Singapore 419529",
+    "lat": 1.324388,
+    "lng": 103.904375,
+    "matchedName": "EUNOS PRIMARY SCHOOL"
+  },
+  "fuhua-primary-school": {
+    "postal": "609647",
+    "address": "65 Jurong East Street 13, Singapore 609647",
+    "lat": 1.336404,
+    "lng": 103.736669,
+    "matchedName": "FUHUA PRIMARY SCHOOL"
+  },
+  "jurong-primary-school": {
+    "postal": "609476",
+    "address": "320 Jurong East Street 32, Singapore 609476",
+    "lat": 1.348685,
+    "lng": 103.732975,
+    "matchedName": "JURONG PRIMARY SCHOOL"
+  },
+  "yuhua-primary-school": {
+    "postal": "609558",
+    "address": "158 Jurong East Street 24, Singapore 609558",
+    "lat": 1.34292,
+    "lng": 103.740861,
+    "matchedName": "YUHUA PRIMARY SCHOOL"
+  },
+  "shuqun-primary-school": {
+    "postal": "649332",
+    "address": "8 Jurong West Street 51, Singapore 649332",
+    "lat": 1.347568,
+    "lng": 103.721558,
+    "matchedName": "SHUQUN PRIMARY SCHOOL"
+  },
+  "boon-lay-garden": {
+    "postal": "649930",
+    "address": "20 Boon Lay Drive, Singapore 649930",
+    "lat": 1.342847,
+    "lng": 103.712969,
+    "matchedName": "BOON LAY GARDEN PRIMARY SCHOOL"
+  },
+  "corporation-primary-school": {
+    "postal": "648347",
+    "address": "31 Jurong West Street 24, Singapore 648347",
+    "lat": 1.351485,
+    "lng": 103.707578,
+    "matchedName": "CORPORATION PRIMARY SCHOOL"
+  },
+  "frontier-primary-school": {
+    "postal": "648200",
+    "address": "20 Jurong West Street 61, Singapore 648200",
+    "lat": 1.336643,
+    "lng": 103.699683,
+    "matchedName": "FRONTIER PRIMARY SCHOOL"
+  },
+  "juying-primary-school": {
+    "postal": "649037",
+    "address": "31 Jurong West Street 91, Singapore 649037",
+    "lat": 1.338951,
+    "lng": 103.687833,
+    "matchedName": "JUYING PRIMARY SCHOOL"
+  },
+  "lakeside-primary-school": {
+    "postal": "618310",
+    "address": "161 Corporation Walk, Singapore 618310",
+    "lat": 1.338376,
+    "lng": 103.718051,
+    "matchedName": "LAKESIDE PRIMARY SCHOOL"
+  },
+  "pioneer-primary-school": {
+    "postal": "649076",
+    "address": "23 Jurong West Street 81, Singapore 649076",
+    "lat": 1.348721,
+    "lng": 103.694868,
+    "matchedName": "PIONEER PRIMARY SCHOOL"
+  },
+  "rulang-primary-school": {
+    "postal": "649295",
+    "address": "6 Jurong West Street 52, Singapore 649295",
+    "lat": 1.346844,
+    "lng": 103.71901,
+    "matchedName": "RULANG PRIMARY SCHOOL"
+  },
+  "west-grove-primary": {
+    "postal": "649223",
+    "address": "1 Jurong West Street 72, Singapore 649223",
+    "lat": 1.344712,
+    "lng": 103.698964,
+    "matchedName": "WEST GROVE PRIMARY SCHOOL"
+  },
+  "westwood-primary-school": {
+    "postal": "649188",
+    "address": "1 Jurong West Street 73, Singapore 649188",
+    "lat": 1.347155,
+    "lng": 103.700527,
+    "matchedName": "WESTWOOD PRIMARY SCHOOL"
+  },
+  "xingnan-primary-school": {
+    "postal": "649036",
+    "address": "5 Jurong West Street 91, Singapore 649036",
+    "lat": 1.342685,
+    "lng": 103.687724,
+    "matchedName": "XINGNAN PRIMARY SCHOOL"
+  },
+  "jurong-west-primary": {
+    "postal": "648368",
+    "address": "30 Jurong West Street 61, Singapore 648368",
+    "lat": 1.339244,
+    "lng": 103.698896,
+    "matchedName": "JURONG WEST PRIMARY SCHOOL"
+  },
+  "bukit-view-primary": {
+    "postal": "659634",
+    "address": "18 Bukit Batok Street 21, Singapore 659634",
+    "lat": 1.345945,
+    "lng": 103.753589,
+    "matchedName": "BUKIT VIEW PRIMARY SCHOOL"
+  },
+  "dazhong-primary-school": {
+    "postal": "659441",
+    "address": "35 Bukit Batok Street 31, Singapore 659441",
+    "lat": 1.359059,
+    "lng": 103.748161,
+    "matchedName": "DAZHONG PRIMARY SCHOOL"
+  },
+  "keming-primary-school": {
+    "postal": "659762",
+    "address": "90 Bukit Batok East Avenue 6, Singapore 659762",
+    "lat": 1.345245,
+    "lng": 103.756264,
+    "matchedName": "KEMING PRIMARY SCHOOL"
+  },
+  "lianhua-primary-school": {
+    "postal": "659243",
+    "address": "2 Bukit Batok Street 52, Singapore 659243",
+    "lat": 1.354155,
+    "lng": 103.75421,
+    "matchedName": "LIANHUA PRIMARY SCHOOL"
+  },
+  "princess-elizabeth-primary": {
+    "postal": "659163",
+    "address": "30 Bukit Batok West Avenue 3, Singapore 659163",
+    "lat": 1.349195,
+    "lng": 103.741,
+    "matchedName": "PRINCESS ELIZABETH PRIMARY SCHOOL"
+  },
+  "st-anthony-s": {
+    "postal": "659401",
+    "address": "30 Bukit Batok Street 32, Singapore 659401",
+    "lat": 1.364639,
+    "lng": 103.749294,
+    "matchedName": "SAINT ANTHONY'S PRIMARY SCHOOL"
+  },
+  "beacon-primary-school": {
+    "postal": "679944",
+    "address": "36 Bukit Panjang Ring Road, Singapore 679944",
+    "lat": 1.384237,
+    "lng": 103.773754,
+    "matchedName": "BEACON PRIMARY SCHOOL"
+  },
+  "bukit-panjang-primary": {
+    "postal": "679676",
+    "address": "109 Cashew Road, Singapore 679676",
+    "lat": 1.373472,
+    "lng": 103.769317,
+    "matchedName": "BUKIT PANJANG PRIMARY SCHOOL"
+  },
+  "chij-our-lady-3": {
+    "postal": "679287",
+    "address": "4 Chestnut Drive, Singapore 679287",
+    "lat": 1.366758,
+    "lng": 103.767695,
+    "matchedName": "CHIJ OUR LADY QUEEN OF PEACE"
+  },
+  "greenridge-primary-school": {
+    "postal": "677744",
+    "address": "11 Jelapang Road, Singapore 677744",
+    "lat": 1.385874,
+    "lng": 103.767815,
+    "matchedName": "GREENRIDGE PRIMARY SCHOOL"
+  },
+  "south-view-primary": {
+    "postal": "689762",
+    "address": "6 Choa Chu Kang Central, Singapore 689762",
+    "lat": 1.381767,
+    "lng": 103.74729,
+    "matchedName": "SOUTH VIEW PRIMARY SCHOOL"
+  },
+  "teck-whye-primary": {
+    "postal": "688261",
+    "address": "11 Teck Whye Walk, Singapore 688261",
+    "lat": 1.383558,
+    "lng": 103.753683,
+    "matchedName": "TECK WHYE PRIMARY SCHOOL"
+  },
+  "west-view-primary": {
+    "postal": "677742",
+    "address": "31 Senja Road, Singapore 677742",
+    "lat": 1.383591,
+    "lng": 103.760289,
+    "matchedName": "WEST VIEW PRIMARY SCHOOL"
+  },
+  "zhenghua-primary-school": {
+    "postal": "679002",
+    "address": "9 Fajar Road, Singapore 679002",
+    "lat": 1.379802,
+    "lng": 103.769171,
+    "matchedName": "ZHENGHUA PRIMARY SCHOOL"
+  },
+  "chua-chu-kang": {
+    "postal": "689905",
+    "address": "20 Choa Chu Kang Avenue 2, Singapore 689905",
+    "lat": 1.377743,
+    "lng": 103.741861,
+    "matchedName": "CHUA CHU KANG PRIMARY SCHOOL"
+  },
+  "concord-primary-school": {
+    "postal": "689814",
+    "address": "3 Choa Chu Kang Avenue 4, Singapore 689814",
+    "lat": 1.380412,
+    "lng": 103.736143,
+    "matchedName": "CONCORD PRIMARY SCHOOL"
+  },
+  "de-la-salle": {
+    "postal": "689285",
+    "address": "11 Choa Chu Kang Street 52, Singapore 689285",
+    "lat": 1.395072,
+    "lng": 103.743444,
+    "matchedName": "DE LA SALLE SCHOOL"
+  },
+  "kranji-primary-school": {
+    "postal": "689189",
+    "address": "11 Choa Chu Kang Street 54, Singapore 689189",
+    "lat": 1.39391,
+    "lng": 103.747415,
+    "matchedName": "KRANJI PRIMARY SCHOOL"
+  },
+  "unity-primary-school": {
+    "postal": "688268",
+    "address": "21 Choa Chu Kang Crescent, Singapore 688268",
+    "lat": 1.402823,
+    "lng": 103.746993,
+    "matchedName": "UNITY PRIMARY SCHOOL"
+  },
+  "yew-tee-primary": {
+    "postal": "689100",
+    "address": "10 Choa Chu Kang Street 64, Singapore 689100",
+    "lat": 1.396961,
+    "lng": 103.751195,
+    "matchedName": "YEW TEE PRIMARY SCHOOL"
+  },
+  "admiralty-primary-school": {
+    "postal": "738907",
+    "address": "11 Woodlands Circle, Singapore 738907",
+    "lat": 1.44268,
+    "lng": 103.800114,
+    "matchedName": "ADMIRALTY PRIMARY SCHOOL"
+  },
+  "evergreen-primary-school": {
+    "postal": "738908",
+    "address": "31 Woodlands Circle, Singapore 738908",
+    "lat": 1.444148,
+    "lng": 103.794545,
+    "matchedName": "EVERGREEN PRIMARY SCHOOL"
+  },
+  "fuchun-primary-school": {
+    "postal": "739063",
+    "address": "23 Woodlands Avenue 1, Singapore 739063",
+    "lat": 1.43064,
+    "lng": 103.778175,
+    "matchedName": "FUCHUN PRIMARY SCHOOL"
+  },
+  "greenwood-primary-school": {
+    "postal": "737942",
+    "address": "11 Woodlands Drive 62, Singapore 737942",
+    "lat": 1.44011,
+    "lng": 103.804629,
+    "matchedName": "GREENWOOD PRIMARY SCHOOL"
+  },
+  "innova-primary-school": {
+    "postal": "737888",
+    "address": "80 Woodlands Drive 17, Singapore 737888",
+    "lat": 1.429185,
+    "lng": 103.790557,
+    "matchedName": "INNOVA PRIMARY SCHOOL"
+  },
+  "marsiling-primary-school": {
+    "postal": "738927",
+    "address": "31 Woodlands Centre Road, Singapore 738927",
+    "lat": 1.434423,
+    "lng": 103.773698,
+    "matchedName": "MARSILING PRIMARY SCHOOL"
+  },
+  "qihua-primary-school": {
+    "postal": "738525",
+    "address": "5 Woodlands Street 81, Singapore 738525",
+    "lat": 1.442036,
+    "lng": 103.78834,
+    "matchedName": "QIHUA PRIMARY SCHOOL"
+  },
+  "riverside-primary-school": {
+    "postal": "737803",
+    "address": "110 Woodlands Crescent, Singapore 737803",
+    "lat": 1.447105,
+    "lng": 103.801921,
+    "matchedName": "RIVERSIDE PRIMARY SCHOOL"
+  },
+  "si-ling-primary": {
+    "postal": "739067",
+    "address": "61 Woodlands Avenue 1, Singapore 739067",
+    "lat": 1.4327,
+    "lng": 103.785779,
+    "matchedName": "SI LING PRIMARY SCHOOL"
+  },
+  "woodgrove-primary-school": {
+    "postal": "738079",
+    "address": "2 Woodlands Drive 14, Singapore 738079",
+    "lat": 1.433058,
+    "lng": 103.79039,
+    "matchedName": "WOODGROVE PRIMARY SCHOOL"
+  },
+  "woodlands-primary-school": {
+    "postal": "738853",
+    "address": "10 Woodlands Drive 50, Singapore 738853",
+    "lat": 1.436746,
+    "lng": 103.791772,
+    "matchedName": "WOODLANDS PRIMARY SCHOOL"
+  },
+  "woodlands-ring-primary": {
+    "postal": "738240",
+    "address": "11 Woodlands Ring Road, Singapore 738240",
+    "lat": 1.43477,
+    "lng": 103.797841,
+    "matchedName": "WOODLANDS RING PRIMARY SCHOOL"
+  },
+  "chongfu-school": {
+    "postal": "768959",
+    "address": "170 Yishun Avenue 6, Singapore 768959",
+    "lat": 1.438462,
+    "lng": 103.839071,
+    "matchedName": "CHONGFU SCHOOL"
+  },
+  "huamin-primary-school": {
+    "postal": "768857",
+    "address": "21 Yishun Avenue 11, Singapore 768857",
+    "lat": 1.426998,
+    "lng": 103.84421,
+    "matchedName": "HUAMIN PRIMARY SCHOOL (U/C)"
+  },
+  "jiemin-primary-school": {
+    "postal": "768515",
+    "address": "2 Yishun Street 71, Singapore 768515",
+    "lat": 1.427647,
+    "lng": 103.83048,
+    "matchedName": "JIEMIN PRIMARY SCHOOL"
+  },
+  "north-view-primary": {
+    "postal": "768960",
+    "address": "210 Yishun Avenue 6, Singapore 768960",
+    "lat": 1.427943,
+    "lng": 103.848368,
+    "matchedName": "NORTH VIEW PRIMARY SCHOOL"
+  },
+  "northland-primary-school": {
+    "postal": "769026",
+    "address": "15 Yishun Avenue 4, Singapore 769026",
+    "lat": 1.421304,
+    "lng": 103.840793,
+    "matchedName": "NORTHLAND PRIMARY SCHOOL"
+  },
+  "peiying-primary-school": {
+    "postal": "768687",
+    "address": "651 Yishun Ring Road, Singapore 768687",
+    "lat": 1.417408,
+    "lng": 103.830299,
+    "matchedName": "PEIYING PRIMARY SCHOOL"
+  },
+  "xishan-primary-school": {
+    "postal": "768611",
+    "address": "8 Yishun Street 21, Singapore 768611",
+    "lat": 1.433501,
+    "lng": 103.838289,
+    "matchedName": "XISHAN PRIMARY SCHOOL"
+  },
+  "yishun-primary-school": {
+    "postal": "768679",
+    "address": "500 Yishun Ring Road, Singapore 768679",
+    "lat": 1.433496,
+    "lng": 103.834027,
+    "matchedName": "YISHUN PRIMARY SCHOOL"
+  },
+  "ahmad-ibrahim-primary": {
+    "postal": "768643",
+    "address": "10 Yishun Street 11, Singapore 768643",
+    "lat": 1.433681,
+    "lng": 103.832924,
+    "matchedName": "AHMAD IBRAHIM PRIMARY SCHOOL"
+  },
+  "canberra-primary-school": {
+    "postal": "757714",
+    "address": "21 Admiralty Drive, Singapore 757714",
+    "lat": 1.451064,
+    "lng": 103.815971,
+    "matchedName": "CANBERRA PRIMARY SCHOOL"
+  },
+  "endeavour-primary-school": {
+    "postal": "757521",
+    "address": "10 Admiralty Link, Singapore 757521",
+    "lat": 1.454176,
+    "lng": 103.817427,
+    "matchedName": "ENDEAVOUR PRIMARY SCHOOL"
+  },
+  "sembawang-primary-school": {
+    "postal": "757715",
+    "address": "10 Sembawang Drive, Singapore 757715",
+    "lat": 1.445044,
+    "lng": 103.821022,
+    "matchedName": "SEMBAWANG PRIMARY SCHOOL"
+  },
+  "wellington-primary-school": {
+    "postal": "757702",
+    "address": "10 Wellington Circle, Singapore 757702",
+    "lat": 1.451934,
+    "lng": 103.822321,
+    "matchedName": "WELLINGTON PRIMARY SCHOOL"
+  },
+  "naval-base-primary": {
+    "postal": "769028",
+    "address": "7 Yishun Avenue 4, Singapore 769028",
+    "lat": 1.41628,
+    "lng": 103.838798,
+    "matchedName": "NAVAL BASE PRIMARY SCHOOL"
+  },
+  "_unmatched": []
+}
