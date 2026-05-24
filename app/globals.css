@@ -64,6 +64,13 @@ body {
   scrollbar-color: var(--color-line) transparent;
 }
 
+/* Scope Leaflet's high internal z-indexes (controls reach 1000) to the map
+   container so they don't float above headers, drawers or modals. */
+.leaflet-container {
+  isolation: isolate;
+  z-index: 0;
+}
+
 @keyframes sheet-up {
   from {
     transform: translateY(100%);

@@ -83,7 +83,7 @@ export function GeoMap({
 }: GeoMapProps) {
   return (
     <div>
-      <div className="aspect-square w-full overflow-hidden rounded-lg">
+      <div className="relative isolate aspect-square w-full overflow-hidden rounded-lg">
         <MapContainer
           center={[origin.lat, origin.lng]}
           zoom={15}
