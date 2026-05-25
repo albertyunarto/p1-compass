@@ -1,6 +1,10 @@
+import type { ComponentType } from "react";
 import Link from "next/link";
 import { HeroDemo } from "@/components/HeroDemo";
 import { PostalSearch } from "@/components/PostalSearch";
+import { StepMapSvg } from "@/components/step-illustrations/StepMapSvg";
+import { StepSearchSvg } from "@/components/step-illustrations/StepSearchSvg";
+import { StepVerdictSvg } from "@/components/step-illustrations/StepVerdictSvg";
 import { geocode } from "@/lib/geocode";
 import { searchSchools } from "@/lib/schools";
 import type { NearbySchool } from "@/lib/types";
@@ -11,23 +15,48 @@ const SAMPLES = [
   { postal: "520103", area: "Tampines" },
 ];
 
-const STEPS = [
+type StepBullet = { tone: "good" | "caution" | "unlikely" | "ink"; text: string };
+type Step = {
+  n: string;
+  title: string;
+  body: string;
+  visual: ComponentType;
+  bullets?: StepBullet[];
+};
+
+const STEPS: Step[] = [
   {
     n: "01",
-    title: "Enter your postal code",
-    body: "We resolve your home through OneMap, Singapore's official map service, so distance is measured the way MOE does it.",
+    title: "Enter your postal code or address",
+    body: "Type a postal code, building name or street — we autocomplete via OneMap, Singapore's official map service, so distance is measured the way MOE does it.",
+    visual: StepSearchSvg,
   },
   {
     n: "02",
     title: "Read distance and ballot together",
-    body: "Every school is plotted by exact distance and direction, with five years of phase outcomes shown as compact bars.",
+    body: "Your home sits at the centre of a real map. Every nearby school is pinned by its real location and coloured by how its Phase 2C odds look for you.",
+    visual: StepMapSvg,
+    bullets: [
+      { tone: "good", text: "Green pin inside the 1 km ring — strong odds in Phase 2C." },
+      { tone: "caution", text: "Outer-ring pin, or deep ballot bars — borderline; check siblings and parent-volunteer angles." },
+      { tone: "unlikely", text: "Red pin or 3+ years of overflow — unlikely; line up a Plan B closer to home." },
+      { tone: "ink", text: "Tap any pin or row to see the five-year ballot pattern and the per-phase verdict." },
+    ],
   },
   {
     n: "03",
     title: "Get a plain verdict per school",
     body: "A rules-based engine pairs your distance band with each school's recent ballot depth — twelve cases, no black box.",
+    visual: StepVerdictSvg,
   },
 ];
+
+const BULLET_COLOR: Record<StepBullet["tone"], string> = {
+  good: "#1f7a56",
+  caution: "#b45a1d",
+  unlikely: "#a8362a",
+  ink: "#1b1812",
+};
 
 const STATS = [
   { v: "184", l: "Primary schools indexed" },
@@ -122,22 +151,42 @@ export default async function HomePage() {
           </Link>
         </div>
         <div className="mt-8 grid gap-5 sm:grid-cols-3">
-          {STEPS.map((step) => (
-            <div
-              key={step.n}
-              className="rounded-2xl border border-line bg-surface p-6"
-            >
-              <div className="font-display text-sm font-semibold tracking-[0.1em] text-primary">
-                {step.n}
+          {STEPS.map((step) => {
+            const Visual = step.visual;
+            return (
+              <div
+                key={step.n}
+                className="flex flex-col rounded-2xl border border-line bg-surface p-5"
+              >
+                <div className="rounded-xl border border-line bg-sand/40 p-3">
+                  <Visual />
+                </div>
+                <div className="mt-4 font-display text-sm font-semibold tracking-[0.1em] text-primary">
+                  {step.n}
+                </div>
+                <h3 className="mt-2 font-display text-xl font-medium leading-snug text-ink">
+                  {step.title}
+                </h3>
+                <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
+                  {step.body}
+                </p>
+                {step.bullets ? (
+                  <ul className="mt-4 space-y-2 border-t border-line pt-3 text-[13px] leading-snug text-ink-soft">
+                    {step.bullets.map((b, i) => (
+                      <li key={i} className="flex gap-2">
+                        <span
+                          aria-hidden
+                          className="mt-1.5 h-2 w-2 shrink-0 rounded-full"
+                          style={{ background: BULLET_COLOR[b.tone] }}
+                        />
+                        <span>{b.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
               </div>
-              <h3 className="mt-2.5 font-display text-xl font-medium leading-snug text-ink">
-                {step.title}
-              </h3>
-              <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
-                {step.body}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
