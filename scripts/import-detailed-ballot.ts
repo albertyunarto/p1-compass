@@ -87,8 +87,8 @@ function parseTakenCell(cell: string): Parsed {
   const plain = /^(\d+)$/.exec(s);
   if (plain) return { admitted: Number(plain[1]), balloted: false };
   // "<admitted> <SC|PR><band> <apps>/<vacs>"
-  const re = /^(\d+)\s+(SC|PR)(<1|1-2|>2|<2)\s+(\d+)\/(\d+)$/;
-  const m = re.exec(s);
+  const ratioRe = /^(\d+)\s+(SC|PR)(<1|1-2|>2|<2)\s+(\d+)\/(\d+)$/;
+  const m = ratioRe.exec(s);
   if (m) {
     return {
       admitted: Number(m[1]),
@@ -98,7 +98,17 @@ function parseTakenCell(cell: string): Parsed {
       ballotedVacancies: Number(m[5]),
     };
   }
-  // "<admitted> <SC|PR><band>#" — citizenship/distance constraint without ratio.
+  // "<admitted> <SC|PR><band>" — band noted but ratio not published (2023 format).
+  const bandOnly = /^(\d+)\s+(SC|PR)(<1|1-2|>2|<2)$/;
+  const b = bandOnly.exec(s);
+  if (b) {
+    return {
+      admitted: Number(b[1]),
+      balloted: true,
+      ballotedBand: BAND_MAP[b[3]],
+    };
+  }
+  // "<admitted> <SC|PR>?<band>?#" — citizenship/distance constraint without ratio.
   const hashRe = /^(\d+)\s+(SC|PR)(<1|1-2|>2|<2)?#$/;
   const h = hashRe.exec(s);
   if (h) {

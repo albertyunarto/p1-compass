@@ -3,6 +3,45 @@
   "_source": "MOE Phase 2A/2B/2C vacancies, applicants and per-band ballot details. Sourced from the Straits Times graphic (MINISTRY OF EDUCATION).",
   "_lastUpdated": "2026-05-25",
   "anderson-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 79,
+        "total": 46,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 74,
+        "total": 92,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 37,
+          "mid": 32,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 52,
@@ -87,6 +126,46 @@
     }
   },
   "admiralty-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 75,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 37,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 70,
+        "total": 109,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 44,
+          "mid": 38,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 68,
@@ -174,6 +253,44 @@
     }
   },
   "ahmad-ibrahim-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 106,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 52,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 157,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 112,
@@ -252,6 +369,46 @@
     }
   },
   "ai-tong-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 126,
+        "total": 120,
+        "balloted": false,
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 22,
+        "total": 56,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 45,
+        "total": 78,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 108,
@@ -348,6 +505,45 @@
     }
   },
   "alexandra-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 83,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 127,
+        "total": 141,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 56,
+          "mid": 49,
+          "far": 36
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 65,
@@ -432,6 +628,44 @@
     }
   },
   "anchor-green-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 95,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 128,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 120,
@@ -510,6 +744,46 @@
     }
   },
   "anglo-chinese-school-2": {
+    "2023": {
+      "2A": {
+        "vacancy": 134,
+        "total": 101,
+        "balloted": false,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 52,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 62,
+        "total": 79,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 135,
@@ -600,6 +874,46 @@
     }
   },
   "anglo-chinese-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 124,
+        "total": 106,
+        "balloted": false,
+        "applied": {
+          "near": 42,
+          "mid": 37,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 51,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 53,
+        "total": 68,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 108,
@@ -690,6 +1004,45 @@
     }
   },
   "angsana-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 132,
+        "total": 95,
+        "balloted": false,
+        "applied": {
+          "near": 38,
+          "mid": 33,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 95,
+        "total": 167,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 67,
+          "mid": 58,
+          "far": 42
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 94,
@@ -780,6 +1133,44 @@
     }
   },
   "beacon-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 30,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 84,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 47,
@@ -858,6 +1249,44 @@
     }
   },
   "bedok-green-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 94,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 63,
@@ -936,6 +1365,44 @@
     }
   },
   "bendemeer-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 94,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 83,
@@ -1014,6 +1481,44 @@
     }
   },
   "blangah-rise-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 37,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 77,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 45,
@@ -1092,6 +1597,44 @@
     }
   },
   "boon-lay-garden": {
+    "2023": {
+      "2A": {
+        "vacancy": 74,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 121,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 73,
@@ -1170,6 +1713,46 @@
     }
   },
   "bukit-panjang-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 80,
+        "total": 78,
+        "balloted": false,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 24,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 42,
+        "total": 89,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 69,
@@ -1254,6 +1837,44 @@
     }
   },
   "bukit-timah-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 56,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 111,
+        "total": 71,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 25,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 76,
@@ -1338,6 +1959,44 @@
     }
   },
   "bukit-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 198,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 80,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 242,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 187,
@@ -1416,6 +2075,45 @@
     }
   },
   "canberra-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 100,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 122,
+        "total": 131,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 52,
+          "mid": 46,
+          "far": 33
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 82,
@@ -1500,6 +2198,44 @@
     }
   },
   "canossa-catholic-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 12,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 50,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 23,
@@ -1578,6 +2314,44 @@
     }
   },
   "cantonment-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 45,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 100,
+        "total": 40,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 51,
@@ -1656,6 +2430,44 @@
     }
   },
   "casuarina-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 24,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 22,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 66,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 56,
@@ -1734,6 +2546,47 @@
     }
   },
   "catholic-high-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 116,
+        "total": 135,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 54,
+          "mid": 47,
+          "far": 34
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 29,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 52,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 110,
@@ -1830,6 +2683,44 @@
     }
   },
   "cedar-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 128,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 51,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 151,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 143,
@@ -1908,6 +2799,44 @@
     }
   },
   "changkat-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 75,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 119,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 134,
@@ -1986,6 +2915,44 @@
     }
   },
   "chij-katong-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 96,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 63,
+        "balloted": false,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 106,
@@ -2064,6 +3031,44 @@
     }
   },
   "chij-kellock": {
+    "2023": {
+      "2A": {
+        "vacancy": 93,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 128,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 96,
@@ -2142,6 +3147,44 @@
     }
   },
   "chij-our-lady": {
+    "2023": {
+      "2A": {
+        "vacancy": 61,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 37,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 101,
+        "total": 40,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 61,
@@ -2220,6 +3263,45 @@
     }
   },
   "chij-our-lady-2": {
+    "2023": {
+      "2A": {
+        "vacancy": 120,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 52,
+        "total": 45,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 111,
+        "total": 113,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 45,
+          "mid": 40,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 110,
@@ -2304,6 +3386,44 @@
     }
   },
   "chij-our-lady-3": {
+    "2023": {
+      "2A": {
+        "vacancy": 72,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 59,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 79,
@@ -2382,6 +3502,46 @@
     }
   },
   "chij-primary-toa": {
+    "2023": {
+      "2A": {
+        "vacancy": 100,
+        "total": 78,
+        "balloted": false,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 27,
+        "total": 53,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 55,
+        "total": 69,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 28,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 86,
@@ -2475,6 +3635,47 @@
     }
   },
   "chij-st-nicholas": {
+    "2023": {
+      "2A": {
+        "vacancy": 80,
+        "total": 103,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 46,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 84,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 34,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 76,
@@ -2571,6 +3772,46 @@
     }
   },
   "chongfu-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 118,
+        "total": 73,
+        "balloted": false,
+        "applied": {
+          "near": 29,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 53,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 72,
+        "total": 112,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 45,
+          "mid": 39,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 107,
@@ -2664,6 +3905,45 @@
     }
   },
   "chongzheng-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 60,
+        "total": 41,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 72,
+        "total": 84,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 34,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 80,
@@ -2745,6 +4025,45 @@
     }
   },
   "chua-chu-kang": {
+    "2023": {
+      "2A": {
+        "vacancy": 59,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 62,
+        "total": 111,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 90,
@@ -2829,6 +4148,44 @@
     }
   },
   "clementi-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 165,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 71,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 214,
+        "total": 51,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 149,
@@ -2907,6 +4264,45 @@
     }
   },
   "compassvale-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 73,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 101,
+        "total": 133,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 53,
+          "mid": 47,
+          "far": 33
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 83,
@@ -2991,6 +4387,44 @@
     }
   },
   "concord-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 81,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 108,
+        "total": 76,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 64,
@@ -3072,6 +4506,44 @@
     }
   },
   "corporation-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 75,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 118,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 54,
@@ -3150,6 +4622,44 @@
     }
   },
   "dazhong-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 84,
+        "total": 61,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 85,
+        "total": 83,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 61,
@@ -3234,6 +4744,44 @@
     }
   },
   "de-la-salle": {
+    "2023": {
+      "2A": {
+        "vacancy": 89,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 128,
+        "total": 96,
+        "balloted": false,
+        "applied": {
+          "near": 38,
+          "mid": 34,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 85,
@@ -3312,6 +4860,44 @@
     }
   },
   "east-spring-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 81,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 130,
+        "total": 64,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 107,
@@ -3390,6 +4976,44 @@
     }
   },
   "edgefield-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 109,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 54,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 162,
+        "total": 46,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 111,
@@ -3468,6 +5092,45 @@
     }
   },
   "elias-park-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 23,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 101,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 23,
@@ -3555,6 +5218,44 @@
     }
   },
   "endeavour-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 122,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 59,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 175,
+        "total": 53,
+        "balloted": false,
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 84,
@@ -3633,6 +5334,44 @@
     }
   },
   "evergreen-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 52,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 94,
+        "total": 66,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 50,
@@ -3711,6 +5450,47 @@
     }
   },
   "fairfield-methodist-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 94,
+        "total": 103,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 52,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 66,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 104,
@@ -3804,6 +5584,44 @@
     }
   },
   "farrer-park-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 125,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 55,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 164,
+        "total": 37,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 73,
@@ -3882,6 +5700,44 @@
     }
   },
   "fengshan-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 67,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 96,
+        "total": 75,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 52,
@@ -3966,6 +5822,45 @@
     }
   },
   "fern-green-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 50,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 73,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 29,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 54,
@@ -4044,6 +5939,44 @@
     }
   },
   "first-toa-payoh": {
+    "2023": {
+      "2A": {
+        "vacancy": 71,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 119,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 63,
@@ -4122,6 +6055,46 @@
     }
   },
   "frontier-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 81,
+        "total": 88,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 35,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 48,
+        "total": 63,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 59,
@@ -4212,6 +6185,44 @@
     }
   },
   "fuchun-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 62,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 95,
+        "total": 45,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 70,
@@ -4290,6 +6301,44 @@
     }
   },
   "fuhua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 99,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 128,
+        "total": 54,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 159,
@@ -4368,6 +6417,44 @@
     }
   },
   "gan-eng-seng": {
+    "2023": {
+      "2A": {
+        "vacancy": 59,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 38,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 115,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 52,
@@ -4446,6 +6533,45 @@
     }
   },
   "geylang-methodist-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 108,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 45,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 132,
+        "total": 134,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 54,
+          "mid": 47,
+          "far": 33
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 124,
@@ -4524,6 +6650,46 @@
     }
   },
   "gongshang-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 46,
+        "total": 163,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 65,
+          "mid": 57,
+          "far": 41
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 107,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 43,
+          "mid": 37,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 84,
@@ -4614,6 +6780,44 @@
     }
   },
   "greendale-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 152,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 63,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 190,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 102,
@@ -4692,6 +6896,44 @@
     }
   },
   "greenridge-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 53,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 103,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 45,
@@ -4770,6 +7012,44 @@
     }
   },
   "greenwood-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 82,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 123,
+        "total": 89,
+        "balloted": false,
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 66,
@@ -4848,6 +7128,45 @@
     }
   },
   "haig-girls-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 79,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 38,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 97,
+        "total": 108,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 43,
+          "mid": 38,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 91,
@@ -4926,6 +7245,46 @@
     }
   },
   "henry-park-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 109,
+        "total": 109,
+        "balloted": false,
+        "applied": {
+          "near": 44,
+          "mid": 38,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 23,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 64,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 26,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 108,
@@ -5013,6 +7372,47 @@
     }
   },
   "holy-innocents-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 103,
+        "total": 115,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 46,
+          "mid": 40,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 53,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 115,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 46,
+          "mid": 40,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 102,
@@ -5106,6 +7506,45 @@
     }
   },
   "hong-wen-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 69,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 69,
+        "total": 151,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 60,
+          "mid": 53,
+          "far": 38
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 72,
@@ -5190,6 +7629,46 @@
     }
   },
   "horizon-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 77,
+        "total": 105,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 42,
+          "mid": 37,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 81,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 83,
@@ -5280,6 +7759,45 @@
     }
   },
   "hougang-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 54,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 76,
+        "total": 98,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 39,
+          "mid": 34,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 56,
@@ -5361,6 +7879,46 @@
     }
   },
   "huamin-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 79,
+        "total": 90,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 95,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 38,
+          "mid": 33,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 70,
@@ -5451,6 +8009,44 @@
     }
   },
   "innova-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 56,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 96,
+        "total": 58,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 61,
@@ -5529,6 +8125,44 @@
     }
   },
   "jiemin-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 92,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 134,
+        "total": 57,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 74,
@@ -5607,6 +8241,45 @@
     }
   },
   "jing-shan-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 39,
+        "total": 51,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 62,
+        "balloted": false,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 30,
@@ -5694,6 +8367,44 @@
     }
   },
   "junyuan-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 97,
+        "total": 76,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 27,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 81,
+        "total": 58,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 66,
@@ -5781,6 +8492,44 @@
     }
   },
   "jurong-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 101,
+        "total": 37,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 41,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 125,
+        "total": 73,
+        "balloted": false,
+        "applied": {
+          "near": 29,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 107,
@@ -5859,6 +8608,46 @@
     }
   },
   "jurong-west-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 63,
+        "total": 65,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 63,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 51,
@@ -5943,6 +8732,45 @@
     }
   },
   "keming-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 80,
+        "total": 51,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 82,
+        "total": 138,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 55,
+          "mid": 48,
+          "far": 35
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 75,
@@ -6027,6 +8855,44 @@
     }
   },
   "kheng-cheng-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 109,
+        "total": 47,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 41,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 121,
+        "total": 110,
+        "balloted": false,
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 119,
@@ -6108,6 +8974,46 @@
     }
   },
   "kong-hwa-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 100,
+        "total": 74,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 57,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 57,
+        "total": 84,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 34,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 110,
@@ -6198,6 +9104,46 @@
     }
   },
   "kuo-chuan-presbyterian": {
+    "2023": {
+      "2A": {
+        "vacancy": 92,
+        "total": 57,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 36,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 67,
+        "total": 76,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 66,
@@ -6288,6 +9234,44 @@
     }
   },
   "lakeside-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 98,
+        "total": 42,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 119,
+        "total": 112,
+        "balloted": false,
+        "applied": {
+          "near": 45,
+          "mid": 39,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 100,
@@ -6366,6 +9350,44 @@
     }
   },
   "lianhua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 207,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 84,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 252,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 200,
@@ -6444,6 +9466,46 @@
     }
   },
   "maha-bodhi-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 129,
+        "total": 99,
+        "balloted": false,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 42,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 63,
+        "total": 82,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 141,
@@ -6531,6 +9593,46 @@
     }
   },
   "maris-stella-high": {
+    "2023": {
+      "2A": {
+        "vacancy": 140,
+        "total": 122,
+        "balloted": false,
+        "applied": {
+          "near": 49,
+          "mid": 43,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 30,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 55,
+        "total": 77,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 134,
@@ -6621,6 +9723,44 @@
     }
   },
   "marsiling-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 98,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 74,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 60,
@@ -6699,6 +9839,44 @@
     }
   },
   "marymount-convent-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 143,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 65,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 188,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 157,
@@ -6777,6 +9955,44 @@
     }
   },
   "mayflower-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 83,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 121,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 50,
@@ -6855,6 +10071,45 @@
     }
   },
   "mee-toh-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 132,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 55,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 116,
+        "total": 145,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 58,
+          "mid": 51,
+          "far": 36
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 125,
@@ -6939,6 +10194,44 @@
     }
   },
   "meridian-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 121,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 52,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 157,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 147,
@@ -7017,6 +10310,46 @@
     }
   },
   "methodist-girls-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 86,
+        "total": 83,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 38,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 43,
+        "total": 63,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 91,
@@ -7107,6 +10440,44 @@
     }
   },
   "montfort-junior-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 68,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 113,
+        "total": 25,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 62,
@@ -7185,6 +10556,46 @@
     }
   },
   "nan-chiau-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 109,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 45,
+        "total": 123,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 49,
+          "mid": 43,
+          "far": 31
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 89,
+        "total": 264,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 106,
+          "mid": 92,
+          "far": 66
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 127,
@@ -7275,6 +10686,47 @@
     }
   },
   "nan-hua-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 65,
+        "total": 96,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 38,
+          "mid": 34,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 34,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 192,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 77,
+          "mid": 67,
+          "far": 48
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 73,
@@ -7371,6 +10823,47 @@
     }
   },
   "nanyang-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 149,
+        "total": 171,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 68,
+          "mid": 60,
+          "far": 43
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 43,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 76,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 159,
@@ -7467,6 +10960,46 @@
     }
   },
   "naval-base-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 66,
+        "total": 100,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 58,
+        "total": 89,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 53,
@@ -7557,6 +11090,44 @@
     }
   },
   "new-town-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 113,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 55,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 164,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 90,
@@ -7635,6 +11206,44 @@
     }
   },
   "ngee-ann-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 94,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 122,
+        "total": 122,
+        "balloted": false,
+        "applied": {
+          "near": 49,
+          "mid": 43,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 94,
@@ -7716,6 +11325,44 @@
     }
   },
   "north-spring-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 128,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 58,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 173,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 85,
@@ -7794,6 +11441,45 @@
     }
   },
   "north-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 87,
+        "total": 68,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 80,
+        "total": 95,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 38,
+          "mid": 33,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 75,
@@ -7881,6 +11567,44 @@
     }
   },
   "north-vista-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 123,
+        "total": 35,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 49,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 148,
+        "total": 55,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 109,
@@ -7959,6 +11683,45 @@
     }
   },
   "northland-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 76,
+        "total": 72,
+        "balloted": false,
+        "applied": {
+          "near": 29,
+          "mid": 25,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 200,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 80,
+          "mid": 70,
+          "far": 50
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 95,
@@ -8049,6 +11812,44 @@
     }
   },
   "oasis-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 70,
+        "total": 68,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 63,
+        "balloted": false,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 58,
@@ -8130,6 +11931,45 @@
     }
   },
   "opera-estate-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 60,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 101,
+        "total": 74,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 36,
@@ -8211,6 +12051,44 @@
     }
   },
   "palm-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 78,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 130,
+        "total": 76,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 91,
@@ -8289,6 +12167,44 @@
     }
   },
   "park-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 56,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 101,
+        "total": 66,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 73,
@@ -8367,6 +12283,45 @@
     }
   },
   "pasir-ris-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 39,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 47,
+        "total": 76,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 33,
@@ -8454,6 +12409,45 @@
     }
   },
   "paya-lebar-methodist": {
+    "2023": {
+      "2A": {
+        "vacancy": 146,
+        "total": 70,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 25,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 35,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 103,
+        "total": 120,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 134,
@@ -8541,6 +12535,46 @@
     }
   },
   "pei-chun-public": {
+    "2023": {
+      "2A": {
+        "vacancy": 127,
+        "total": 116,
+        "balloted": false,
+        "applied": {
+          "near": 46,
+          "mid": 41,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 24,
+        "total": 29,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 52,
+        "total": 81,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 135,
@@ -8634,6 +12668,47 @@
     }
   },
   "pei-hwa-presbyterian": {
+    "2023": {
+      "2A": {
+        "vacancy": 62,
+        "total": 93,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 37,
+          "mid": 33,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 32,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 75,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 75,
@@ -8730,6 +12805,44 @@
     }
   },
   "pei-tong-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 160,
+        "total": 25,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 65,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 196,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 170,
@@ -8808,6 +12921,44 @@
     }
   },
   "peiying-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 90,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 121,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 54,
@@ -8926,6 +13077,46 @@
     }
   },
   "poi-ching-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 85,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 41,
+        "total": 45,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 82,
+        "total": 197,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 79,
+          "mid": 69,
+          "far": 49
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 74,
@@ -9010,6 +13201,46 @@
     }
   },
   "princess-elizabeth-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 53,
+        "total": 89,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 48,
+        "total": 283,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 113,
+          "mid": 99,
+          "far": 71
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 45,
@@ -9106,6 +13337,44 @@
     }
   },
   "punggol-cove-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 118,
+        "total": 65,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 38,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 113,
+        "total": 82,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 116,
@@ -9184,6 +13453,46 @@
     }
   },
   "punggol-green-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 73,
+        "total": 98,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 39,
+          "mid": 34,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 58,
+        "total": 110,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 70,
@@ -9271,6 +13580,45 @@
     }
   },
   "punggol-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 41,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 86,
+        "total": 106,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 42,
+          "mid": 37,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 51,
@@ -9355,6 +13703,44 @@
     }
   },
   "punggol-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 82,
+        "total": 51,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 92,
+        "total": 51,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 97,
@@ -9433,6 +13819,45 @@
     }
   },
   "qifa-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 125,
+        "total": 48,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 124,
+        "total": 130,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 52,
+          "mid": 46,
+          "far": 32
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 74,
@@ -9517,6 +13942,44 @@
     }
   },
   "qihua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 60,
+        "total": 25,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 95,
+        "total": 42,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 69,
@@ -9595,6 +14058,45 @@
     }
   },
   "queenstown-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 75,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 106,
+        "total": 123,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 49,
+          "mid": 43,
+          "far": 31
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 87,
@@ -9676,6 +14178,45 @@
     }
   },
   "radin-mas-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 71,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 54,
+        "total": 81,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 62,
@@ -9760,6 +14301,45 @@
     }
   },
   "raffles-girls-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 151,
+        "total": 66,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 113,
+        "total": 130,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 52,
+          "mid": 46,
+          "far": 32
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 146,
@@ -9844,6 +14424,47 @@
     }
   },
   "red-swastika-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 86,
+        "total": 112,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 45,
+          "mid": 39,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 22,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 42,
+        "total": 89,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 81,
@@ -9937,6 +14558,45 @@
     }
   },
   "river-valley-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 67,
+        "total": 52,
+        "balloted": false,
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 73,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 29,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 75,
@@ -10018,6 +14678,46 @@
     }
   },
   "riverside-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 63,
+        "total": 70,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 28,
+          "mid": 25,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 59,
+        "total": 90,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 72,
@@ -10105,6 +14805,47 @@
     }
   },
   "rosyth-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 75,
+        "total": 120,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 23,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 142,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 57,
+          "mid": 50,
+          "far": 35
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 90,
@@ -10201,6 +14942,47 @@
     }
   },
   "rulang-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 88,
+        "total": 102,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 26,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 112,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 45,
+          "mid": 39,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 84,
@@ -10297,6 +15079,44 @@
     }
   },
   "sembawang-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 58,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 75,
+        "total": 67,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 55,
@@ -10381,6 +15201,46 @@
     }
   },
   "sengkang-green-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 92,
+        "total": 121,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 31
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 45,
+        "total": 87,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 35,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 77,
@@ -10471,6 +15331,45 @@
     }
   },
   "shuqun-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 62,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 97,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 39,
+          "mid": 34,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 49,
@@ -10561,6 +15460,44 @@
     }
   },
   "si-ling-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 50,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 33,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 100,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 63,
@@ -10639,6 +15576,45 @@
     }
   },
   "singapore-chinese-girls": {
+    "2023": {
+      "2A": {
+        "vacancy": 78,
+        "total": 75,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 43,
+        "total": 58,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 76,
@@ -10735,6 +15711,47 @@
     }
   },
   "south-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 89,
+        "total": 105,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 42,
+          "mid": 37,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 34,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 128,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 51,
+          "mid": 45,
+          "far": 32
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 88,
@@ -10828,6 +15845,44 @@
     }
   },
   "springdale-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 118,
+        "total": 57,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 121,
+        "total": 68,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 59,
@@ -10906,6 +15961,45 @@
     }
   },
   "st-andrew-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 125,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 45,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 103,
+        "total": 113,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 45,
+          "mid": 40,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 128,
@@ -10990,6 +16084,44 @@
     }
   },
   "st-anthony-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 124,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 58,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 165,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 90,
@@ -11068,6 +16200,44 @@
     }
   },
   "st-gabriel-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 64,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 37,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 77,
+        "total": 52,
+        "balloted": false,
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 59,
@@ -11146,6 +16316,47 @@
     }
   },
   "st-hilda-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 103,
+        "total": 113,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 45,
+          "mid": 40,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 36,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 136,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 54,
+          "mid": 48,
+          "far": 34
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 76,
@@ -11239,6 +16450,46 @@
     }
   },
   "st-joseph-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 127,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 85,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 34,
+          "mid": 30,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 88,
+        "total": 98,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 39,
+          "mid": 34,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 123,
@@ -11326,6 +16577,44 @@
     }
   },
   "st-margaret-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 106,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 122,
+        "total": 78,
+        "balloted": false,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 95,
@@ -11407,6 +16696,44 @@
     }
   },
   "st-stephen-s": {
+    "2023": {
+      "2A": {
+        "vacancy": 150,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 62,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 160,
+        "total": 58,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 130,
@@ -11485,6 +16812,44 @@
     }
   },
   "tampines-north-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 96,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 138,
+        "total": 47,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 131,
@@ -11563,6 +16928,44 @@
     }
   },
   "tampines-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 103,
+        "total": 62,
+        "balloted": false,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 102,
+        "total": 92,
+        "balloted": false,
+        "applied": {
+          "near": 37,
+          "mid": 32,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 82,
@@ -11644,6 +17047,45 @@
     }
   },
   "tanjong-katong-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 69,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 87,
+        "total": 108,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 43,
+          "mid": 38,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 56,
@@ -11731,6 +17173,47 @@
     }
   },
   "tao-nan-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 117,
+        "total": 138,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 55,
+          "mid": 48,
+          "far": 35
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 68,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 95,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 38,
+          "mid": 33,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 181,
@@ -11824,6 +17307,44 @@
     }
   },
   "teck-ghee-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 44,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 84,
+        "total": 64,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 38,
@@ -11902,6 +17423,44 @@
     }
   },
   "teck-whye-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 106,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 94,
@@ -11980,6 +17539,44 @@
     }
   },
   "telok-kurau-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 109,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 138,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 95,
@@ -12058,6 +17655,46 @@
     }
   },
   "temasek-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 56,
+        "total": 59,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 48,
+        "total": 116,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 46,
+          "mid": 41,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 69,
@@ -12148,6 +17785,44 @@
     }
   },
   "unity-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 38,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 88,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 96,
@@ -12226,6 +17901,45 @@
     }
   },
   "valour-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 107,
+        "total": 82,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 84,
+        "total": 102,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 69,
@@ -12316,6 +18030,44 @@
     }
   },
   "waterway-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 120,
+        "total": 61,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 120,
+        "total": 77,
+        "balloted": false,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 77,
@@ -12403,6 +18155,46 @@
     }
   },
   "wellington-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 72,
+        "total": 85,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 34,
+          "mid": 30,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 55,
+        "total": 108,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 43,
+          "mid": 38,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 62,
@@ -12490,6 +18282,44 @@
     }
   },
   "west-grove-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 73,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 126,
+        "total": 45,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 90,
@@ -12568,6 +18398,44 @@
     }
   },
   "west-view-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 45,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 27,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 82,
+        "total": 41,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 44,
@@ -12646,6 +18514,45 @@
     }
   },
   "westwood-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 90,
+        "total": 82,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 59,
+        "total": 82,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 89,
@@ -12733,6 +18640,45 @@
     }
   },
   "white-sands-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 42,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 78,
+        "total": 86,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 34,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 45,
@@ -12811,6 +18757,44 @@
     }
   },
   "woodgrove-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 61,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 37,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 103,
+        "total": 99,
+        "balloted": false,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 56,
@@ -12889,6 +18873,44 @@
     }
   },
   "woodlands-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 81,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 102,
+        "total": 87,
+        "balloted": false,
+        "applied": {
+          "near": 35,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 65,
@@ -12967,6 +18989,44 @@
     }
   },
   "woodlands-ring-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 65,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 53,
+        "balloted": false,
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 43,
@@ -13045,6 +19105,44 @@
     }
   },
   "xinghua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 152,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 67,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 203,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 84,
@@ -13123,6 +19221,44 @@
     }
   },
   "xingnan-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 101,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 43,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 53,
@@ -13201,6 +19337,45 @@
     }
   },
   "xinmin-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 81,
+        "total": 54,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 62,
+        "total": 100,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 58,
@@ -13288,6 +19463,44 @@
     }
   },
   "xishan-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 87,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 116,
+        "total": 43,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 76,
@@ -13366,6 +19579,46 @@
     }
   },
   "yangzheng-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 34,
+        "total": 38,
+        "balloted": true,
+        "ballotedBand": "beyond2km",
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 48,
+        "total": 77,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 28,
@@ -13456,6 +19709,44 @@
     }
   },
   "yew-tee-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 67,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 118,
+        "total": 45,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 82,
@@ -13534,6 +19825,44 @@
     }
   },
   "yio-chu-kang": {
+    "2023": {
+      "2A": {
+        "vacancy": 74,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 41,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 123,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 68,
@@ -13612,6 +19941,44 @@
     }
   },
   "yishun-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 106,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 141,
+        "total": 54,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 85,
@@ -13690,6 +20057,45 @@
     }
   },
   "yu-neng-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 51,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 22,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 56,
+        "total": 82,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 44,
@@ -13777,6 +20183,44 @@
     }
   },
   "yuhua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 123,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 53,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 160,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 176,
@@ -13855,6 +20299,44 @@
     }
   },
   "yumin-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 113,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 54,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 161,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 128,
@@ -13933,6 +20415,44 @@
     }
   },
   "zhangde-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 57,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 95,
+        "total": 88,
+        "balloted": false,
+        "applied": {
+          "near": 35,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 38,
@@ -14014,6 +20534,44 @@
     }
   },
   "zhenghua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 72,
+        "total": 55,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 76,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 76,
@@ -14095,6 +20653,44 @@
     }
   },
   "zhonghua-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 39,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 95,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 38,
@@ -14173,6 +20769,44 @@
     }
   },
   "ang-mo-kio": {
+    "2023": {
+      "2A": {
+        "vacancy": 58,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 85,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 41,
@@ -14251,6 +20885,44 @@
     }
   },
   "fernvale-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 103,
+        "total": 35,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 129,
+        "total": 80,
+        "balloted": false,
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 131,
@@ -14329,6 +21001,44 @@
     }
   },
   "northoaks-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 85,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 45,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 137,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 129,
@@ -14407,6 +21117,44 @@
     }
   },
   "northshore-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 168,
+        "total": 69,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 53,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 159,
+        "total": 110,
+        "balloted": false,
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 130,
@@ -14491,6 +21239,45 @@
     }
   },
   "rivervale-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 44,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 70,
+        "total": 133,
+        "balloted": true,
+        "ballotedBand": "within1km",
+        "applied": {
+          "near": 53,
+          "mid": 47,
+          "far": 33
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 53,
@@ -14575,6 +21362,44 @@
     }
   },
   "seng-kang-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 111,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 54,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 163,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 61,
@@ -14653,6 +21478,45 @@
     }
   },
   "st-anthony-s-2": {
+    "2023": {
+      "2A": {
+        "vacancy": 110,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 102,
+        "total": 114,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 46,
+          "mid": 40,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 90,
@@ -14737,6 +21601,45 @@
     }
   },
   "west-spring-primary": {
+    "2023": {
+      "2A": {
+        "vacancy": 87,
+        "total": 69,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 79,
+        "total": 85,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "applied": {
+          "near": 34,
+          "mid": 30,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 52,
@@ -14818,6 +21721,44 @@
     }
   },
   "damai-primary-school": {
+    "2023": {
+      "2A": {
+        "vacancy": 41,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      },
+      "2C": {
+        "vacancy": 87,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2023"
+      }
+    },
     "2024": {
       "2A": {
         "vacancy": 54,

@@ -218,7 +218,7 @@ section("Ballot data internal consistency + provenance");
   info(`${schoolsWithReal}/${schools.length} schools have at least one real ballot year.`);
 
   // Hard invariant: recent years must NEVER carry synthesised data.
-  const REAL_REQUIRED_YEARS = [2024, 2025];
+  const REAL_REQUIRED_YEARS = [2023, 2024, 2025];
   let badRecent = 0;
   for (const yr of REAL_REQUIRED_YEARS) {
     for (const s of schools) {
