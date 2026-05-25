@@ -216,6 +216,22 @@ section("Ballot data internal consistency + provenance");
   info(`ballot provenance: ${realPhases}/${totalPhases} phase-rows from real MOE data (${pct}%).`);
   const schoolsWithReal = Object.values(realBySchool).filter((n) => n > 0).length;
   info(`${schoolsWithReal}/${schools.length} schools have at least one real ballot year.`);
+
+  // Hard invariant: the most recent year must NEVER carry synthesised data.
+  const REAL_REQUIRED_YEAR = 2025;
+  let badRecent = 0;
+  for (const s of schools) {
+    const y = s.ballot[REAL_REQUIRED_YEAR];
+    if (!y) continue;
+    for (const [phase, b] of Object.entries(y)) {
+      if (b && !b.isReal) {
+        fail(`${s.name} ${REAL_REQUIRED_YEAR} ${phase} is synthesised — must be real or removed.`);
+        badRecent++;
+      }
+    }
+  }
+  if (badRecent === 0) info(`✓ every ${REAL_REQUIRED_YEAR} ballot row in the dataset is verified MOE data (no synthesised ${REAL_REQUIRED_YEAR} entries).`);
+
   if (realPhases === 0) {
     warn(`zero real ballot data — every ballot bar in the UI will be flagged 'Illustrative'. Run scripts/scrape-ballot.ts to populate data/ballot-truth.json.`);
   }

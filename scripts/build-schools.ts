@@ -539,6 +539,13 @@ function loadBallotTruth(): BallotTruth {
   }
 }
 
+/**
+ * Most-recent year for which the dataset must be 100% real. If the truth
+ * file doesn't carry that year for a school, the synthesised entry for
+ * that year is DELETED rather than shown — better blank than fake.
+ */
+const REAL_REQUIRED_YEAR = 2025;
+
 /** Merge real-source ballot data over the synthesised history. */
 function applyBallotTruth(
   base: BallotHistory,
@@ -553,6 +560,15 @@ function applyBallotTruth(
     for (const [phase, real] of Object.entries(phases) as [Phase, PhaseBallot][]) {
       out[y][phase] = { ...real, isReal: true };
     }
+  }
+  // Enforce: REAL_REQUIRED_YEAR can never carry synthesised data.
+  if (out[REAL_REQUIRED_YEAR]) {
+    const kept: Partial<Record<Phase, PhaseBallot>> = {};
+    for (const [phase, b] of Object.entries(out[REAL_REQUIRED_YEAR]) as [Phase, PhaseBallot][]) {
+      if (b?.isReal === true) kept[phase] = b;
+    }
+    if (Object.keys(kept).length === 0) delete out[REAL_REQUIRED_YEAR];
+    else out[REAL_REQUIRED_YEAR] = kept;
   }
   return out;
 }

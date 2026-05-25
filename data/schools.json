@@ -6300,32 +6300,6 @@
             "far": 34
           }
         }
-      },
-      "2025": {
-        "2A": {
-          "vacancy": 53,
-          "applied": {
-            "near": 20,
-            "mid": 14,
-            "far": 12
-          }
-        },
-        "2B": {
-          "vacancy": 27,
-          "applied": {
-            "near": 12,
-            "mid": 8,
-            "far": 8
-          }
-        },
-        "2C": {
-          "vacancy": 135,
-          "applied": {
-            "near": 63,
-            "mid": 40,
-            "far": 34
-          }
-        }
       }
     }
   },
@@ -7998,32 +7972,6 @@
             "near": 28,
             "mid": 19,
             "far": 17
-          }
-        }
-      },
-      "2025": {
-        "2A": {
-          "vacancy": 42,
-          "applied": {
-            "near": 6,
-            "mid": 5,
-            "far": 4
-          }
-        },
-        "2B": {
-          "vacancy": 22,
-          "applied": {
-            "near": 4,
-            "mid": 3,
-            "far": 3
-          }
-        },
-        "2C": {
-          "vacancy": 62,
-          "applied": {
-            "near": 20,
-            "mid": 14,
-            "far": 13
           }
         }
       }
@@ -18399,32 +18347,6 @@
             "near": 96,
             "mid": 56,
             "far": 45
-          }
-        }
-      },
-      "2025": {
-        "2A": {
-          "vacancy": 48,
-          "applied": {
-            "near": 35,
-            "mid": 20,
-            "far": 15
-          }
-        },
-        "2B": {
-          "vacancy": 22,
-          "applied": {
-            "near": 14,
-            "mid": 9,
-            "far": 7
-          }
-        },
-        "2C": {
-          "vacancy": 105,
-          "applied": {
-            "near": 116,
-            "mid": 58,
-            "far": 37
           }
         }
       }
