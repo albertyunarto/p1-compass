@@ -1,6 +1,6 @@
 {
   "_doc": "Real ballot data per school per year. Keyed by school id (same id used in data/schools.json). When an entry exists for (school, year, phase), it overrides the synthesised ballot in data/schools.json at build time. See scripts/scrape-ballot.ts to populate this file from elite.com.sg/ballot. Years not present in this file fall back to synthesised illustrative data and the UI labels them as such.",
-  "_source": "MOE Past Vacancies and Balloting Data, sourced from elite.com.sg/ballot.",
+  "_source": "MOE 2025 via Straits Times graphic (https://www.straitstimes.com — MINISTRY OF EDUCATION source).",
   "_lastUpdated": "2026-05-25",
   "anderson-primary-school": {
     "2025": {
@@ -8,15 +8,25 @@
         "vacancy": 69,
         "total": 43,
         "balloted": false,
-        "applied": { "near": 17, "mid": 14, "far": 12 },
-        "source": "MOE 2025"
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
       },
       "2B": {
         "vacancy": 29,
         "total": 25,
         "balloted": false,
-        "applied": { "near": 10, "mid": 8, "far": 7 },
-        "source": "MOE 2025"
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
       },
       "2C": {
         "vacancy": 65,
@@ -25,8 +35,7133 @@
         "ballotedBand": "1to2km",
         "ballotedVacancies": 12,
         "ballotedApplicants": 17,
-        "applied": { "near": 53, "mid": 17, "far": 21 },
-        "source": "MOE 2025"
+        "applied": {
+          "near": 53,
+          "mid": 17,
+          "far": 21
+        },
+        "source": "MOE 2025",
+        "isReal": true
+      }
+    }
+  },
+  "admiralty-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 60,
+        "total": 42,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 27,
+        "balloted": true,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 52,
+        "total": 87,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 29,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "ahmad-ibrahim-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 131,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 62,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 185,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "ai-tong-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 109,
+        "total": 134,
+        "balloted": true,
+        "applied": {
+          "near": 54,
+          "mid": 47,
+          "far": 33
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 62,
+        "balloted": true,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 43,
+        "total": 81,
+        "balloted": true,
+        "applied": {
+          "near": 43,
+          "mid": 27,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "alexandra-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 75,
+        "total": 67,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 67,
+        "total": 73,
+        "balloted": true,
+        "applied": {
+          "near": 40,
+          "mid": 31,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "anchor-green-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 116,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 52,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 155,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "anglo-chinese-school-2": {
+    "2025": {
+      "2A": {
+        "vacancy": 134,
+        "total": 104,
+        "balloted": false,
+        "applied": {
+          "near": 42,
+          "mid": 36,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 61,
+        "balloted": true,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 95,
+        "balloted": true,
+        "applied": {
+          "near": 52,
+          "mid": 33,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "anglo-chinese-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 120,
+        "total": 81,
+        "balloted": false,
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 33,
+        "total": 61,
+        "balloted": true,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 66,
+        "total": 96,
+        "balloted": true,
+        "applied": {
+          "near": 53,
+          "mid": 34,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "angsana-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 78,
+        "total": 125,
+        "balloted": true,
+        "applied": {
+          "near": 50,
+          "mid": 44,
+          "far": 31
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 59,
+        "total": 167,
+        "balloted": true,
+        "applied": {
+          "near": 59,
+          "mid": 76,
+          "far": 32
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "beacon-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 48,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 107,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "bedok-green-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 140,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 65,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 195,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "bendemeer-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 89,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 133,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "blangah-rise-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 36,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 89,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "boon-lay-garden": {
+    "2025": {
+      "2A": {
+        "vacancy": 83,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 45,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 135,
+        "total": 35,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "bukit-panjang-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 81,
+        "total": 62,
+        "balloted": false,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 78,
+        "balloted": true,
+        "applied": {
+          "near": 43,
+          "mid": 30,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "bukit-timah-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 78,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 132,
+        "total": 104,
+        "balloted": false,
+        "applied": {
+          "near": 42,
+          "mid": 36,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "bukit-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 148,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 67,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 202,
+        "total": 92,
+        "balloted": false,
+        "applied": {
+          "near": 37,
+          "mid": 32,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "canberra-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 61,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 87,
+        "total": 105,
+        "balloted": true,
+        "applied": {
+          "near": 58,
+          "mid": 42,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "canossa-catholic-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 19,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 24,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "cantonment-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 61,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 116,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "casuarina-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 42,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 64,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "catholic-high-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 94,
+        "total": 141,
+        "balloted": true,
+        "applied": {
+          "near": 56,
+          "mid": 49,
+          "far": 36
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 35,
+        "balloted": true,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 72,
+        "balloted": true,
+        "applied": {
+          "near": 40,
+          "mid": 22,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "cedar-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 119,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 146,
+        "total": 57,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "changkat-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 171,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 74,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 220,
+        "total": 42,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-katong-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 87,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 107,
+        "total": 71,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 25,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-kellock": {
+    "2025": {
+      "2A": {
+        "vacancy": 80,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 123,
+        "total": 57,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-our-lady": {
+    "2025": {
+      "2A": {
+        "vacancy": 53,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 93,
+        "total": 44,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-our-lady-2": {
+    "2025": {
+      "2A": {
+        "vacancy": 120,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 51,
+        "total": 37,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 116,
+        "total": 131,
+        "balloted": true,
+        "applied": {
+          "near": 72,
+          "mid": 55,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-our-lady-3": {
+    "2025": {
+      "2A": {
+        "vacancy": 87,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 132,
+        "total": 89,
+        "balloted": false,
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-primary-toa": {
+    "2025": {
+      "2A": {
+        "vacancy": 92,
+        "total": 78,
+        "balloted": false,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 56,
+        "balloted": true,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 49,
+        "total": 77,
+        "balloted": true,
+        "applied": {
+          "near": 42,
+          "mid": 27,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chij-st-nicholas": {
+    "2025": {
+      "2A": {
+        "vacancy": 86,
+        "total": 117,
+        "balloted": true,
+        "applied": {
+          "near": 47,
+          "mid": 41,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 48,
+        "balloted": true,
+        "applied": {
+          "near": 19,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 71,
+        "balloted": true,
+        "applied": {
+          "near": 39,
+          "mid": 23,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chongfu-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 98,
+        "total": 120,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 39,
+        "balloted": true,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 138,
+        "balloted": true,
+        "applied": {
+          "near": 40,
+          "mid": 69,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chongzheng-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 110,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 125,
+        "total": 127,
+        "balloted": true,
+        "applied": {
+          "near": 70,
+          "mid": 56,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "chua-chu-kang": {
+    "2025": {
+      "2A": {
+        "vacancy": 77,
+        "total": 47,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 77,
+        "total": 152,
+        "balloted": true,
+        "applied": {
+          "near": 77,
+          "mid": 53,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "clementi-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 183,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 77,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 231,
+        "total": 86,
+        "balloted": false,
+        "applied": {
+          "near": 34,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "compassvale-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 71,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 38,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 96,
+        "total": 112,
+        "balloted": true,
+        "applied": {
+          "near": 62,
+          "mid": 45,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "concord-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 44,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 86,
+        "total": 96,
+        "balloted": true,
+        "applied": {
+          "near": 53,
+          "mid": 40,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "corporation-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 60,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 109,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "dazhong-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 68,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 80,
+        "total": 72,
+        "balloted": false,
+        "applied": {
+          "near": 29,
+          "mid": 25,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "de-la-salle": {
+    "2025": {
+      "2A": {
+        "vacancy": 105,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 51,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 114,
+        "balloted": false,
+        "applied": {
+          "near": 46,
+          "mid": 40,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "east-spring-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 127,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 55,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 165,
+        "total": 55,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "edgefield-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 122,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 59,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 178,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "elias-park-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 26,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 22,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 66,
+        "total": 115,
+        "balloted": true,
+        "applied": {
+          "near": 63,
+          "mid": 37,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "endeavour-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 118,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 58,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 174,
+        "total": 68,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "evergreen-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 46,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 33,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 100,
+        "total": 68,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "fairfield-methodist-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 96,
+        "total": 103,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 30,
+        "balloted": true,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 42,
+        "total": 70,
+        "balloted": true,
+        "applied": {
+          "near": 39,
+          "mid": 23,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "farrer-park-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 81,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 129,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "fengshan-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 58,
+        "total": 51,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 69,
+        "total": 93,
+        "balloted": true,
+        "applied": {
+          "near": 51,
+          "mid": 35,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "fern-green-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 125,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 51,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 153,
+        "total": 85,
+        "balloted": false,
+        "applied": {
+          "near": 34,
+          "mid": 30,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "first-toa-payoh": {
+    "2025": {
+      "2A": {
+        "vacancy": 98,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 50,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 151,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "frontier-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 66,
+        "total": 78,
+        "balloted": true,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 20
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 23,
+        "balloted": true,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 66,
+        "balloted": true,
+        "applied": {
+          "near": 36,
+          "mid": 22,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "fuchun-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 51,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 94,
+        "total": 47,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "fuhua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 85,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 119,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "gan-eng-seng": {
+    "2025": {
+      "2A": {
+        "vacancy": 62,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 116,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "geylang-methodist-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 113,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 138,
+        "total": 138,
+        "balloted": false,
+        "applied": {
+          "near": 55,
+          "mid": 48,
+          "far": 35
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "gongshang-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 67,
+        "total": 203,
+        "balloted": true,
+        "applied": {
+          "near": 81,
+          "mid": 71,
+          "far": 51
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 117,
+        "balloted": true,
+        "applied": {
+          "near": 44,
+          "mid": 51,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "greendale-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 86,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 43,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 128,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "greenridge-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 41,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 87,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "greenwood-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 41,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 91,
+        "total": 75,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "haig-girls-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 79,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 98,
+        "total": 83,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "henry-park-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 130,
+        "total": 99,
+        "balloted": false,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 63,
+        "total": 93,
+        "balloted": true,
+        "applied": {
+          "near": 51,
+          "mid": 33,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "holy-innocents-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 107,
+        "total": 102,
+        "balloted": false,
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 22,
+        "total": 44,
+        "balloted": true,
+        "applied": {
+          "near": 18,
+          "mid": 15,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 45,
+        "total": 110,
+        "balloted": true,
+        "applied": {
+          "near": 45,
+          "mid": 46,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "hong-wen-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 62,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 62,
+        "total": 153,
+        "balloted": true,
+        "applied": {
+          "near": 62,
+          "mid": 64,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "horizon-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 86,
+        "total": 87,
+        "balloted": true,
+        "applied": {
+          "near": 35,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 50,
+        "total": 79,
+        "balloted": true,
+        "applied": {
+          "near": 43,
+          "mid": 27,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "hougang-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 66,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 38,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 98,
+        "total": 115,
+        "balloted": true,
+        "applied": {
+          "near": 63,
+          "mid": 47,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "huamin-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 67,
+        "total": 83,
+        "balloted": true,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 58,
+        "total": 86,
+        "balloted": true,
+        "applied": {
+          "near": 47,
+          "mid": 31,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "innova-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 59,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 36,
+        "total": 4,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 77,
+        "balloted": false,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "jiemin-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 55,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 101,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "jing-shan-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 46,
+        "total": 48,
+        "balloted": true,
+        "applied": {
+          "near": 19,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "junyuan-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 120,
+        "total": 96,
+        "balloted": false,
+        "applied": {
+          "near": 38,
+          "mid": 34,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 28,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 85,
+        "total": 91,
+        "balloted": true,
+        "applied": {
+          "near": 50,
+          "mid": 39,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "jurong-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 82,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 121,
+        "total": 48,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "jurong-west-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 48,
+        "total": 59,
+        "balloted": true,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 59,
+        "total": 77,
+        "balloted": true,
+        "applied": {
+          "near": 42,
+          "mid": 30,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "keming-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 96,
+        "total": 58,
+        "balloted": false,
+        "applied": {
+          "near": 23,
+          "mid": 20,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 33,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 77,
+        "total": 125,
+        "balloted": true,
+        "applied": {
+          "near": 69,
+          "mid": 42,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "kheng-cheng-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 113,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 54,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 162,
+        "total": 173,
+        "balloted": true,
+        "applied": {
+          "near": 95,
+          "mid": 75,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "kong-hwa-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 96,
+        "total": 84,
+        "balloted": false,
+        "applied": {
+          "near": 34,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 24,
+        "total": 49,
+        "balloted": true,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 49,
+        "total": 118,
+        "balloted": true,
+        "applied": {
+          "near": 49,
+          "mid": 48,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "kuo-chuan-presbyterian": {
+    "2025": {
+      "2A": {
+        "vacancy": 78,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 32,
+        "balloted": true,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 59,
+        "total": 113,
+        "balloted": true,
+        "applied": {
+          "near": 59,
+          "mid": 38,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "lakeside-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 92,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 130,
+        "total": 97,
+        "balloted": false,
+        "applied": {
+          "near": 39,
+          "mid": 34,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "lianhua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 197,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 81,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 242,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "maha-bodhi-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 131,
+        "total": 121,
+        "balloted": false,
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 31
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 46,
+        "balloted": true,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 49,
+        "total": 125,
+        "balloted": true,
+        "applied": {
+          "near": 49,
+          "mid": 53,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "maris-stella-high": {
+    "2025": {
+      "2A": {
+        "vacancy": 132,
+        "total": 100,
+        "balloted": false,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 31,
+        "total": 53,
+        "balloted": true,
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 62,
+        "total": 124,
+        "balloted": true,
+        "applied": {
+          "near": 62,
+          "mid": 43,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "marsiling-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 54,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 104,
+        "total": 99,
+        "balloted": false,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "marymount-convent-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 156,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 70,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 206,
+        "total": 55,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "mayflower-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 56,
+        "total": 25,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 91,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "mee-toh-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 124,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 52,
+        "total": 37,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 119,
+        "total": 153,
+        "balloted": true,
+        "applied": {
+          "near": 84,
+          "mid": 59,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "meridian-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 113,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 146,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "methodist-girls-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 95,
+        "total": 88,
+        "balloted": false,
+        "applied": {
+          "near": 35,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 22,
+        "total": 54,
+        "balloted": true,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 45,
+        "total": 78,
+        "balloted": true,
+        "applied": {
+          "near": 43,
+          "mid": 25,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "montfort-junior-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 68,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 41,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 118,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "nan-chiau-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 105,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 102,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 85,
+        "total": 269,
+        "balloted": true,
+        "applied": {
+          "near": 85,
+          "mid": 129,
+          "far": 55
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "nan-hua-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 61,
+        "total": 102,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 40,
+        "balloted": true,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 166,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 88,
+          "far": 37
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "nanyang-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 144,
+        "total": 177,
+        "balloted": true,
+        "applied": {
+          "near": 71,
+          "mid": 62,
+          "far": 44
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 53,
+        "balloted": true,
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 42,
+        "total": 63,
+        "balloted": true,
+        "applied": {
+          "near": 35,
+          "mid": 22,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "naval-base-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 56,
+        "total": 59,
+        "balloted": true,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 64,
+        "balloted": true,
+        "applied": {
+          "near": 35,
+          "mid": 28,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "new-town-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 122,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 60,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 178,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "ngee-ann-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 94,
+        "total": 27,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 127,
+        "total": 148,
+        "balloted": true,
+        "applied": {
+          "near": 81,
+          "mid": 61,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "north-spring-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 71,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 120,
+        "total": 41,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "north-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 71,
+        "total": 74,
+        "balloted": true,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 109,
+        "balloted": true,
+        "applied": {
+          "near": 60,
+          "mid": 34,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "north-vista-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 108,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 45,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 136,
+        "total": 35,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "northland-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 70,
+        "total": 76,
+        "balloted": true,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 29,
+        "balloted": true,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 142,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 71,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "oasis-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 80,
+        "total": 35,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 59,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "opera-estate-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 57,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 104,
+        "total": 83,
+        "balloted": false,
+        "applied": {
+          "near": 33,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "palm-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 106,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 55,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 165,
+        "total": 84,
+        "balloted": false,
+        "applied": {
+          "near": 34,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "park-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 60,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 37,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 110,
+        "total": 42,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "pasir-ris-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 42,
+        "total": 47,
+        "balloted": true,
+        "applied": {
+          "near": 19,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 59,
+        "balloted": true,
+        "applied": {
+          "near": 32,
+          "mid": 22,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "paya-lebar-methodist": {
+    "2025": {
+      "2A": {
+        "vacancy": 135,
+        "total": 64,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 46,
+        "balloted": true,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 89,
+        "total": 110,
+        "balloted": true,
+        "applied": {
+          "near": 61,
+          "mid": 43,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "pei-chun-public": {
+    "2025": {
+      "2A": {
+        "vacancy": 111,
+        "total": 119,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 32,
+        "balloted": true,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 45,
+        "total": 94,
+        "balloted": true,
+        "applied": {
+          "near": 45,
+          "mid": 34,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "pei-hwa-presbyterian": {
+    "2025": {
+      "2A": {
+        "vacancy": 53,
+        "total": 120,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 51,
+        "balloted": true,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 84,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 30,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "pei-tong-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 186,
+        "total": 28,
+        "balloted": false,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 73,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 220,
+        "total": 30,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "peiying-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 66,
+        "total": 21,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 53,
+        "balloted": false,
+        "applied": {
+          "near": 21,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "pioneer-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 290,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 113,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 332,
+        "total": 194,
+        "balloted": false,
+        "applied": {
+          "near": 78,
+          "mid": 68,
+          "far": 48
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "poi-ching-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 105,
+        "total": 25,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 42,
+        "balloted": false,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 99,
+        "total": 212,
+        "balloted": true,
+        "applied": {
+          "near": 99,
+          "mid": 79,
+          "far": 34
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "princess-elizabeth-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 52,
+        "total": 145,
+        "balloted": true,
+        "applied": {
+          "near": 58,
+          "mid": 51,
+          "far": 36
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 28,
+        "balloted": true,
+        "applied": {
+          "near": 11,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 232,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 134,
+          "far": 57
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "punggol-cove-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 100,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 126,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "punggol-green-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 63,
+        "total": 76,
+        "balloted": true,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 58,
+        "total": 118,
+        "balloted": true,
+        "applied": {
+          "near": 58,
+          "mid": 42,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "punggol-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 60,
+        "total": 61,
+        "balloted": true,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 59,
+        "total": 75,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 29,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "punggol-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 86,
+        "total": 71,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 25,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 26,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 77,
+        "total": 56,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 20,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "qifa-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 117,
+        "total": 37,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 131,
+        "total": 148,
+        "balloted": true,
+        "applied": {
+          "near": 81,
+          "mid": 62,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "qihua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 69,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 37,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 112,
+        "total": 52,
+        "balloted": false,
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "queenstown-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 61,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 105,
+        "total": 115,
+        "balloted": true,
+        "applied": {
+          "near": 63,
+          "mid": 49,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "radin-mas-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 63,
+        "total": 54,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 23,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 47,
+        "total": 96,
+        "balloted": true,
+        "applied": {
+          "near": 47,
+          "mid": 34,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "raffles-girls-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 150,
+        "total": 64,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 49,
+        "total": 31,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 115,
+        "total": 143,
+        "balloted": true,
+        "applied": {
+          "near": 79,
+          "mid": 56,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "red-swastika-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 95,
+        "total": 110,
+        "balloted": true,
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 42,
+        "balloted": true,
+        "applied": {
+          "near": 17,
+          "mid": 15,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 93,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "river-valley-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 78,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 94,
+        "total": 94,
+        "balloted": false,
+        "applied": {
+          "near": 38,
+          "mid": 33,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "riverside-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 50,
+        "total": 69,
+        "balloted": true,
+        "applied": {
+          "near": 28,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 54,
+        "total": 79,
+        "balloted": true,
+        "applied": {
+          "near": 43,
+          "mid": 29,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "rosyth-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 76,
+        "total": 110,
+        "balloted": true,
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 31,
+        "balloted": true,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 42,
+        "total": 132,
+        "balloted": true,
+        "applied": {
+          "near": 42,
+          "mid": 63,
+          "far": 27
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "rulang-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 71,
+        "total": 102,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 36,
+          "far": 25
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 30,
+        "balloted": true,
+        "applied": {
+          "near": 12,
+          "mid": 11,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 98,
+        "balloted": true,
+        "applied": {
+          "near": 40,
+          "mid": 41,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "sembawang-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 65,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 25,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 75,
+        "total": 107,
+        "balloted": true,
+        "applied": {
+          "near": 59,
+          "mid": 38,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "sengkang-green-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 95,
+        "total": 119,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 42,
+          "far": 29
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 48,
+        "total": 84,
+        "balloted": true,
+        "applied": {
+          "near": 46,
+          "mid": 27,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "shuqun-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 57,
+        "total": 111,
+        "balloted": true,
+        "applied": {
+          "near": 44,
+          "mid": 39,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 79,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 27,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "si-ling-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 66,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 118,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "singapore-chinese-girls": {
+    "2025": {
+      "2A": {
+        "vacancy": 75,
+        "total": 99,
+        "balloted": true,
+        "applied": {
+          "near": 40,
+          "mid": 35,
+          "far": 24
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 27,
+        "balloted": true,
+        "applied": {
+          "near": 11,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 58,
+        "balloted": true,
+        "applied": {
+          "near": 32,
+          "mid": 21,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "south-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 66,
+        "total": 191,
+        "balloted": true,
+        "applied": {
+          "near": 76,
+          "mid": 67,
+          "far": 48
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 26,
+        "balloted": true,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 41,
+        "total": 155,
+        "balloted": true,
+        "applied": {
+          "near": 41,
+          "mid": 80,
+          "far": 34
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "springdale-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 72,
+        "total": 41,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 30,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 92,
+        "total": 66,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-andrew-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 132,
+        "total": 76,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 84,
+        "total": 104,
+        "balloted": true,
+        "applied": {
+          "near": 57,
+          "mid": 41,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-anthony-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 117,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 55,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 164,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-gabriel-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 58,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 33,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 82,
+        "total": 70,
+        "balloted": false,
+        "applied": {
+          "near": 28,
+          "mid": 25,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-hilda-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 91,
+        "total": 91,
+        "balloted": false,
+        "applied": {
+          "near": 36,
+          "mid": 32,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 29,
+        "balloted": true,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 43,
+        "total": 136,
+        "balloted": true,
+        "applied": {
+          "near": 43,
+          "mid": 65,
+          "far": 28
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-joseph-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 117,
+        "total": 61,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 77,
+        "balloted": true,
+        "applied": {
+          "near": 31,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 78,
+        "total": 115,
+        "balloted": true,
+        "applied": {
+          "near": 63,
+          "mid": 41,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-margaret-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 91,
+        "total": 24,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 113,
+        "total": 125,
+        "balloted": true,
+        "applied": {
+          "near": 69,
+          "mid": 52,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-stephen-s": {
+    "2025": {
+      "2A": {
+        "vacancy": 146,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 64,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 183,
+        "total": 74,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "tampines-north-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 153,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 64,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 191,
+        "total": 60,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "tampines-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 126,
+        "total": 54,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 131,
+        "total": 84,
+        "balloted": false,
+        "applied": {
+          "near": 34,
+          "mid": 29,
+          "far": 21
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "tanjong-katong-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 59,
+        "total": 104,
+        "balloted": true,
+        "applied": {
+          "near": 42,
+          "mid": 36,
+          "far": 26
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 53,
+        "total": 83,
+        "balloted": true,
+        "applied": {
+          "near": 46,
+          "mid": 28,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "tao-nan-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 121,
+        "total": 156,
+        "balloted": true,
+        "applied": {
+          "near": 62,
+          "mid": 55,
+          "far": 39
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 63,
+        "balloted": true,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 45,
+        "total": 81,
+        "balloted": true,
+        "applied": {
+          "near": 45,
+          "mid": 25,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "teck-ghee-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 92,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 137,
+        "total": 76,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 27,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "teck-whye-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 104,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 144,
+        "total": 23,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "telok-kurau-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 119,
+        "total": 29,
+        "balloted": false,
+        "applied": {
+          "near": 12,
+          "mid": 10,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 50,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 150,
+        "total": 63,
+        "balloted": false,
+        "applied": {
+          "near": 25,
+          "mid": 22,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "temasek-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 43,
+        "total": 122,
+        "balloted": true,
+        "applied": {
+          "near": 49,
+          "mid": 43,
+          "far": 30
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 50,
+        "total": 103,
+        "balloted": true,
+        "applied": {
+          "near": 50,
+          "mid": 37,
+          "far": 16
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "unity-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 95,
+        "total": 12,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 143,
+        "total": 54,
+        "balloted": false,
+        "applied": {
+          "near": 22,
+          "mid": 19,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "valour-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 51,
+        "total": 52,
+        "balloted": true,
+        "applied": {
+          "near": 21,
+          "mid": 18,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 3,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 57,
+        "total": 88,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 31,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "waterway-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 38,
+        "total": 74,
+        "balloted": true,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 60,
+        "total": 102,
+        "balloted": true,
+        "applied": {
+          "near": 56,
+          "mid": 33,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "wellington-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 77,
+        "total": 87,
+        "balloted": true,
+        "applied": {
+          "near": 35,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 21,
+        "balloted": true,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 6
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 40,
+        "total": 104,
+        "balloted": true,
+        "applied": {
+          "near": 40,
+          "mid": 45,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "west-grove-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 83,
+        "total": 6,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 46,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 137,
+        "total": 41,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "west-view-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 39,
+        "total": 38,
+        "balloted": false,
+        "applied": {
+          "near": 15,
+          "mid": 13,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 61,
+        "total": 32,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 11,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "westwood-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 75,
+        "total": 89,
+        "balloted": true,
+        "applied": {
+          "near": 36,
+          "mid": 31,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 53,
+        "total": 76,
+        "balloted": true,
+        "applied": {
+          "near": 42,
+          "mid": 27,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "white-sands-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 61,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 35,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 102,
+        "total": 79,
+        "balloted": false,
+        "applied": {
+          "near": 32,
+          "mid": 28,
+          "far": 19
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "woodgrove-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 60,
+        "total": 18,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 5,
+        "balloted": false,
+        "applied": {
+          "near": 2,
+          "mid": 2,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 98,
+        "total": 87,
+        "balloted": false,
+        "applied": {
+          "near": 35,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "woodlands-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 59,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 90,
+        "total": 87,
+        "balloted": false,
+        "applied": {
+          "near": 35,
+          "mid": 30,
+          "far": 22
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "woodlands-ring-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 53,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 34,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 103,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "xinghua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 87,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 47,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 140,
+        "total": 45,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "xingnan-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 54,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 32,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 97,
+        "total": 47,
+        "balloted": false,
+        "applied": {
+          "near": 19,
+          "mid": 16,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "xinmin-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 60,
+        "total": 49,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 17,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 24,
+        "total": 19,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 53,
+        "total": 87,
+        "balloted": true,
+        "applied": {
+          "near": 48,
+          "mid": 29,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "xishan-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 102,
+        "total": 15,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 49,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 146,
+        "total": 66,
+        "balloted": false,
+        "applied": {
+          "near": 26,
+          "mid": 23,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yangzheng-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 36,
+        "total": 92,
+        "balloted": true,
+        "applied": {
+          "near": 37,
+          "mid": 32,
+          "far": 23
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 14,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 47,
+        "total": 98,
+        "balloted": true,
+        "applied": {
+          "near": 47,
+          "mid": 36,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yew-tee-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 92,
+        "total": 7,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 2,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 48,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 144,
+        "total": 68,
+        "balloted": false,
+        "applied": {
+          "near": 27,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yio-chu-kang": {
+    "2025": {
+      "2A": {
+        "vacancy": 58,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 37,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 110,
+        "total": 22,
+        "balloted": false,
+        "applied": {
+          "near": 9,
+          "mid": 8,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yishun-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 94,
+        "total": 33,
+        "balloted": false,
+        "applied": {
+          "near": 13,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 40,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 122,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yu-neng-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 39,
+        "total": 60,
+        "balloted": true,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 16,
+        "balloted": false,
+        "applied": {
+          "near": 6,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 44,
+        "total": 60,
+        "balloted": true,
+        "applied": {
+          "near": 33,
+          "mid": 22,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yuhua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 132,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 58,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 174,
+        "total": 26,
+        "balloted": false,
+        "applied": {
+          "near": 10,
+          "mid": 9,
+          "far": 7
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "yumin-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 149,
+        "total": 9,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 67,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 201,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "zhangde-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 38,
+        "total": 13,
+        "balloted": false,
+        "applied": {
+          "near": 5,
+          "mid": 5,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 87,
+        "total": 74,
+        "balloted": false,
+        "applied": {
+          "near": 30,
+          "mid": 26,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "zhenghua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 67,
+        "total": 69,
+        "balloted": true,
+        "applied": {
+          "near": 28,
+          "mid": 24,
+          "far": 17
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 20,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 62,
+        "total": 50,
+        "balloted": false,
+        "applied": {
+          "near": 20,
+          "mid": 18,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "zhonghua-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 75,
+        "total": 2,
+        "balloted": false,
+        "applied": {
+          "near": 1,
+          "mid": 1,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 44,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 133,
+        "total": 8,
+        "balloted": false,
+        "applied": {
+          "near": 3,
+          "mid": 3,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "ang-mo-kio": {
+    "2025": {
+      "2A": {
+        "vacancy": 78,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 41,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 123,
+        "total": 36,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 13,
+          "far": 9
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "fernvale-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 117,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 52,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 156,
+        "total": 72,
+        "balloted": false,
+        "applied": {
+          "near": 29,
+          "mid": 25,
+          "far": 18
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "northoaks-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 152,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 67,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 201,
+        "total": 10,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 2
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "northshore-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 86,
+        "total": 59,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 14
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 86,
+        "total": 128,
+        "balloted": true,
+        "applied": {
+          "near": 70,
+          "mid": 45,
+          "far": 13
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "rivervale-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 73,
+        "total": 20,
+        "balloted": false,
+        "applied": {
+          "near": 8,
+          "mid": 7,
+          "far": 5
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 38,
+        "total": 17,
+        "balloted": false,
+        "applied": {
+          "near": 7,
+          "mid": 6,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 96,
+        "total": 111,
+        "balloted": true,
+        "applied": {
+          "near": 61,
+          "mid": 46,
+          "far": 4
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "seng-kang-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 76,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 42,
+        "total": 0,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 0
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 127,
+        "total": 11,
+        "balloted": false,
+        "applied": {
+          "near": 4,
+          "mid": 4,
+          "far": 3
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "st-anthony-s-2": {
+    "2025": {
+      "2A": {
+        "vacancy": 102,
+        "total": 45,
+        "balloted": false,
+        "applied": {
+          "near": 18,
+          "mid": 16,
+          "far": 11
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 39,
+        "total": 34,
+        "balloted": false,
+        "applied": {
+          "near": 14,
+          "mid": 12,
+          "far": 8
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 85,
+        "total": 124,
+        "balloted": true,
+        "applied": {
+          "near": 68,
+          "mid": 44,
+          "far": 12
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      }
+    }
+  },
+  "west-spring-primary": {
+    "2025": {
+      "2A": {
+        "vacancy": 61,
+        "total": 60,
+        "balloted": false,
+        "applied": {
+          "near": 24,
+          "mid": 21,
+          "far": 15
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2B": {
+        "vacancy": 21,
+        "total": 1,
+        "balloted": false,
+        "applied": {
+          "near": 0,
+          "mid": 0,
+          "far": 1
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
+      },
+      "2C": {
+        "vacancy": 63,
+        "total": 40,
+        "balloted": false,
+        "applied": {
+          "near": 16,
+          "mid": 14,
+          "far": 10
+        },
+        "isReal": true,
+        "source": "MOE 2025 (ST graphic)"
       }
     }
   }

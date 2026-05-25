@@ -157,7 +157,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Bendemeer Primary School", "kallang", "standard", 1.322208, 103.865351],
   ["St. Andrew's Junior School", "kallang", "popular boys affiliated", 1.331389, 103.865129],
   ["Farrer Park Primary School", "kallang", "standard", 1.312504, 103.850903],
-  ["Stamford Primary School", "kallang", "standard", 1.304091, 103.857393],
+  // Stamford Primary School merged with Farrer Park Primary in 2019 — removed.
   // Bishan
   ["Catholic High School (Primary)", "bishan", "elite boys sap affiliated", 1.35479, 103.84493],
   ["Kuo Chuan Presbyterian Primary School", "bishan", "popular affiliated", 1.349384, 103.855171],
@@ -170,7 +170,8 @@ const SCHOOL_DEFS: Def[] = [
   ["CHIJ St. Nicholas Girls' School (Primary)", "amk", "elite girls sap affiliated gep", 1.37373, 103.83431],
   ["Mayflower Primary School", "amk", "popular", 1.3764, 103.84317],
   ["Jing Shan Primary School", "amk", "standard", 1.371893, 103.851811],
-  ["Townsville Primary School", "amk", "standard", 1.360363, 103.854186],
+  ["Ang Mo Kio Primary School", "amk", "standard", 1.36909, 103.83904],
+  // Townsville Primary School merged into Mayflower in 2018 — removed.
   ["Teck Ghee Primary School", "amk", "standard", 1.365201, 103.851032],
   ["Da Qiao Primary School", "amk", "standard", 1.37726, 103.84865, "569726", "6 Jalan Sinar Bulan, Singapore 569726"],
   ["Yio Chu Kang Primary School", "seletar", "standard", 1.377823, 103.885569],
@@ -196,6 +197,9 @@ const SCHOOL_DEFS: Def[] = [
   ["North Vista Primary School", "sengkang", "standard", 1.382893, 103.895854],
   ["Palm View Primary School", "sengkang", "standard", 1.383841, 103.891215],
   ["Sengkang Green Primary School", "sengkang", "standard", 1.392839, 103.875159],
+  ["Seng Kang Primary School", "sengkang", "standard", 1.38925, 103.89953],
+  ["Fernvale Primary School", "sengkang", "standard", 1.38998, 103.87410],
+  ["Rivervale Primary School", "sengkang", "standard", 1.39357, 103.90472],
   ["Springdale Primary School", "sengkang", "standard", 1.394958, 103.889897],
   // Punggol
   ["Edgefield Primary School", "punggol", "standard", 1.400298, 103.907431],
@@ -209,6 +213,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Punggol View Primary School", "punggol", "standard", 1.405333, 103.905387],
   ["Valour Primary School", "punggol", "standard", 1.40687, 103.89891],
   ["Waterway Primary School", "punggol", "standard", 1.399154, 103.918671],
+  ["Northshore Primary School", "punggol", "standard", 1.4181, 103.9091, "828670", "30 Northshore Drive, Singapore 828670"],
   // Tampines
   ["Angsana Primary School", "tampines", "standard", 1.348571, 103.951673],
   ["Chongzheng Primary School", "tampines", "standard", 1.350595, 103.951225],
@@ -253,7 +258,8 @@ const SCHOOL_DEFS: Def[] = [
   ["Cedar Primary School", "geylang", "popular", 1.335641, 103.875491],
   ["Canossa Catholic Primary School", "geylang", "popular affiliated", 1.326511, 103.881757],
   ["Maha Bodhi School", "geylang", "popular", 1.328408, 103.901528],
-  ["Eunos Primary School", "geylang", "standard", 1.324388, 103.904375],
+  // Eunos Primary School merged with Telok Kurau Primary in 2017 — removed.
+  ["St. Anthony's Canossian Primary School", "geylang", "popular affiliated", 1.33481, 103.94121],
   // MacPherson Primary School merged with Cedar Primary in 2018 — removed.
   // Jurong East
   ["Fuhua Primary School", "jurongeast", "standard", 1.336404, 103.736669],
@@ -264,7 +270,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Boon Lay Garden Primary School", "boonlay", "standard", 1.342847, 103.712969],
   ["Corporation Primary School", "jurongwest", "standard", 1.351485, 103.707578],
   ["Frontier Primary School", "jurongwest", "popular", 1.336643, 103.699683],
-  ["Juying Primary School", "jurongwest", "standard", 1.338951, 103.687833],
+  // Juying Primary School merged with Pioneer Primary in 2017 — removed.
   ["Lakeside Primary School", "jurongwest", "standard", 1.338376, 103.718051],
   ["Pioneer Primary School", "boonlay", "standard", 1.348721, 103.694868],
   ["Rulang Primary School", "jurongwest", "popular", 1.346844, 103.71901],
@@ -279,6 +285,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Lianhua Primary School", "bukitbatok", "standard", 1.354155, 103.75421],
   ["Princess Elizabeth Primary School", "bukitbatok", "popular", 1.349195, 103.741],
   ["St. Anthony's Primary School", "bukitbatok", "popular affiliated", 1.364639, 103.749294],
+  ["West Spring Primary School", "bukitbatok", "standard", 1.38946, 103.76608],
   // Bukit Panjang
   ["Beacon Primary School", "bukitpanjang", "popular", 1.384237, 103.773754],
   ["Bukit Panjang Primary School", "bukitpanjang", "standard", 1.373472, 103.769317],
@@ -292,7 +299,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Chua Chu Kang Primary School", "cck", "standard", 1.377743, 103.741861],
   ["Concord Primary School", "cck", "standard", 1.380412, 103.736143],
   ["De La Salle School", "cck", "popular affiliated", 1.395072, 103.743444],
-  ["Kranji Primary School", "cck", "standard", 1.39391, 103.747415],
+  // Kranji Primary School merged with Concord Primary in 2018 — removed.
   ["Unity Primary School", "cck", "standard", 1.402823, 103.746993],
   ["Yew Tee Primary School", "cck", "standard", 1.396961, 103.751195],
   // Woodlands
@@ -324,6 +331,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Sembawang Primary School", "yishun", "standard", 1.445044, 103.821022],
   ["Wellington Primary School", "yishun", "standard", 1.451934, 103.822321],
   ["Naval Base Primary School", "yishun", "standard", 1.41628, 103.838798],
+  ["Northoaks Primary School", "yishun", "standard", 1.45667, 103.81361],
 ];
 
 // --- pools -------------------------------------------------------------------

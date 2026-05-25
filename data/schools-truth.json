@@ -230,13 +230,6 @@
     "lng": 103.850903,
     "matchedName": "FARRER PARK PRIMARY SCHOOL"
   },
-  "stamford-primary-school": {
-    "postal": "198423",
-    "address": "1 Victoria Lane, Singapore 198423",
-    "lat": 1.304091,
-    "lng": 103.857393,
-    "matchedName": "STAMFORD PRIMARY SCHOOL"
-  },
   "catholic-high-school": {
     "postal": "579767",
     "address": "9 Bishan Street 22, Singapore 579767",
@@ -307,12 +300,12 @@
     "lng": 103.851811,
     "matchedName": "JING SHAN PRIMARY SCHOOL"
   },
-  "townsville-primary-school": {
-    "postal": "569730",
-    "address": "3 Ang Mo Kio Avenue 10, Singapore 569730",
-    "lat": 1.360363,
-    "lng": 103.854186,
-    "matchedName": "TOWNSVILLE PRIMARY SCHOOL"
+  "ang-mo-kio": {
+    "postal": "569920",
+    "address": "20 Ang Mo Kio Avenue 3, Singapore 569920",
+    "lat": 1.369092,
+    "lng": 103.839041,
+    "matchedName": "ANG MO KIO PRIMARY SCHOOL"
   },
   "teck-ghee-primary": {
     "postal": "569299",
@@ -467,6 +460,27 @@
     "lat": 1.392839,
     "lng": 103.875159,
     "matchedName": "SENGKANG GREEN PRIMARY SCHOOL"
+  },
+  "seng-kang-primary": {
+    "postal": "545166",
+    "address": "21 Compassvale Walk, Singapore 545166",
+    "lat": 1.38925,
+    "lng": 103.899528,
+    "matchedName": "SENG KANG PRIMARY SCHOOL"
+  },
+  "fernvale-primary-school": {
+    "postal": "797701",
+    "address": "1 Fernvale Lane, Singapore 797701",
+    "lat": 1.389979,
+    "lng": 103.874101,
+    "matchedName": "FERNVALE PRIMARY SCHOOL"
+  },
+  "rivervale-primary-school": {
+    "postal": "545092",
+    "address": "80 Rivervale Drive, Singapore 545092",
+    "lat": 1.393574,
+    "lng": 103.904718,
+    "matchedName": "RIVERVALE PRIMARY SCHOOL"
   },
   "springdale-primary-school": {
     "postal": "544799",
@@ -804,12 +818,12 @@
     "lng": 103.901528,
     "matchedName": "MAHA BODHI SCHOOL"
   },
-  "eunos-primary-school": {
-    "postal": "419529",
-    "address": "95 Jalan Eunos, Singapore 419529",
-    "lat": 1.324388,
-    "lng": 103.904375,
-    "matchedName": "EUNOS PRIMARY SCHOOL"
+  "st-anthony-s": {
+    "postal": "469701",
+    "address": "1602 Bedok North Avenue 4, Singapore 469701",
+    "lat": 1.334807,
+    "lng": 103.941209,
+    "matchedName": "SAINT ANTHONY'S CANOSSIAN PRIMARY SCHOOL"
   },
   "fuhua-primary-school": {
     "postal": "609647",
@@ -859,13 +873,6 @@
     "lat": 1.336643,
     "lng": 103.699683,
     "matchedName": "FRONTIER PRIMARY SCHOOL"
-  },
-  "juying-primary-school": {
-    "postal": "649037",
-    "address": "31 Jurong West Street 91, Singapore 649037",
-    "lat": 1.338951,
-    "lng": 103.687833,
-    "matchedName": "JUYING PRIMARY SCHOOL"
   },
   "lakeside-primary-school": {
     "postal": "618310",
@@ -951,12 +958,19 @@
     "lng": 103.741,
     "matchedName": "PRINCESS ELIZABETH PRIMARY SCHOOL"
   },
-  "st-anthony-s": {
+  "st-anthony-s-2": {
     "postal": "659401",
     "address": "30 Bukit Batok Street 32, Singapore 659401",
     "lat": 1.364639,
     "lng": 103.749294,
     "matchedName": "SAINT ANTHONY'S PRIMARY SCHOOL"
+  },
+  "west-spring-primary": {
+    "postal": "679946",
+    "address": "60 Bukit Panjang Ring Road, Singapore 679946",
+    "lat": 1.389463,
+    "lng": 103.766077,
+    "matchedName": "WEST SPRING PRIMARY SCHOOL"
   },
   "beacon-primary-school": {
     "postal": "679944",
@@ -1034,13 +1048,6 @@
     "lat": 1.395072,
     "lng": 103.743444,
     "matchedName": "DE LA SALLE SCHOOL"
-  },
-  "kranji-primary-school": {
-    "postal": "689189",
-    "address": "11 Choa Chu Kang Street 54, Singapore 689189",
-    "lat": 1.39391,
-    "lng": 103.747415,
-    "matchedName": "KRANJI PRIMARY SCHOOL"
   },
   "unity-primary-school": {
     "postal": "688268",
@@ -1237,6 +1244,13 @@
     "lat": 1.41628,
     "lng": 103.838798,
     "matchedName": "NAVAL BASE PRIMARY SCHOOL"
+  },
+  "northoaks-primary-school": {
+    "postal": "757622",
+    "address": "61 Sembawang Drive, Singapore 757622",
+    "lat": 1.456667,
+    "lng": 103.81361,
+    "matchedName": "NORTHOAKS PRIMARY SCHOOL"
   },
   "_unmatched": []
 }
