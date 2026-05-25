@@ -79,6 +79,7 @@ export function SchoolDetailPanel({
   const insight = personalisedInsight(school, school.band, phase);
   const tone = TONE_COLOR[insight.tone];
   const { year, outcome } = latestOutcome(school, phase);
+  const pbForCurrentYear = school.ballot[year]?.[phase];
   const ratio =
     outcome.vacancy > 0 ? outcome.totalApplied / outcome.vacancy : 0;
 
@@ -252,7 +253,7 @@ export function SchoolDetailPanel({
                 <tr className="bg-sand text-left text-xs text-eyebrow">
                   <th className="px-3 py-1.5 font-bold">Distance band</th>
                   <th className="px-3 py-1.5 text-right font-bold">Applied</th>
-                  <th className="px-3 py-1.5 text-right font-bold">Places</th>
+                  <th className="px-3 py-1.5 text-right font-bold">Admitted</th>
                   <th className="px-3 py-1.5 font-bold">Outcome</th>
                 </tr>
               </thead>
@@ -277,8 +278,8 @@ export function SchoolDetailPanel({
                       <td className="px-3 py-1.5 text-right tabular-nums text-ink">
                         {bo.applied}
                       </td>
-                      <td className="px-3 py-1.5 text-right tabular-nums text-ink-muted">
-                        {bo.places}
+                      <td className="px-3 py-1.5 text-right tabular-nums text-ink">
+                        {bo.taken}
                       </td>
                       <td className="px-3 py-1.5 text-ink-muted">
                         {bandOutcomeText(bo)}
@@ -289,6 +290,15 @@ export function SchoolDetailPanel({
               </tbody>
             </table>
           </div>
+          {outcome.isReal && !pbForCurrentYear?.ballotedBand ? (
+            <p className="mt-2 text-[11px] leading-snug text-ink-muted/80">
+              MOE publishes the phase total ({outcome.totalApplied} applied,{" "}
+              {outcome.vacancy} place{outcome.vacancy === 1 ? "" : "s"}) and the
+              balloting outcome, but not the per-band split. The applied/admitted
+              numbers per band above are estimated from the totals and should be
+              read as approximate.
+            </p>
+          ) : null}
         </Section>
 
         {/* 5-year ballot depth */}
