@@ -187,12 +187,15 @@ section("1 km MOE-band edge cases");
 }
 
 // ─────────────────────────────────────────────────────────────────────
-// 8. Ballot internal consistency
+// 8. Ballot internal consistency + real-vs-illustrative provenance
 // ─────────────────────────────────────────────────────────────────────
-section("Ballot data internal consistency");
+section("Ballot data internal consistency + provenance");
 {
   let badYears = 0;
+  let realPhases = 0, synthPhases = 0;
+  const realBySchool: Record<string, number> = {};
   for (const s of schools) {
+    realBySchool[s.id] = 0;
     for (const [yr, phases] of Object.entries(s.ballot)) {
       const y = Number(yr);
       if (!Number.isInteger(y) || y < 2018 || y > 2030) { badYears++; continue; }
@@ -201,11 +204,21 @@ section("Ballot data internal consistency");
         if (b.vacancy < 0) fail(`${s.name} ${yr} ${phase}: negative vacancy`);
         if (b.applied.near < 0 || b.applied.mid < 0 || b.applied.far < 0)
           fail(`${s.name} ${yr} ${phase}: negative applied`);
+        if (b.isReal) { realPhases++; realBySchool[s.id]++; }
+        else synthPhases++;
       }
     }
   }
   if (badYears) fail(`${badYears} ballot rows have invalid years`);
   else info(`all ballot years valid, all vacancies + applied non-negative.`);
+  const totalPhases = realPhases + synthPhases;
+  const pct = totalPhases ? ((realPhases / totalPhases) * 100).toFixed(1) : "0";
+  info(`ballot provenance: ${realPhases}/${totalPhases} phase-rows from real MOE data (${pct}%).`);
+  const schoolsWithReal = Object.values(realBySchool).filter((n) => n > 0).length;
+  info(`${schoolsWithReal}/${schools.length} schools have at least one real ballot year.`);
+  if (realPhases === 0) {
+    warn(`zero real ballot data — every ballot bar in the UI will be flagged 'Illustrative'. Run scripts/scrape-ballot.ts to populate data/ballot-truth.json.`);
+  }
 }
 
 // ─────────────────────────────────────────────────────────────────────

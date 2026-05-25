@@ -6667,28 +6667,43 @@
       },
       "2025": {
         "2A": {
-          "vacancy": 46,
+          "vacancy": 69,
+          "total": 43,
+          "balloted": false,
           "applied": {
-            "near": 23,
+            "near": 17,
             "mid": 14,
-            "far": 11
-          }
+            "far": 12
+          },
+          "source": "MOE 2025",
+          "isReal": true
         },
         "2B": {
-          "vacancy": 30,
+          "vacancy": 29,
+          "total": 25,
+          "balloted": false,
           "applied": {
-            "near": 28,
-            "mid": 15,
-            "far": 11
-          }
+            "near": 10,
+            "mid": 8,
+            "far": 7
+          },
+          "source": "MOE 2025",
+          "isReal": true
         },
         "2C": {
-          "vacancy": 117,
+          "vacancy": 65,
+          "total": 91,
+          "balloted": true,
+          "ballotedBand": "1to2km",
+          "ballotedVacancies": 12,
+          "ballotedApplicants": 17,
           "applied": {
-            "near": 95,
-            "mid": 51,
-            "far": 36
-          }
+            "near": 53,
+            "mid": 17,
+            "far": 21
+          },
+          "source": "MOE 2025",
+          "isReal": true
         }
       }
     }

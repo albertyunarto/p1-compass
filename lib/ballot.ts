@@ -31,6 +31,10 @@ export type PhaseOutcome = {
   ballotedBand: Band | null;
   /** 0–1, how oversubscribed the balloted band was — drives colour intensity. */
   intensity: number;
+  /** True when this outcome was built from real MOE data, not synthesised. */
+  isReal: boolean;
+  /** Provenance label, e.g. "MOE 2025". */
+  source?: string;
 };
 
 export function resolvePhase(pb: PhaseBallot): PhaseOutcome {
@@ -63,14 +67,28 @@ export function resolvePhase(pb: PhaseBallot): PhaseOutcome {
   return {
     status: ballotedBand ? STATUS_FOR_BAND[ballotedBand] : "open",
     vacancy: pb.vacancy,
-    totalApplied,
+    totalApplied: pb.total ?? totalApplied,
     bands,
     ballotedBand,
     intensity,
+    isReal: pb.isReal === true,
+    source: pb.source,
   };
 }
 
 const EMPTY: PhaseBallot = { vacancy: 0, applied: { near: 0, mid: 0, far: 0 } };
+
+/** How many of the displayed years carry real MOE figures. */
+export function realYearCount(
+  school: School,
+  phase: Phase,
+): { real: number; total: number } {
+  let real = 0;
+  for (const y of BALLOT_YEARS) {
+    if (school.ballot[y]?.[phase]?.isReal) real++;
+  }
+  return { real, total: BALLOT_YEARS.length };
+}
 
 /** Outcome for a phase in a specific year, or null if not recorded. */
 export function outcomeFor(

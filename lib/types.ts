@@ -27,13 +27,29 @@ export type Band = "near" | "mid" | "far";
 export type BallotStatus = "open" | "b_far" | "b_mid" | "b_near";
 
 /**
- * Raw balloting inputs for one phase in one year: how many places were
- * contested, and how many children applied from each distance band. The
- * outcome (which band balloted, how oversubscribed) is derived from this.
+ * Raw balloting inputs for one phase in one year. `applied` is the
+ * synthesised per-band breakdown (used by the verdict engine for
+ * proportional reasoning). The optional fields below carry the actual
+ * MOE-published figures and supersede the synthesised breakdown when
+ * present — see data/ballot-truth.json.
  */
 export type PhaseBallot = {
   vacancy: number;
   applied: { near: number; mid: number; far: number };
+  /** Real total applicants for the phase, from MOE. */
+  total?: number;
+  /** Whether the phase required balloting. */
+  balloted?: boolean;
+  /** Distance band where balloting was conducted (if any). */
+  ballotedBand?: "within1km" | "1to2km" | "beyond2km" | "all";
+  /** Vacancies that went into the ballot. */
+  ballotedVacancies?: number;
+  /** Applicants in the balloted band. */
+  ballotedApplicants?: number;
+  /** Set true when this phase's figures came from a real source. */
+  isReal?: boolean;
+  /** Provenance label, e.g. "MOE 2025". */
+  source?: string;
 };
 
 export type BallotHistory = {

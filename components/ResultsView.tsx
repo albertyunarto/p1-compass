@@ -124,8 +124,47 @@ export function ResultsView({ within, beyond, origin }: Props) {
   const showWithin = distance !== "far";
   const showBeyond = distance === "all" || distance === "far";
 
+  // Ballot-data provenance for everything currently in view.
+  const provenance = useMemo(() => {
+    let real = 0;
+    let total = 0;
+    for (const s of all) {
+      for (const yrs of Object.values(s.ballot)) {
+        for (const b of Object.values(yrs)) {
+          if (!b) continue;
+          total++;
+          if (b.isReal) real++;
+        }
+      }
+    }
+    return { real, total };
+  }, [all]);
+  const allReal = provenance.total > 0 && provenance.real === provenance.total;
+  const someReal = provenance.real > 0 && provenance.real < provenance.total;
+
   return (
     <div className="flex flex-col gap-5">
+      <div
+        role="note"
+        className={
+          "rounded-md border px-3 py-2 text-xs sm:text-[13px] leading-snug " +
+          (allReal
+            ? "border-good/30 bg-good-soft text-good"
+            : someReal
+              ? "border-caution/30 bg-caution-soft text-caution"
+              : "border-caution/40 bg-caution-soft text-caution")
+        }
+      >
+        <strong>
+          {allReal
+            ? "All ballot figures verified against MOE."
+            : someReal
+              ? `${provenance.real} of ${provenance.total} ballot figures verified against MOE.`
+              : "Ballot figures shown are illustrative — pending the next MOE refresh."}
+        </strong>{" "}
+        School locations and distances are exact (verified against the Singapore
+        Land Authority dataset). See <a href="/about" className="underline">how we keep the data honest</a>.
+      </div>
       <ResultsFilterBar
         phase={phase}
         onPhase={(p) => {

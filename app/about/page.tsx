@@ -101,6 +101,39 @@ export default function AboutPage() {
         dataset — you can read it on GitHub.
       </p>
 
+      <Heading>Ballot data — what&apos;s real, what isn&apos;t</Heading>
+      <p className="mt-2 leading-relaxed text-ink-soft">
+        Every ballot bar in P1 Compass is labelled by provenance. A green
+        &ldquo;✓ Verified against MOE figures&rdquo; banner means the figures for that
+        phase came from MOE&apos;s Past Vacancies and Balloting Data (via{" "}
+        <a
+          href="https://www.p1registration.sg/category/ballot-history/"
+          target="_blank"
+          rel="noreferrer"
+          className="text-primary underline underline-offset-2"
+        >
+          p1registration.sg
+        </a>
+        ). An amber &ldquo;⚠ Illustrative — pending the next MOE refresh&rdquo;
+        banner means we don&apos;t yet have real numbers for that school, and
+        what you see is generated to demonstrate the UI — do NOT use it for a
+        decision. The refresh runs once per year after MOE publishes; the
+        scraper script (
+        <code className="rounded bg-sand/60 px-1.5 py-0.5 text-[0.85em] text-ink">
+          bun scripts/scrape-ballot.ts
+        </code>
+        ) pulls the real figures into{" "}
+        <code className="rounded bg-sand/60 px-1.5 py-0.5 text-[0.85em] text-ink">
+          data/ballot-truth.json
+        </code>{" "}
+        and the build merges them in.
+      </p>
+      <p className="mt-3 leading-relaxed text-ink-soft">
+        Individual bars also carry a small &ldquo;MOE&rdquo; tag under the year
+        label when verified, and a hatched pattern on illustrative bars so they
+        never look interchangeable with real data.
+      </p>
+
       <Heading>Phases &amp; ballot history</Heading>
       <p className="mt-2 leading-relaxed text-ink-soft">
         Use the phase toggle to view your situation for Phase 2A (alumni),

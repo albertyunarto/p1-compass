@@ -1,0 +1,33 @@
+{
+  "_doc": "Real ballot data per school per year. Keyed by school id (same id used in data/schools.json). When an entry exists for (school, year, phase), it overrides the synthesised ballot in data/schools.json at build time. See scripts/scrape-ballot.ts to populate this file from elite.com.sg/ballot. Years not present in this file fall back to synthesised illustrative data and the UI labels them as such.",
+  "_source": "MOE Past Vacancies and Balloting Data, sourced from elite.com.sg/ballot.",
+  "_lastUpdated": "2026-05-25",
+  "anderson-primary-school": {
+    "2025": {
+      "2A": {
+        "vacancy": 69,
+        "total": 43,
+        "balloted": false,
+        "applied": { "near": 17, "mid": 14, "far": 12 },
+        "source": "MOE 2025"
+      },
+      "2B": {
+        "vacancy": 29,
+        "total": 25,
+        "balloted": false,
+        "applied": { "near": 10, "mid": 8, "far": 7 },
+        "source": "MOE 2025"
+      },
+      "2C": {
+        "vacancy": 65,
+        "total": 91,
+        "balloted": true,
+        "ballotedBand": "1to2km",
+        "ballotedVacancies": 12,
+        "ballotedApplicants": 17,
+        "applied": { "near": 53, "mid": 17, "far": 21 },
+        "source": "MOE 2025"
+      }
+    }
+  }
+}

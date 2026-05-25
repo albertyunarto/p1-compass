@@ -510,6 +510,45 @@ function loadTruth(): Record<string, TruthEntry> {
   }
 }
 
+/** data/ballot-truth.json schema. */
+type BallotTruth = Record<
+  string,
+  Record<string, Partial<Record<Phase, PhaseBallot>>>
+>;
+
+function loadBallotTruth(): BallotTruth {
+  try {
+    const path = join(import.meta.dirname, "..", "data", "ballot-truth.json");
+    const raw = JSON.parse(readFileSync(path, "utf8")) as BallotTruth;
+    const out: BallotTruth = {};
+    for (const [k, v] of Object.entries(raw)) {
+      if (k.startsWith("_")) continue;
+      out[k] = v;
+    }
+    return out;
+  } catch {
+    return {};
+  }
+}
+
+/** Merge real-source ballot data over the synthesised history. */
+function applyBallotTruth(
+  base: BallotHistory,
+  override: Record<string, Partial<Record<Phase, PhaseBallot>>>,
+): BallotHistory {
+  const out: BallotHistory = { ...base };
+  for (const [yearStr, phases] of Object.entries(override)) {
+    const y = Number(yearStr);
+    if (!Number.isInteger(y)) continue;
+    const existing = out[y] ?? {};
+    out[y] = { ...existing };
+    for (const [phase, real] of Object.entries(phases) as [Phase, PhaseBallot][]) {
+      out[y][phase] = { ...real, isReal: true };
+    }
+  }
+  return out;
+}
+
 async function buildSchools(): Promise<School[]> {
   // Probe OneMap once — if reachable, geocode every school precisely.
   const probe = await onemapSearch("Raffles Place MRT");
@@ -525,6 +564,20 @@ async function buildSchools(): Promise<School[]> {
   if (truthIds.length > 0) {
     console.log(
       `Loaded ${truthIds.length} school address/postal entries from data/schools-truth.json.`,
+    );
+  }
+
+  const ballotTruth = loadBallotTruth();
+  const ballotTruthIds = Object.keys(ballotTruth);
+  let realBallotPhases = 0;
+  for (const yrs of Object.values(ballotTruth)) {
+    for (const phases of Object.values(yrs)) {
+      realBallotPhases += Object.keys(phases).length;
+    }
+  }
+  if (ballotTruthIds.length > 0) {
+    console.log(
+      `Loaded ${realBallotPhases} real ballot phases across ${ballotTruthIds.length} schools from data/ballot-truth.json.`,
     );
   }
 
@@ -630,7 +683,10 @@ async function buildSchools(): Promise<School[]> {
       affiliations: tags.includes("affiliated") ? affiliationsFor(name) : [],
       ccas: sample(rng, CCAS, 5 + Math.floor(rng() * 4)),
       programmes: sample(rng, PROGRAMMES, 1 + Math.floor(rng() * 2)),
-      ballot: buildBallot(rng, compFor(tier, rng), intake),
+      ballot: applyBallotTruth(
+        buildBallot(rng, compFor(tier, rng), intake),
+        ballotTruth[id] ?? {},
+      ),
     } satisfies School);
   }
 
