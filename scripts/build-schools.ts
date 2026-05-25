@@ -544,7 +544,7 @@ function loadBallotTruth(): BallotTruth {
  * doesn't carry a school's entry for one of these years, the synthesised
  * row is DELETED — better blank than fake.
  */
-const REAL_REQUIRED_YEARS = new Set([2023, 2024, 2025]);
+const REAL_REQUIRED_YEARS = new Set([2021, 2022, 2023, 2024, 2025]);
 
 /** Merge real-source ballot data over the synthesised history. */
 function applyBallotTruth(

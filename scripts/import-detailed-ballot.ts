@@ -224,12 +224,48 @@ for (let i = 0; i < lines.length; ) {
   }
   matched++;
 
-  for (const { phase, idx } of phases) {
-    const vacancy = Number((vac[idx] ?? "").replace(/[^\d]/g, ""));
-    const applied = Number((app[idx] ?? "").replace(/[^\d]/g, ""));
-    if (!Number.isFinite(vacancy) || !Number.isFinite(applied)) continue;
-    const t = parseTakenCell(taken[idx] ?? "");
-    setPhase(sch.id, phase, vacancy, applied, t);
+  // 2021 used a 7-column layout: Phase1 | 2A(1) | 2A(2) | 2B | 2C | 2C(S) | 3.
+  // The two 2A sub-phases combine to today's single 2A — vacancies = the 2A(1)
+  // starting pool, applied/admitted are summed, and ballot info from whichever
+  // sub-phase actually balloted carries through.
+  const is2021 = YEAR === 2021;
+  if (is2021) {
+    const vacancy2A = Number((vac[1] ?? "").replace(/[^\d]/g, ""));
+    const applied2A =
+      Number((app[1] ?? "").replace(/[^\d]/g, "")) +
+      Number((app[2] ?? "").replace(/[^\d]/g, ""));
+    const t1 = parseTakenCell(taken[1] ?? "");
+    const t2 = parseTakenCell(taken[2] ?? "");
+    const balloted = t1.balloted || t2.balloted;
+    const ballotSrc = t2.balloted ? t2 : t1;
+    const combined: Parsed = {
+      admitted: t1.admitted + t2.admitted,
+      balloted,
+      ballotedBand: ballotSrc.ballotedBand,
+      ballotedVacancies: ballotSrc.ballotedVacancies,
+      ballotedApplicants: ballotSrc.ballotedApplicants,
+    };
+    if (Number.isFinite(vacancy2A) && Number.isFinite(applied2A)) {
+      setPhase(sch.id, "2A", vacancy2A, applied2A, combined);
+    }
+    for (const { phase, srcIdx } of [
+      { phase: "2B" as Phase, srcIdx: 3 },
+      { phase: "2C" as Phase, srcIdx: 4 },
+    ]) {
+      const v = Number((vac[srcIdx] ?? "").replace(/[^\d]/g, ""));
+      const a = Number((app[srcIdx] ?? "").replace(/[^\d]/g, ""));
+      if (!Number.isFinite(v) || !Number.isFinite(a)) continue;
+      const t = parseTakenCell(taken[srcIdx] ?? "");
+      setPhase(sch.id, phase, v, a, t);
+    }
+  } else {
+    for (const { phase, idx } of phases) {
+      const vacancy = Number((vac[idx] ?? "").replace(/[^\d]/g, ""));
+      const applied = Number((app[idx] ?? "").replace(/[^\d]/g, ""));
+      if (!Number.isFinite(vacancy) || !Number.isFinite(applied)) continue;
+      const t = parseTakenCell(taken[idx] ?? "");
+      setPhase(sch.id, phase, vacancy, applied, t);
+    }
   }
 }
 
