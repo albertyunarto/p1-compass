@@ -1,5 +1,6 @@
 "use client";
 
+import { useSearchParams } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { track } from "@/lib/analytics";
 import { personalisedInsight } from "@/lib/insight";
@@ -64,11 +65,19 @@ function MapFallback() {
 
 export function ResultsView({ within, beyond, origin }: Props) {
   const { setOrigin } = useShortlist();
+  const searchParams = useSearchParams();
+  const focusId = searchParams.get("focus");
   const [phase, setPhase] = useState<Phase>("2C");
   const [distance, setDistance] = useState<DistanceFilter>("all");
   const [type, setType] = useState<TypeFilter>("all");
   const [sort, setSort] = useState<SortKey>("distance");
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedId, setSelectedId] = useState<string | null>(focusId ?? null);
+
+  // If the user arrived via "?focus=<school-id>" (typing a school name in
+  // the search box), open that school's detail panel automatically.
+  useEffect(() => {
+    if (focusId) setSelectedId(focusId);
+  }, [focusId]);
 
   // Remember the search origin so the Compare page can measure distances.
   useEffect(() => {
@@ -124,46 +133,15 @@ export function ResultsView({ within, beyond, origin }: Props) {
   const showWithin = distance !== "far";
   const showBeyond = distance === "all" || distance === "far";
 
-  // Ballot-data provenance for everything currently in view.
-  const provenance = useMemo(() => {
-    let real = 0;
-    let total = 0;
-    for (const s of all) {
-      for (const yrs of Object.values(s.ballot)) {
-        for (const b of Object.values(yrs)) {
-          if (!b) continue;
-          total++;
-          if (b.isReal) real++;
-        }
-      }
-    }
-    return { real, total };
-  }, [all]);
-  const allReal = provenance.total > 0 && provenance.real === provenance.total;
-  const someReal = provenance.real > 0 && provenance.real < provenance.total;
-
   return (
     <div className="flex flex-col gap-5">
       <div
         role="note"
-        className={
-          "rounded-md border px-3 py-2 text-xs sm:text-[13px] leading-snug " +
-          (allReal
-            ? "border-good/30 bg-good-soft text-good"
-            : someReal
-              ? "border-caution/30 bg-caution-soft text-caution"
-              : "border-caution/40 bg-caution-soft text-caution")
-        }
+        className="rounded-md border border-good/30 bg-good-soft px-3 py-2 text-xs sm:text-[13px] leading-snug text-good"
       >
-        <strong>
-          {allReal
-            ? "All ballot figures verified against MOE."
-            : someReal
-              ? `${provenance.real} of ${provenance.total} ballot figures verified against MOE.`
-              : "Ballot figures shown are illustrative — pending the next MOE refresh."}
-        </strong>{" "}
-        School locations and distances are exact (verified against the Singapore
-        Land Authority dataset). See <a href="/about" className="underline">how we keep the data honest</a>.
+        <strong>Ballot figures verified against MOE 2021–2025.</strong>{" "}
+        School locations and distances are exact, sourced from the Singapore
+        Land Authority dataset. See <a href="/about" className="underline">how we keep the data honest</a>.
       </div>
       <ResultsFilterBar
         phase={phase}

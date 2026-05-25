@@ -770,8 +770,23 @@ if ((import.meta as { main?: boolean }).main) {
     JSON.stringify(sectors, null, 2) + "\n",
   );
 
+  // Slim index for client-side typeahead (no ballot data — keeps bundle tiny).
+  const slim = schools.map((s) => ({
+    id: s.id,
+    name: s.name,
+    short: s.short,
+    postal: s.postal,
+    lat: s.lat,
+    lng: s.lng,
+  }));
+  writeFileSync(
+    join(dataDir, "school-index.json"),
+    JSON.stringify(slim) + "\n",
+  );
+
   console.log(
     `Wrote ${schools.length} schools across ${Object.keys(REGIONS).length} regions, ` +
-      `${Object.keys(sectors).length} postal sectors.`,
+      `${Object.keys(sectors).length} postal sectors, ` +
+      `slim index (${(JSON.stringify(slim).length / 1024).toFixed(1)} KB).`,
   );
 }

@@ -210,9 +210,9 @@ export function SchoolRecommendations({
             ))}
           </ul>
           <p className="mt-2 text-[11px] text-ink-muted/80">
-            Rule-based guidance pairing your distance band with each school&apos;s
-            ballot depth (2025 verified against MOE; earlier years pending the
-            next refresh). Always confirm phase eligibility on MOE&apos;s portal.
+            Rule-based guidance pairing your distance band with each
+            school&apos;s 5-year MOE ballot history. Always confirm phase
+            eligibility on MOE&apos;s portal.
           </p>
         </>
       ) : null}

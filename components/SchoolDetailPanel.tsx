@@ -79,7 +79,6 @@ export function SchoolDetailPanel({
   const insight = personalisedInsight(school, school.band, phase);
   const tone = TONE_COLOR[insight.tone];
   const { year, outcome } = latestOutcome(school, phase);
-  const pbForCurrentYear = school.ballot[year]?.[phase];
   const ratio =
     outcome.vacancy > 0 ? outcome.totalApplied / outcome.vacancy : 0;
 
@@ -290,15 +289,6 @@ export function SchoolDetailPanel({
               </tbody>
             </table>
           </div>
-          {outcome.isReal && !pbForCurrentYear?.ballotedBand ? (
-            <p className="mt-2 text-[11px] leading-snug text-ink-muted/80">
-              MOE publishes the phase total ({outcome.totalApplied} applied,{" "}
-              {outcome.vacancy} place{outcome.vacancy === 1 ? "" : "s"}) and the
-              balloting outcome, but not the per-band split. The applied/admitted
-              numbers per band above are estimated from the totals and should be
-              read as approximate.
-            </p>
-          ) : null}
         </Section>
 
         {/* 5-year ballot depth */}

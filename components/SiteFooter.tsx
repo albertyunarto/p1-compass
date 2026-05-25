@@ -15,7 +15,8 @@ export function SiteFooter() {
           <strong className="text-ink">
             A planning aid, not an official source.
           </strong>{" "}
-          Ballot history shown here is illustrative — always confirm with{" "}
+          Ballot figures are MOE 2021&ndash;2025; registration itself happens
+          only on{" "}
           <a
             href="https://www.moe.gov.sg/primary/p1-registration"
             target="_blank"
@@ -24,7 +25,7 @@ export function SiteFooter() {
           >
             MOE&apos;s official P1 registration site
           </a>
-          . Registration itself happens only on MOE&apos;s portal.
+          .
         </p>
         <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-1.5 text-xs text-ink-muted">
           <Link href="/about" className="hover:text-ink">

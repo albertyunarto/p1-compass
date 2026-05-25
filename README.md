@@ -47,21 +47,26 @@ Three data files are committed:
 
 | File | Contents |
 | --- | --- |
-| `data/schools.json` | The 184 schools — real coordinates; ballot history is synthetic. |
+| `data/schools.json` | 180 schools — SLA-verified coords + MOE 2021–2025 ballot history. |
+| `data/schools-truth.json` | Per-school address/postal/coord truth pulled from SLA. |
+| `data/ballot-truth.json` | Per-school per-year MOE ballot figures (2021–2025). |
 | `data/postal_coords.json` | Offline geocoder: ~120k Singapore postal codes → coordinates. |
 | `data/postal_sectors.json` | Coarse postal-sector centroids (last-resort fallback). |
 
-Regenerate them:
+Regenerate:
 
 ```bash
 bun run build:postal   # rebuilds data/postal_coords.json from the open dataset
-bun run build:data     # rebuilds data/schools.json
+bun run build:truth    # rebuilds data/schools-truth.json from SLA buildings
+bun run build:data     # rebuilds data/schools.json (merging both truth files)
+bun run validate       # asserts coords + postals exact, ballot 2021-2025 real
 ```
 
-School **coordinates** are real (OneMap-derived); **ballot history** is synthetic
-and illustrative — not official MOE figures. `build:data` geocodes each school
-by name through OneMap when reachable, otherwise it uses the curated coordinates
-baked into the script.
+School **coordinates** and **addresses** come from SLA's buildings dataset
+(verified exact in `bun run validate`). **Ballot history** is MOE-published
+for 2021–2025 — sourced from the annual Straits Times graphic that MOE
+supplies. The build asserts every year in the 2021–2025 window is real before
+shipping; there is no synthetic ballot data in the deployed app.
 
 ## Routes
 

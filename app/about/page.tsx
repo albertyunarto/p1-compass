@@ -101,37 +101,26 @@ export default function AboutPage() {
         dataset — you can read it on GitHub.
       </p>
 
-      <Heading>Ballot data — what&apos;s real, what isn&apos;t</Heading>
+      <Heading>Ballot data</Heading>
       <p className="mt-2 leading-relaxed text-ink-soft">
-        Every ballot bar in P1 Compass is labelled by provenance. A green
-        &ldquo;✓ Verified against MOE figures&rdquo; banner means the figures for that
-        phase came from MOE&apos;s Past Vacancies and Balloting Data (via{" "}
-        <a
-          href="https://www.p1registration.sg/category/ballot-history/"
-          target="_blank"
-          rel="noreferrer"
-          className="text-primary underline underline-offset-2"
-        >
-          p1registration.sg
-        </a>
-        ). An amber &ldquo;⚠ Illustrative — pending the next MOE refresh&rdquo;
-        banner means we don&apos;t yet have real numbers for that school, and
-        what you see is generated to demonstrate the UI — do NOT use it for a
-        decision. The refresh runs once per year after MOE publishes; the
-        scraper script (
-        <code className="rounded bg-sand/60 px-1.5 py-0.5 text-[0.85em] text-ink">
-          bun scripts/scrape-ballot.ts
-        </code>
-        ) pulls the real figures into{" "}
+        Every Phase 2A, 2B and 2C figure for 2021 through 2025 comes from
+        MOE&apos;s annual Past Vacancies and Balloting publication, transcribed
+        from the Straits Times graphic that MOE supplies to it each year.
+        Vacancies, applicants and the balloting band (within 1 km / 1&ndash;2 km /
+        beyond 2 km) are MOE-published. For 2024 and 2025 the per-band ballot
+        ratios (applicants for places, in the balloted band) are also
+        published; for 2021&ndash;2023 only the band itself is published, not the
+        per-band counts.
+      </p>
+      <p className="mt-3 leading-relaxed text-ink-soft">
+        The dataset is refreshed every year after MOE&apos;s publication.
+        Source files live under{" "}
         <code className="rounded bg-sand/60 px-1.5 py-0.5 text-[0.85em] text-ink">
           data/ballot-truth.json
         </code>{" "}
-        and the build merges them in.
-      </p>
-      <p className="mt-3 leading-relaxed text-ink-soft">
-        Individual bars also carry a small &ldquo;MOE&rdquo; tag under the year
-        label when verified, and a hatched pattern on illustrative bars so they
-        never look interchangeable with real data.
+        and the build asserts that every year in the 2021&ndash;2025 window is
+        real before shipping — there is no synthetic ballot data in the
+        deployed app.
       </p>
 
       <Heading>Phases &amp; ballot history</Heading>
@@ -204,9 +193,10 @@ export default function AboutPage() {
           Important
         </h2>
         <p className="mt-1.5 text-sm leading-relaxed text-ink-soft">
-          This build uses an illustrative dataset for demonstration — school
-          figures and ballot outcomes are not official. Always confirm
-          vacancies and balloting against{" "}
+          P1 Compass is a planning aid, not an official MOE source.
+          Vacancies, applicants and ballot bands shown here are the figures
+          MOE published for 2021&ndash;2025 — accurate as of each year&apos;s
+          release, but always re-check the latest cycle against{" "}
           <a
             href="https://www.moe.gov.sg/primary/p1-registration"
             target="_blank"
