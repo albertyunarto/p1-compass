@@ -1,7 +1,7 @@
 "use client";
 
 import index from "@/data/school-index.json";
-import { ALIAS_INDEX } from "./school-aliases";
+import { ALIAS_INDEX, SCHOOL_ALIASES } from "./school-aliases";
 
 export type SchoolHit = {
   id: string;
@@ -102,4 +102,31 @@ export function findSchools(query: string, limit = 5): SchoolHit[] {
 
   const ranked = [...scored.values()].sort((a, b) => b.score - a.score);
   return ranked.slice(0, limit).map((r) => r.hit);
+}
+
+/**
+ * Does this school match a free-text query via its name, short code, or one
+ * of its curated abbreviations? Used by inline school filters (e.g. the
+ * "Look up a school" search inside the Beyond-2-km panel) so typing "ACS"
+ * or "SJI" finds the right school without leaving the page.
+ */
+export function schoolMatchesQuery(
+  school: { name: string; short?: string },
+  query: string,
+): boolean {
+  const q = norm(query);
+  if (q.length === 0) return true;
+  if (norm(school.name).includes(q)) return true;
+  if (school.short && norm(school.short).includes(q)) return true;
+  const aliases = SCHOOL_ALIASES[school.name];
+  if (aliases) {
+    for (const a of aliases) {
+      const an = norm(a);
+      if (!an) continue;
+      if (an === q || an.startsWith(q) || q.startsWith(an) || an.includes(q)) {
+        return true;
+      }
+    }
+  }
+  return false;
 }

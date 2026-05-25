@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { schoolMatchesQuery } from "@/lib/school-search";
 import type { NearbySchool, Phase } from "@/lib/types";
 import { SchoolRow } from "./SchoolRow";
 
@@ -25,11 +26,11 @@ export function BeyondPanel({
   const [open, setOpen] = useState(defaultOpen);
   const [query, setQuery] = useState("");
 
-  const q = query.trim().toLowerCase();
+  const q = query.trim();
   const matches = useMemo(() => {
     if (!q) return schools.slice(0, PREVIEW);
     return schools
-      .filter((s) => s.name.toLowerCase().includes(q))
+      .filter((s) => schoolMatchesQuery(s, q))
       .slice(0, MAX_RESULTS);
   }, [schools, q]);
 
@@ -76,13 +77,13 @@ export function BeyondPanel({
           <p className="mb-3 text-sm text-ink-muted">
             You are in the lowest-priority distance band for these schools, but
             you can still check any school&rsquo;s ballot history and odds —
-            search for one by name.
+            search by name or abbreviation (ACS, SJI, MGS, CHIJ, TKPS&hellip;).
           </p>
           <input
             type="search"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search by name — e.g. Anglo-Chinese"
+            placeholder="Search by name or abbreviation — e.g. ACS, SJI, Tao Nan"
             aria-label="Search schools beyond 2 km by name"
             className="h-11 w-full rounded-xl border border-line bg-paper px-4 text-base text-ink outline-none transition placeholder:text-ink-muted/70 focus:border-primary focus:ring-2 focus:ring-primary/25"
           />
