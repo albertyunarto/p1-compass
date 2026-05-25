@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "build:data": "bun scripts/build-schools.ts",
-    "build:postal": "bun scripts/build-postal-index.ts"
+    "build:postal": "bun scripts/build-postal-index.ts",
+    "build:truth": "bun scripts/match-school-truth.ts",
+    "validate": "bun scripts/validate-accuracy.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

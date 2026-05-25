@@ -63,6 +63,44 @@ export default function AboutPage() {
         into three bands: within 1 km, 1–2 km, and beyond 2 km.
       </p>
 
+      <Heading>How we keep the location data honest</Heading>
+      <p className="mt-2 leading-relaxed text-ink-soft">
+        School locations are not estimates. Every school&apos;s coordinates,
+        street address and postal code come from the Singapore Land Authority
+        building dataset (the same source OneMap and the government&apos;s own
+        postal lookup use). Every release is run through an automated audit
+        that asserts:
+      </p>
+      <ul className="mt-3 space-y-1.5 text-ink-soft">
+        <li>
+          <strong className="text-ink">100% of school coordinates</strong>{" "}
+          match SLA to 5 decimal places (sub-metre).
+        </li>
+        <li>
+          <strong className="text-ink">100% of school postal codes</strong>{" "}
+          match SLA exactly — no synthesised addresses.
+        </li>
+        <li>
+          <strong className="text-ink">Distance maths are byte-identical</strong>{" "}
+          to a direct SLA-to-SLA haversine calculation (max delta &lt; 1 m
+          across every postal-school pair tested).
+        </li>
+        <li>
+          <strong className="text-ink">Your home postal</strong> is resolved
+          live through OneMap, the official map service, with a 121k-postal
+          offline index as a fallback when OneMap is unreachable.
+        </li>
+      </ul>
+      <p className="mt-3 leading-relaxed text-ink-soft">
+        If your home postal isn&apos;t in the offline index (very new
+        developments occasionally aren&apos;t), we always defer to OneMap to
+        avoid mis-banding you across the 1 km Phase 2C cutoff. The audit
+        script (<code className="rounded bg-sand/60 px-1.5 py-0.5 text-[0.85em] text-ink">
+          bun run validate
+        </code>) runs every build and the result is checked in alongside the
+        dataset — you can read it on GitHub.
+      </p>
+
       <Heading>Phases &amp; ballot history</Heading>
       <p className="mt-2 leading-relaxed text-ink-soft">
         Use the phase toggle to view your situation for Phase 2A (alumni),

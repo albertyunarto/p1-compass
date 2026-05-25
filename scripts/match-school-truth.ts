@@ -53,9 +53,11 @@ async function loadBuildings(): Promise<RawBuilding[]> {
 }
 
 function titleCase(value: string): string {
+  // Capitalise after spaces, slashes, parens or hyphens — not after
+  // apostrophes, so "king's road" → "King's Road" (not "King'S Road").
   return value
     .toLowerCase()
-    .replace(/\b\w/g, (c) => c.toUpperCase());
+    .replace(/(^|[\s/(-])([a-z])/g, (_, sep, c) => sep + c.toUpperCase());
 }
 
 /** Normalise a school name for matching: uppercase, St→Saint, strip punct. */
