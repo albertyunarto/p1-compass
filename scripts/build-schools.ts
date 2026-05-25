@@ -161,7 +161,7 @@ const SCHOOL_DEFS: Def[] = [
   // Bishan
   ["Catholic High School (Primary)", "bishan", "elite boys sap affiliated", 1.35479, 103.84493],
   ["Kuo Chuan Presbyterian Primary School", "bishan", "popular affiliated", 1.349384, 103.855171],
-  ["Guangyang Primary School", "bishan", "standard", 1.346043, 103.849285],
+  // Guangyang Primary School merged with Catholic High (Primary) in 2024 — removed.
   ["Marymount Convent School", "bishan", "popular girls", 1.340427, 103.839899],
   ["Zhonghua Primary School", "bishan", "popular", 1.360167, 103.869696],
   // Ang Mo Kio
@@ -173,7 +173,7 @@ const SCHOOL_DEFS: Def[] = [
   ["Ang Mo Kio Primary School", "amk", "standard", 1.36909, 103.83904],
   // Townsville Primary School merged into Mayflower in 2018 — removed.
   ["Teck Ghee Primary School", "amk", "standard", 1.365201, 103.851032],
-  ["Da Qiao Primary School", "amk", "standard", 1.37726, 103.84865, "569726", "6 Jalan Sinar Bulan, Singapore 569726"],
+  // Da Qiao Primary School merged with Mayflower Primary in 2018 — removed.
   ["Yio Chu Kang Primary School", "seletar", "standard", 1.377823, 103.885569],
   // Serangoon / Hougang
   ["Rosyth School", "serangoon", "elite gep", 1.372916, 103.874693],
@@ -540,11 +540,11 @@ function loadBallotTruth(): BallotTruth {
 }
 
 /**
- * Most-recent year for which the dataset must be 100% real. If the truth
- * file doesn't carry that year for a school, the synthesised entry for
- * that year is DELETED rather than shown — better blank than fake.
+ * Years for which the dataset must be 100% real. If the truth file
+ * doesn't carry a school's entry for one of these years, the synthesised
+ * row is DELETED — better blank than fake.
  */
-const REAL_REQUIRED_YEAR = 2025;
+const REAL_REQUIRED_YEARS = new Set([2024, 2025]);
 
 /** Merge real-source ballot data over the synthesised history. */
 function applyBallotTruth(
@@ -561,14 +561,15 @@ function applyBallotTruth(
       out[y][phase] = { ...real, isReal: true };
     }
   }
-  // Enforce: REAL_REQUIRED_YEAR can never carry synthesised data.
-  if (out[REAL_REQUIRED_YEAR]) {
+  // Enforce: any REAL_REQUIRED_YEARS row that's still synthesised gets removed.
+  for (const y of REAL_REQUIRED_YEARS) {
+    if (!out[y]) continue;
     const kept: Partial<Record<Phase, PhaseBallot>> = {};
-    for (const [phase, b] of Object.entries(out[REAL_REQUIRED_YEAR]) as [Phase, PhaseBallot][]) {
+    for (const [phase, b] of Object.entries(out[y]) as [Phase, PhaseBallot][]) {
       if (b?.isReal === true) kept[phase] = b;
     }
-    if (Object.keys(kept).length === 0) delete out[REAL_REQUIRED_YEAR];
-    else out[REAL_REQUIRED_YEAR] = kept;
+    if (Object.keys(kept).length === 0) delete out[y];
+    else out[y] = kept;
   }
   return out;
 }
